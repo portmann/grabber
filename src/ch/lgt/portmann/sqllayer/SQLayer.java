@@ -59,11 +59,13 @@ public class SQLayer {
 	}
 
 	public int setChannel(RSSChannel rssChannel) {
+		
+		try {
 
 		String insertString = "INSERT INTO channel (title, description, url) VALUES ('" + rssChannel.getTitle().replace("'", "") 
 				+ "', ''" + rssChannel.getDescription().replace("'", "") + ",'" + rssChannel.getUrl().replace("'", "") + "')";
 
-		try {
+		
 		sqlHandler.runUpdate(insertString);
 
 		// get new Id

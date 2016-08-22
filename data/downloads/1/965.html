@@ -1,1042 +1,1494 @@
-<!--[if !IE]> This has been served from cache <![endif]-->
-<!--[if !IE]> Request served from apache server: S264630NJ2XSF07 <![endif]-->
-<!--[if !IE]> Cached on Thu, 18 Aug 2016 15:12:02 GMT and will expire on Thu, 18 Aug 2016 15:27:02 GMT <![endif]-->
-<!--[if !IE]> token: eb14be65-e715-478d-b349-8de5065d8b04 <![endif]-->
-<!--[if !IE]> CSTAT-UUID: 84c58baa-f407-4311-bdc9-7f117e36d4e7 <![endif]-->
-<!--[if !IE]> App Server /S264630NJ2XSF55/ <![endif]-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if IE 8]> <html class="ie ie8 lt-ie10 lt-ie9" lang="en"> <![endif]--> <!--[if IE 9]> <html class="ie ie9 lt-ie10" lang="en"> <![endif]--> <!--[if gt IE 9]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"  xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" >
+<!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+        <meta name="description" content="Minutes from the Fed's July meeting and speeches from key officials should shed light on the central bank's view of the economy." />
+    <meta NAME="ROBOTS" content="noarchive, noodp" />
+    <meta NAME="article.section" content="World" />
+    <meta NAME="article.id" content="BL-263B-8057" />
+    <meta NAME="article.headline" content="5 Things to Watch on the U.S. Economic Calendar" />
+    <meta NAME="article.access" content="free" />
+    <meta NAME="article.author" content="Jeffrey Sparshott" />
+    <meta NAME="article.created" content="2016-08-12T16:45:35-04:00" />
+    <meta NAME="article.published" content="2016-08-12T16:45:35-04:00" />
+    <meta NAME="article.updated" content="2016-08-12T16:46:38-04:00" />
+    <meta NAME="article.type" content="Briefly" />
+    <meta NAME="article.page" content="Briefly Blog" />
+    <meta NAME="article:image_count" content="2" />
 
-<!doctype html><html><head>
-<title>
-            Long-term study links neonicotinoids to wild bee declines
-| Reuters</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="utf-8"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="//s1.reutersmedia.net"/><link rel="dns-prefetch" href="//s2.reutersmedia.net"/><link rel="dns-prefetch" href="//s3.reutersmedia.net"/><link rel="dns-prefetch" href="//s4.reutersmedia.net"/><link rel="dns-prefetch" href="//static.reuters.com"/><meta name="robots" content="INDEX, FOLLOW">
 
-<meta name="google-site-verification" content="SVDMcE-27ZUUuh-EcZzejAJ0YIFjxD9H_nwAX6YVTw4" /><meta name="msvalidate.01" content="2055F771212E9574BFD5AF29D47FBA04" /><script type="text/javascript" >
+    <!-- begin Facebook Open Graph/Twitter meta tags -->
+    <meta property="fb:app_id" content="368513495882" />
+<meta property="og:site_name" content="WSJ" />
+<meta property="fb:url" content="http://blogs.wsj.com/briefly/2016/08/12/5-things-to-watch-on-the-u-s-economic-calendar-16/" />
+<meta property="og:url" content="http://blogs.wsj.com/briefly/2016/08/12/5-things-to-watch-on-the-u-s-economic-calendar-16/" />
+<meta property="og:image" content="//si.wsj.net/public/resources/images/BN-PJ653_fedmin_P_20160812155035.jpg" />
+<meta property="og:image:width" content="749" />
+<meta property="og:image:height" content="499" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="5 Things to Watch on the U.S. Economic Calendar" />
+<meta property="og:description" content="Minutes from the Fed's July meeting and speeches from key officials should shed light on the central bank's view of the economy." />
+<meta property="article:publisher" content="https://www.facebook.com/wsj" />
 
-// Rubicon Initialize
-(function() {
-    var account_id = 11384;
-    var rct = document.createElement('script');
-        rct.type = 'text/javascript';
-        rct.async = true;
-        rct.src = (document.location.protocol === 'https:' ? 'https:' : 'http:') + '//ads.rubiconproject.com/header/' + account_id + '.js';
-    var node = document.getElementsByTagName('script')[0];
-        node.parentNode.appendChild(rct);
-})();
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="5 Things to Watch on the U.S. Economic Calendar">
+<meta name="twitter:site" content="WSJ">
+<meta name="twitter:description" content="Minutes from the Fed's July meeting and speeches from key officials should shed light on the central bank's view of the economy.">
+<meta name="twitter:url" content="http://blogs.wsj.com/briefly/2016/08/12/5-things-to-watch-on-the-u-s-economic-calendar-16/">
+<meta name="twitter:image:src" content="https://si.wsj.net/public/resources/images/BN-PJ653_fedmin_P_20160812155035.jpg">
+<meta name="twitter:domain" content="WSJ.com">    <!-- end Facebook Open Graph/Twitter meta tags -->
 
-</script><script type="text/javascript" src="//reuters-d.openx.net/w/1.0/jstag?nc=4735792-reuters"></script><div class="linebreak"></div>
-	<style>
-@font-face { font-family: 'knowledge-reg'; src: url('/resources_v2/fonts/Knowledge-Regular.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'knowledge-light'; src: url('/resources_v2/fonts/Knowledge-Light.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'knowledge-medium'; src: url('/resources_v2/fonts/Knowledge-Medium.woff') format('woff'); font-weight: normal; font-style: normal; }
+    <title>5 Things to Watch on the U.S. Economic Calendar - WSJ</title>
+
+    <link rel="shortcut icon" href="http://s.wsj.net/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" title="Briefly RSS Feed" href="http://blogs.wsj.com/briefly/feed/" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blogs.wsj.com/briefly/xmlrpc.php?rsd" />
+
+    <meta name="news_keywords" content="consumer price index,cpi,economy,Federal Reserve,Housing,housing starts,industrial production,inflation,Manufacturing,mining" /><meta name="keywords" content="consumer price index,cpi,economy,Federal Reserve,Housing,housing starts,industrial production,inflation,Manufacturing,mining" /><link rel="canonical" href="http://blogs.wsj.com/briefly/2016/08/12/5-things-to-watch-on-the-u-s-economic-calendar-16/"/><!-- non-CSS content from global CSS include -->
+      
+<meta name="verify-v1" content="G7OeL6LGnbrn0Zailv/PZqYmqL84WdTGoZWaLNXmSn0="/>
+<meta name="msvalidate.01" content="CD9C2939B71756871FE062470B7C108B"/>
+
+<meta name="msapplication-task" content="name=WSJ;action-uri=http://online.wsj.com/;icon-uri=http://si.wsj.net/favicon.ico"/>
+<meta name="msapplication-task" content="name=MarketWatch;action-uri=http://www.marketwatch.com/;icon-uri=http://www.marketwatch.com/favicon.ico"/>
+<meta name="msapplication-task" content="name=Barron's;action-uri=http://online.barrons.com/;icon-uri=http://online.barrons.com/favicon.ico"/>
+<meta name="msapplication-task" content="name=All Things Digital;action-uri=http://allthingsd.com/;icon-uri=http://allthingsd.com/favicon.ico"/>
+<meta name="msapplication-task" content="name=SmartMoney;action-uri=http://www.smartmoney.com/;icon-uri=http://www.smartmoney.com/favicon.ico"/>
+
+<meta name="application-name" content="WSJ.com"/>
+<meta name="msapplication-tooltip" content="The Wall Street Journal Online"/>
+
+ 
+
+<style type="text/css"> 
+    .wsjblog .header li.form_factor_nav .inlineNav .blogsLinkContainer a, 
+    .wsjblog .header li.form_factor_nav .inlineNav .blogsLinkContainer a:visited { 
+        color: #E36627; 
+    }
+    //.maintenance { display: none; }
 </style>
 
-<script type="text/javascript" src="http://www.reuters.com/reuters_bootstrap.js"></script><script type="text/javascript" src="http://www.reuters.com/reuters_gpt_bootstrap.js"></script>
-<script type="text/javascript">var abp;</script><script type="text/javascript" src="http://s4.reutersmedia.net/resources_v2/js/px.js?ch=1"></script><script type="text/javascript" src="http://s4.reutersmedia.net/resources_v2/js/px.js?ch=2"></script>
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
 <script type="text/javascript">
-var parallelMediaHosts = new Array();
-parallelMediaHosts.push("s1.reutersmedia.net");parallelMediaHosts.push("s2.reutersmedia.net");parallelMediaHosts.push("s3.reutersmedia.net");parallelMediaHosts.push("s4.reutersmedia.net");</script>
-
-<meta name="DCSext.ContentChannel" content="scienceNews" />
-<meta name="DCSext.ChannelList" content="scienceNews;environmentNews;corporateResponsibility;SustainabilityGreen;SustainabilityCorporate;everything;ShellEnergy;Hyundai;newsproHome;cfaglobal;nonegative;dassaultuk;PorscheCayenne;ubs;Intel;CathayPacific_US;MOC_US_2015-16" />
-<meta name="DCSext.ContentHeadline" content="Long-term+study+links+neonicotinoids+to+wild+bee+declines" />
-<meta name="DCSext.PageNumber" content="1" />
-<meta name="DCSext.PageTotal" content="1" />
-<meta name="DCSext.contentversion" content="original" />
-<meta name="DCSext.rAuthor" content="Kate Kelland">
-<meta name="WT.z_inlinetype" content="false" />
-<meta name="WT.z_navid" content="nav-Text-scienceNews" />
-
-<link rel="canonical" href="http://www.reuters.com/article/us-science-bees-neonicotinoids-idUSKCN10R1M5" />
-<link rel="alternate" href="http://uk.reuters.com/article/us-science-bees-neonicotinoids-idUKKCN10R1M5" hreflang="en-gb" />
-<link rel="alternate" href="http://in.reuters.com/article/us-science-bees-neonicotinoids-idINKCN10R1M5" hreflang="en-in" />
-<link rel="alternate" href="http://www.reuters.com/article/us-science-bees-neonicotinoids-idUSKCN10R1M5" hreflang="en" /><link rel="alternate" media="only screen and (max-width: 640px)" href="http://mobile.reuters.com/article/idUSKCN10R1M5" />
-<meta name="description" content="Wild bees that forage from oilseed rape crops treated with insecticides known as neonicotinoids are more likely to undergo long-term population declines than bees that forage from other sources, according to the findings of an 18-year study.">
-<meta name="Author" content="Kate Kelland">
-<link rel="image_src" href="http://s2.reutersmedia.net/resources/r/?m=02&d=20160816&t=2&i=1149890444&w=&fh=545px&fw=&ll=&pl=&sq=&r=LYNXNPEC7F0YB" />
-<meta name="keywords" content="United Kingdom,Ben Woodcock,Christopher Connolly,US,SCIENCE,BEES,NEONICOTINOIDS,Industrial Machinery / Equipment (Legacy),India,Agricultural Markets,United Kingdom,Europe,Company News,Environment,European Union,Science,Agricultural Chemicals (TRBC),Life Sciences,Government Borrowing Requirement,Asia / Pacific,Chemicals (Legacy),Switzerland,England,Corporate Events,Health / Medicine,Western Europe" />
-<meta name="news_keywords" content="United Kingdom;Ben Woodcock;Christopher Connolly;US;SCIENCE;BEES;NEONICOTINOIDS;Industrial Machinery / Equipment (Legacy);India;Agricultural Markets;United Kingdom;Europe;Company News;Environment;European Union;Science;Agricultural Chemicals (TRBC);Life Sciences;Government Borrowing Requirement;Asia / Pacific;Chemicals (Legacy);Switzerland;England;Corporate Events;Health / Medicine;Western Europe" />
-<meta name="REVISION_DATE" content="Tue Aug 16 15:25:27 UTC 2016">
-
-<meta name="sailthru.author" content="Kate Kelland" />
-<meta name="sailthru.date" content="2016-08-16T15:25:27+0000" />
-<meta name="sailthru.title" content="Long-term study links neonicotinoids to wild bee declines" />
-
-<meta property="og:locale" content="en_US"/>
-<meta property="og:site_name" content="Reuters" />
-<meta name="site edition" content="Reuters" />
-<meta property="article:publisher" content="https://www.facebook.com/Reuters" />
-<meta property="og:title" content="Long-term study links neonicotinoids to wild bee declines" />
-<meta property="og:url" content="http://www.reuters.com/article/us-science-bees-neonicotinoids-idUSKCN10R1M5" />
-<meta property="og:type" content="article" />
-<meta property="og:description" content="Wild bees that forage from oilseed rape crops treated with insecticides known as neonicotinoids are more likely to undergo long-term population declines than bees that forage from other sources, according to the findings of an 18-year study.">
-<meta property="og:image" content="http://s2.reutersmedia.net/resources/r/?m=02&d=20160816&t=2&i=1149890444&w=&fh=545px&fw=&ll=&pl=&sq=&r=LYNXNPEC7F0YB" />
-<meta property="og:article:published_time" content="2016-08-16T15:25:27+0000" />
-<meta property="og:article:modified_time" content="2016-08-16T15:25:27+0000" /> 
-<meta property="og:article:section" content="Technology" /> 
-<meta property="og:article:author" content="Kate Kelland" />
-<meta property="og:article:tag" content="United Kingdom,Ben Woodcock,Christopher Connolly,US,SCIENCE,BEES,NEONICOTINOIDS,Industrial Machinery / Equipment (Legacy),India,Agricultural Markets,United Kingdom,Europe,Company News,Environment,European Union,Science,Agricultural Chemicals (TRBC),Life Sciences,Government Borrowing Requirement,Asia / Pacific,Chemicals (Legacy),Switzerland,England,Corporate Events,Health / Medicine,Western Europe" />
-
-<meta name="twitter:site" content="@Reuters" />
-<meta name="twitter:creator" content="@Reuters" />
-<link rel="publisher" href="https://plus.google.com/+Reuters"/>
-    <meta name="twitter:card" content="summary_large_image"> 
-    <meta name="twitter:title" content="Long-term study links neonicotinoids to wild bee declines" />
-<meta name="twitter:description" content="Wild bees that forage from oilseed rape crops treated with insecticides known as neonicotinoids are more likely to undergo long-term population declines than bees that forage from other sources, according to the findings of an 18-year study.">
-<meta name="twitter:image:src" content="http://s2.reutersmedia.net/resources/r/?m=02&d=20160816&t=2&i=1149890444&w=&fh=545px&fw=&ll=&pl=&sq=&r=LYNXNPEC7F0YB">
-<meta name="twitter:image" content="http://s2.reutersmedia.net/resources/r/?m=02&d=20160816&t=2&i=1149890444&w=&fh=545px&fw=&ll=&pl=&sq=&r=LYNXNPEC7F0YB" />
-
-
-<script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "article": {
-            "@type": "NewsArticle",
-            "headline": "Long-term study links neonicotinoids to wild bee declines",
-            "url": "http://www.reuters.com/article/us-science-bees-neonicotinoids-idUSKCN10R1M5",
-            "thumbnailUrl": "http://s2.reutersmedia.net/resources/r/?m=02&d=20160816&t=2&i=1149890444&w=&fh=545px&fw=&ll=&pl=&sq=&r=LYNXNPEC7F0YB",
-            "dateCreated": "2016-08-16T15:25:27+0000",
-            "dateModified": "2016-08-16T15:25:27+0000",
-            "datePublished": "2016-08-16T15:25:27+0000",
-            "description": "Wild bees that forage from oilseed rape crops treated with insecticides known as neonicotinoids are more likely to undergo long-term population declines than bees that forage from other sources, according to the findings of an 18-year study.",
-            "publisher": "Reuters",
-            "articleSection": "Technology",
-            "creator": ["Kate Kelland"],
-            "keywords": ["United Kingdom","Ben Woodcock","Christopher Connolly","US","SCIENCE","BEES","NEONICOTINOIDS","Industrial Machinery / Equipment (Legacy)","India","Agricultural Markets","United Kingdom","Europe","Company News","Environment","European Union","Science","Agricultural Chemicals (TRBC)","Life Sciences","Government Borrowing Requirement","Asia / Pacific","Chemicals (Legacy)","Switzerland","England","Corporate Events","Health / Medicine","Western Europe","Article","Science","Environment"],
-            "about":"Article"
-        }
-    }
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
-<meta name="DCSext.rChannel" content="Article - News"> 
 
-<meta name="DCSext.ContentType"  content="Article">
-<meta name="DCSext.DartZone" content="us.reuters/tech/science/article" />
-<meta name="WT.cg_n" content="Technology">
-<meta name="WT.cg_s" content="Science">
-<link rel="shortcut icon" type="image/x-icon" href="http://s3.reutersmedia.net/resources_v2/images/favicon/favicon.ico" />
-<link rel="icon" type="image/png" href="http://s3.reutersmedia.net/resources_v2/images/favicon/favicon-16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="http://s1.reutersmedia.net/resources_v2/images/favicon/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="http://s3.reutersmedia.net/resources_v2/images/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="stylesheet" type="text/css" href="http://s2.reutersmedia.net/resources_v2/css/core.css" />
-<link rel="stylesheet" type="text/css" href="http://s4.reutersmedia.net/resources_v2/css/core-modules.css" />
-    <link rel="stylesheet" type="text/css" href="http://s2.reutersmedia.net/resources_v2/css/core-article.css" />
-    <script src="http://s3.reutersmedia.net/resources_v2/js/libraries/jquery-2.2.4.min.js" type="text/javascript"></script>
-
-<script src="http://s2.reutersmedia.net/resources_v2/js/libraries/cookie.js" type="text/javascript"></script>
-<script src="http://s2.reutersmedia.net/resources_v2/js/core.js" type="text/javascript"></script>
-<script src="http://s4.reutersmedia.net/resources_v2/js/libraries/slideshow.js" type="text/javascript"></script>
-<script src="http://s2.reutersmedia.net/resources_v2/js/search.js" type="text/javascript"></script>
-<script type="text/javascript" src="http://s4.reutersmedia.net/resources_v2/js/core-most-popular.js"></script>
 <script type="text/javascript">
-  window._taboola = window._taboola || [];
-  _taboola.push({article:'auto'});
-  !function (e, f, u) {
-    e.async = 1;
-    e.src = u;
-    f.parentNode.insertBefore(e, f);
-  }(document.createElement('script'),
-  document.getElementsByTagName('script')[0],
-  '//cdn.taboola.com/libtrc/reuters-network/loader.js');
-</script><script type='text/javascript'>
-        var _sf_async_config = _sf_async_config || {};
-        _sf_async_config.uid = 52639; 
-        _sf_async_config.domain = 'reuters.com';  
-        _sf_async_config.topStorageDomain = 'reuters.com'; 
-        _sf_async_config.path = document.querySelector("link[rel='canonical']").getAttribute("href").replace('http://www.', ''); 
-        _sf_async_config.flickerControl = false;
-        var _sf_startpt = (new Date()).getTime();
-    </script><script async src='//static.chartbeat.com/js/chartbeat_mab.js'></script></head>
-<body class="BETAUS article">
-<div class="inter_bg"></div><div class="close_button" onClick="javascript:$('.inter_bg').hide();$('#div_gpt_intro').hide();$('#div_gpt_intro2').hide();"></div><div id="div_gpt_intro2" style="display:none;"></div>
-<script>function inter_pop(){$(".inter_bg, .close_button").show(),$("#div_gpt_intro2").append($(".close_button"))}function close_pop(){$(".inter_bg, .close_button, #div_gpt_intro2").fadeOut()}function createCookie(e,t,o){if(o){var n=new Date;n.setTime(n.getTime()+24*o*60*60*1e3);var r="; expires="+n.toGMTString()}else var r="";document.cookie=e+"="+t+r+"; path=/"}function readCookie(e){for(var t=e+"=",o=document.cookie.split(";"),n=0;n<o.length;n++){for(var r=o[n];" "==r.charAt(0);)r=r.substring(1,r.length);if(0==r.indexOf(t))return r.substring(t.length,r.length)}return null}function eraseCookie(e){createCookie(e,"",-1)}TR3.extractDartZone().indexOf("jp.reuters")>-1&&$(".close_button").html("???");var x=readCookie("r_inter");"true"==x?TR3.log("inter cookie:true"):displayAd("div_gpt_intro2",TR3.extractDartZone(),[640,480],"type=intro_gpt;"+adParams2);</script><div id="div_gpt_intro" style="display:none;"></div>
-<script>function close_pop2(){$("#div_gpt_intro").fadeOut()}function createCookie(e,t,o){if(o){var r=new Date;r.setTime(r.getTime()+24*o*60*60*1e3);var i="; expires="+r.toGMTString()}else var i="";document.cookie=e+"="+t+i+"; path=/"}function readCookie(e){for(var t=e+"=",o=document.cookie.split(";"),r=0;r<o.length;r++){for(var i=o[r];" "==i.charAt(0);)i=i.substring(1,i.length);if(0==i.indexOf(t))return i.substring(t.length,i.length)}return null}function eraseCookie(e){createCookie(e,"",-1)}var x=readCookie("r_inter");"true"==x?TR3.log("inter cookie:true"):(setTimeout(function(){close_pop2()},15e3),displayAd("div_gpt_intro",TR3.extractDartZone(),"","type=intro_gpt;"+adParams2));</script>
+    var _wpdq                   = 1;
+    var globalHeaderPageTitle   = "Blogs"; 
+    var gcDomain                = "online.wsj.com"; 
+    var cdnDomain               = "http://s.wsj.net";
+    var wpDomain                = "blogs.wsj.com";
+    var openHouseMode           = "true";
+    var pDate = new Date; pDate = pDate.toString();
+    var pStl                    = 'renovation';
+    var nonrenoAdLabel          = 'blog_' + document.location.toString().split( "/", 4 )[3];
+    if( typeof dj == "undefined" ) { var dj = {}; }
+    if( typeof dj.context == "undefined" ) { dj.context = {}; }
 
+var AT_VARS = '';
+</script>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js"></script>
+<script type="text/javascript" src="http://blogs.wsj.com/static_js/djscript_j_global_slim_b15.js"></script>
+<script type="text/javascript" src="http://sj.wsj.net/public/resources/documents/swfobject.js"></script>
 
-<!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W9SLGS"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>if (location.href.indexOf('/commentsChild?') == -1){ (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})
-    (window,document,'script','dataLayer','GTM-W9SLGS'); }</script>
-    <!-- End Google Tag Manager -->
+<style type="text/css">
+/* hack: only show 'Add a comment' link on top liveblog entry */
+ul.postList-liveBlog li ul li.pMetadataType-comments { display: none; }
+ul.postList-liveBlog li:first-child ul li.pMetadataType-comments { display: block; }
 
-    <section id="breakingNewsContainer" class="hidden"><div id="breakingNews" class="group wrap"><div class="breaking-content"><div class="breaking-news-type"></div><div class="breaking-news-content"></div></div><div class="close-btn">X</div></div></section>
+/* styling for headcuts generated at http://blogs.wsj.com/utilities/hedcut-module-html-generator.php in case WP strips out style tag (it does) */
+.headlineSummary.about .headcut {
+  float: left;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+.headlineSummary.about .headcut div, .headlineSummary.about .headcut span {
+  width: 64px;
+  display: block;
+}
+.headlineSummary.about .headcut img {
+  border: 1px solid black;
+  float: left;
+  margin-right: 8px;
+  width: auto;
+}
 
-    <header id="headerMain">
-        <div class="container group">
-            <div class="edition-container group">
-                <div class="edition-label">Edition:</div>
-                <div class="edition-selector">
-                    <div class="edition">United States</div>
-                    <div class="edition-arrow"></div>
-                </div>
-            </div>
-            <div class="reuters-nav-main">
-                <h2 class="reuters-logo">
-                    <a href="/" title="Reuters"></a>
-                </h2>
-            </div>
-            <div id="utilities" class="utilities"></div>
-        </div>
-    </header>
-    <nav id="headerNav">
-        <div class="container group">
-            <div class="header-mini-logo">
-                    <a href="/" title="Reuters"></a>
-            </div>
-            <ul class="horizontal-list nav-list">
-                <li class="nav-item home-tab active-icon
-                                                no-subnav" id="nav-item-1">
-                                            <a href="/home" class="nav-link-sec">
-                                                <div class="home-icon"></div>
-                                                <span class="text"></span>
-                                            </a>
-                                        </li>
-                <li class="nav-item" id="nav-item-2">
-                                       <a href="/finance" class="nav-link-sec">Business</a>
-                                <div class="subnav" id="subnav-2">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/finance" class="nav-link-subsec">Business Home</a></li>
-                                        <li><a href="/legal" class="nav-link-subsec">Legal</a></li>
-                                        <li><a href="/finance/deals" class="nav-link-subsec">Deals</a></li>
-                                        <li><a href="/subjects/aerospace-and-defense" class="nav-link-subsec">Aerospace & Defense</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/subjects/banks" class="nav-link-subsec">Finance</a></li>
-                                        <li><a href="/subjects/autos" class="nav-link-subsec">Autos</a></li>
-                                        <li><a href="/finance/summits" class="nav-link-subsec">Reuters Summits</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-3">
-                                       <a href="/finance/markets" class="nav-link-sec">Markets</a>
-                                <div class="subnav" id="subnav-3">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/finance/markets" class="nav-link-subsec">Markets Home</a></li>
-                                        <li><a href="/finance/markets/us" class="nav-link-subsec">U.S. Markets</a></li>
-                                        <li><a href="/finance/markets/europe" class="nav-link-subsec">European Markets</a></li>
-                                        <li><a href="/finance/markets/asia" class="nav-link-subsec">Asian Markets</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/finance/global-market-data" class="nav-link-subsec">Global Market Data</a></li>
-                                        <li><a href="/finance/markets/indices" class="nav-link-subsec">Indices</a></li>
-                                        <li><a href="/finance/stocks" class="nav-link-subsec">Stocks</a></li>
-                                        <li><a href="/finance/bonds" class="nav-link-subsec">Bonds</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/finance/currencies" class="nav-link-subsec">Currencies</a></li>
-                                        <li><a href="/finance/commodities" class="nav-link-subsec">Comm & Energy</a></li>
-                                        <li><a href="/finance/futures" class="nav-link-subsec">Futures</a></li>
-                                        <li><a href="/finance/funds" class="nav-link-subsec">Funds</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/finance/EarningsUS" class="nav-link-subsec">Earnings</a></li>
-                                        <li><a href="/finance/markets/dividends" class="nav-link-subsec">Dividends</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-4">
-                                       <a href="/news/world" class="nav-link-sec">World</a>
-                                <div class="subnav" id="subnav-4">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/news/world" class="nav-link-subsec">World Home</a></li>
-                                        <li><a href="/news/us" class="nav-link-subsec">U.S.</a></li>
-                                        <li><a href="/subjects/specialReports" class="nav-link-subsec">Special Reports</a></li>
-                                        <li><a href="http://www.reuters.com/investigates/" class="nav-link-subsec">Reuters Investigates</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/subjects/euro-zone" class="nav-link-subsec">Euro Zone</a></li>
-                                        <li><a href="/subjects/middle-east" class="nav-link-subsec">Middle East</a></li>
-                                        <li><a href="/places/china" class="nav-link-subsec">China</a></li>
-                                        <li><a href="/places/japan" class="nav-link-subsec">Japan</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/places/mexico" class="nav-link-subsec">Mexico</a></li>
-                                        <li><a href="/places/brazil" class="nav-link-subsec">Brazil</a></li>
-                                        <li><a href="/places/africa" class="nav-link-subsec">Africa</a></li>
-                                        <li><a href="/places/russia" class="nav-link-subsec">Russia</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/places/india" class="nav-link-subsec">India</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-5">
-                                       <a href="/politics" class="nav-link-sec">Politics</a>
-                                <div class="subnav" id="subnav-5">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/politics" class="nav-link-subsec">Politics Home</a></li>
-                                        <li><a href="/politics/election2016" class="nav-link-subsec">Election 2016</a></li>
-                                        <li><a href="http://polling.reuters.com" class="nav-link-subsec">Polling Explorer</a></li>
-                                        <li><a href="http://live.reuters.com/Event/Election_2016" class="nav-link-subsec">Just In</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="http://www.reuters.com/election2016/the-undecided/" class="nav-link-subsec">What Voters Want</a></li>
-                                        <li><a href="/subjects/supreme-court" class="nav-link-subsec">Supreme Court</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-6">
-                                       <a href="/news/technology" class="nav-link-sec">Tech</a>
-                                <div class="subnav" id="subnav-6">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/news/technology" class="nav-link-subsec">Technology Home</a></li>
-                                        <li><a href="/news/science" class="nav-link-subsec">Science</a></li>
-                                        <li><a href="/bizfinance/technology/Top100Innovators" class="nav-link-subsec">Top 100 Global Innovators</a></li>
-                                        <li><a href="/news/environment" class="nav-link-subsec">Environment</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/innovation" class="nav-link-subsec">Innovation</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-7">
-                                       <a href="/commentary/" class="nav-link-sec">Commentary</a>
-                                <div class="subnav" id="subnav-7">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/commentary/" class="nav-link-subsec">Commentary Home </a></li>
-                                        <li><a href="/tools/podcasts/" class="nav-link-subsec">Podcasts</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-8">
-                                       <a href="http://blogs.reuters.com/breakingviews/" class="nav-link-sec">Breakingviews</a>
-                                <div class="subnav" id="subnav-8">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="http://blogs.reuters.com/breakingviews/" class="nav-link-subsec">Breakingviews Home</a></li>
-                                        <li><a href="/video/breakingviews" class="nav-link-subsec">Breakingviews Video</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-9">
-                                       <a href="/finance/personal-finance" class="nav-link-sec">Money</a>
-                                <div class="subnav" id="subnav-9">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/finance/personal-finance" class="nav-link-subsec">Money Home</a></li>
-                                        <li><a href="/finance/personal-finance/retirement" class="nav-link-subsec">Retirement</a></li>
-                                        <li><a href="/subjects/us-lipper-awards" class="nav-link-subsec">Lipper Awards</a></li>
-                                        <li><a href="https://commerce.us.reuters.com/purchase/default.do" class="nav-link-subsec">Analyst Research</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="http://stockscreener.us.reuters.com/Stock/US/Index?quickscreen=gaarp" class="nav-link-subsec">Stock Screener</a></li>
-                                        <li><a href="http://funds.us.reuters.com/US/screener/screener.asp" class="nav-link-subsec">Fund Screener</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item no-subnav" id="nav-item-10">
-                                       <a href="/subjects/rio-2016" class="nav-link-sec">Rio 2016</a>
-                                </li>
-                <li class="nav-item pictures-tab active-icon active-text
-                                               " id="nav-item-11">
-                                            <a href="/news/pictures" class="nav-link-sec">
-                                                <div class="pictures-icon"></div>
-                                                <span class="text">Pictures</span>
-                                            </a>
-                                        <div class="subnav" id="subnav-11">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/news/pictures" class="nav-link-subsec">Pictures Home</a></li>
-                                        <li><a href="http://widerimage.reuters.com" class="nav-link-subsec">The Wider Image</a></li>
-                                        <li><a href="http://widerimage.reuters.com/photographer" class="nav-link-subsec">Photographers</a></li>
-                                        <li><a href="/focus-360/" class="nav-link-subsec">Focus 360</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item video-tab active-icon active-text
-                                                no-subnav" id="nav-item-12">
-                                            <a href="/video" class="nav-link-sec">
-                                                <div class="video-icon"></div>
-                                                <span class="text">Video</span>
-                                            </a>
-                                        </li>
-                <li class="nav-item search-tab active-icon no-subnav"><div class="search-icon"></div></li>
-            </ul>
-            <div id="searchBar">
-                <form id="searchForm" class="search-form" name="searchbox" method="get" action="/search/news" autocomplete="off">
-                    <input id="searchfield" class="search-field" name="blob" type="text" value="" onfocus="this.value = this.value;"  size="30" maxlength="128">
-                    <span class="search-line"></span>
-                    <input type="submit" id="search-submit-button" class="search-submit-button" value="" onmousedown="if(document.forms['searchbox'].blob.value == 'Search Reuters') { document.forms['searchbox'].blob.value = ''; }">
-                    <div class="search-close-button"></div>
-                </form>
-            </div>
-            <div class="article-mini-nav">
-    <div class="mini-nav-info">
-        <span class="mini-nav-headline">
-            Long-term study links neonicotinoids to wild bee declines</span></div>
-    <div class="mini-nav-share">
-        <div class="core-share nav-share" 
-            data-share-short-url="http://reut.rs/2bbo9jv"
-            data-share-url="http://www.reuters.com/article/us-science-bees-neonicotinoids-idUSKCN10R1M5"
-            data-share-title="Long-term study links neonicotinoids to wild bee declines"
-            data-share-desc="Long-term study links neonicotinoids to wild bee declines"
-            data-share-img="http://s2.reutersmedia.net/resources/r/?m=02&d=20160816&t=2&i=1149890444&w=1200&fh=&fw=&ll=&pl=&sq=&r=LYNXNPEC7F0YB"
-            data-share="twitter,facebook,linkedin,mailArticle"
-            data-share-id="USKCN10R1M5">
-        </div></div>
-</div></div>
-    </nav>
-    <div class="nav-white-space"></div>
-    <div class="edition-header">
-        <div class="container">
-            <div class="selection-header"></div>
-            <ul class="edition-list">
-                <li>
-                    <div class="item"><a href="http://af.reuters.com">Africa</a></div>
-                    <div class="item"><a href="http://lta.reuters.com">América Latina</a></div>
-                </li>
-                <li>
-                    <div class="item"><a href="http://ara.reuters.com">????</a></div>
-                    <div class="item"><a href="http://ar.reuters.com">Argentina</a></div>
-                </li>
-                <li>
-                    <div class="item"><a href="http://br.reuters.com">Brasil</a></div>
-                    <div class="item"><a href="http://ca.reuters.com">Canada</a></div>
-                </li>   
-                <li>
-                    <div class="item"><a href="http://cn.reuters.com" class="">??</a></div>
-                    <div class="item"><a href="http://de.reuters.com" class="">Deutschland</a></div>
-                </li>
-                <li>
-                    <div class="item"><a href="http://es.reuters.com">España</a></div>
-                    <div class="item"><a href="http://fr.reuters.com">France</a></div>
-                </li>
-                <li>
-                    <div class="item"><a href="http://in.reuters.com" class="">India</a></div>
-                    <div class="item"><a href="http://it.reuters.com">Italia</a></div>
-                </li>
-                <li>
-                    <div class="item"><a href="http://jp.reuters.com" class="">??</a></div>
-                    <div class="item"><a href="http://mx.reuters.com">México</a></div>
-                </li>
-                <li>
-                    <div class="item"><a href="http://ru.reuters.com">??????</a></div>
-                    <div class="item"><a href="http://uk.reuters.com" class="">United Kingdom</a></div>
-                </li> 
-                <li><div class="item"><a href="http://www.reuters.com" class="active">United States</a></div></li>
-            </ul>
-        </div>
-    </div>
+.blog-sp .col5wide .logo img {
+ margin-top: -30px !important;
+}
+
+/* hotfix for some side effects of PSSBSCEN-1930 */
+.post-content .mceTemp.imageFormat-E {
+  width: auto;
+  padding: 0
+}
+
+/* hotfix for PSSBSCEN-2015 */
+.post-snippet div.mceTemp dl[style="width: 458px"] { width: 475px !important; }
+
+/* fix FB button overflow while loading - overflow hidden breaks other stuff though. so this isn't working. */
+.blog-sp .post-snippet footer { max-height: 80px; /*overflow: hidden;*/ clear: both; }
+
+/* EA/EV images overlap byline and other weirdness */
+.blog-sp .post-snippet .post-content .mceTemp.imageFormat-EA dl.alignleft, .post-snippet .post-content .mceTemp.imageFormat-EV dl.alignleft { margin-top: 0px !important; margin-left: 0px; float: left; }
+.blog-sp .post-content a { font-weight: bold; }
+.blog-sp .post-content .socialByline a { font-weight: normal; }
+.myButton {
+	background-color:#ededed;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:arial;
+	font-size:13px;
+	padding:1px 4px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background-color:#dfdfdf;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+#ad_placeholder1 iframe { 
+    width : 540px ; 
+    height: 82px ;
+     margin-bottom: 10px;
+}
+.adtext1 {
+background: #f5f5f5;
+height: 5px;
+text-align: center;
+width: 540px;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+</style>
+
+<!-- end non-CSS content from global CSS include -->
+
+<link rel="stylesheet" media="all" type="text/css" href="http://blogs.wsj.com/style/sp_header,sp_nav,newGlobalFooter2012,globalHat,hdrSearch,login_scrim,slimHeaderWhite,slimHeaderWhiteMj,scrimEmailThis,sp_prevnext,ad-homeSq300x336,blogSearchbox,hsbMostPopular,ctNonHTMLBox,twLatestTweets,emailSignUp,trendingNow,blogCommentsTeaser,vltArticleTools,sp_post_header,sp_post_content,art-tabbedNavigation,blogCategories,sp_single_post,blogKeywordLinks,inlineTicker/pc/" /><!--[if IE 8]><link rel="stylesheet" media="all" type="text/css" href="http://blogs.wsj.com/style/sp_header,sp_nav,newGlobalFooter2012,globalHat,hdrSearch,login_scrim,slimHeaderWhite,slimHeaderWhiteMj,scrimEmailThis,sp_prevnext,ad-homeSq300x336,blogSearchbox,hsbMostPopular,ctNonHTMLBox,twLatestTweets,emailSignUp,trendingNow,blogCommentsTeaser,vltArticleTools,sp_post_header,sp_post_content,art-tabbedNavigation,blogCategories,sp_single_post,blogKeywordLinks,inlineTicker/ie8/" /><![endif]--><!--[if IE 9]><link rel="stylesheet" media="all" type="text/css" href="http://blogs.wsj.com/style/sp_header,sp_nav,newGlobalFooter2012,globalHat,hdrSearch,login_scrim,slimHeaderWhite,slimHeaderWhiteMj,scrimEmailThis,sp_prevnext,ad-homeSq300x336,blogSearchbox,hsbMostPopular,ctNonHTMLBox,twLatestTweets,emailSignUp,trendingNow,blogCommentsTeaser,vltArticleTools,sp_post_header,sp_post_content,art-tabbedNavigation,blogCategories,sp_single_post,blogKeywordLinks,inlineTicker/ie9/" /><![endif]--><script>  var current_path = "/briefly/2016/08/12/5-things-to-watch-on-the-u-s-economic-calendar-16/";</script>
+    <!-- briefly specific stuff -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+            <link rel="stylesheet" type="text/css" href="http://s.wsj.net/djs/css/djs-5t.css" />
+        <link rel="stylesheet" type="text/css" href="http://s.wsj.net/djs/css/djs-5t-break3.css" />
+        <link rel="stylesheet" href="//video-api.wsj.com/api-video/player/css/player.base.css" type="text/css" />
+        <link href="//video-api.wsj.com/api-video/player/css/WsjVideoPlayer.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="http://blogs.wsj.com/briefly/wp-content/themes/wsj_five_things/style.css" type="text/css"  />
     
-    <div id="content">
-            <div id="overlayForSearch"></div><section>
-	<div class="group" id="">
-		<script type="text/javascript">
-Reuters.namespace("info");
-Reuters.info.articleId = 'USKCN10R1M5';
-Reuters.info.articlePartnerURI = '';
-Reuters.info.channel = 'scienceNews';
-Reuters.info.articleUrl = '/article/us-science-bees-neonicotinoids-idUSKCN10R1M5';
-</script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-<!-- overrideType can be "video" -->
+    <!-- end briefly specific stuff -->
+    
+</head>
 
-</div>
-	</section><section class="main-content">
-	<div class="group wrap" id="articleContent">
-		<div id="div_gpt_lb" class="ad-leaderboard"><div class="ad" id="leaderboard">
+<body>
+<a name="top"></a>
+<div class="fullwide pagewide navType-white post-single">
 
-		<script type="text/javascript">
-var dz_final = TR3.extractDartZone();
-// leaderboard
-if( 'leaderboard' == 'leaderboard'){
-    //US HOME FASTLANE
-    if((TR3.extractDartZone().indexOf("us.reuters") > -1)){
-        if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        {displayAd_sync_fastlane(dz_final,  "articleID=USKCN10R1M5;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" );}
-        else{ displayAd_sync_fastlane( dz_final, "articleID=USKCN10R1M5;" + adParams2 + "" ); }
-    }
-    else{ if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        { displayAd_sync(dz_final,  "articleID=USKCN10R1M5;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" ); }
-        else{ displayAd_sync( dz_final, "articleID=USKCN10R1M5;" + adParams2 + "" ); }
-    }
-}
-else if('leaderboard' == 'mpu'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpu'); }); }
-else if('leaderboard' == 'mpulow'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpulow'); }); }
-else if('leaderboard' == 'leaderboardcenter'){
-    if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_center'); }); }
-    else{ displayAd("div_gpt_lb", dz_final, [[728, 90],[970,250],[970,90],[970,66],[1,1]], "type=leaderboard;articleID=USKCN10R1M5;" + adParams2 + "" ); }
-}
-else if('leaderboard' == 'leaderboardlow'){
-        if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_low'); }); }
-        else{ displayAd("div_gpt_lb", dz_final, [[728, 90],[970,250],[970,90],[970,66],[1,1]], "type=leaderboard;articleID=USKCN10R1M5;" + adParams2 + "" ); }
-}
-else{
-    if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined'){
-        displayAd("div_gpt_lb", dz_final, [[728, 90],[970,250],[970,90],[970,66],[1,1]], "type=leaderboard;articleID=USKCN10R1M5;storychannel=" + Reuters.info.channel+ ";" + adParams2 + "" );
-    } else{ displayAd("div_gpt_lb", dz_final, [[728, 90],[970,250],[970,90],[970,66],[1,1]], "type=leaderboard;articleID=USKCN10R1M5;" + adParams2 + "" ); }	
-}
-</script>
-        
-        </div>
+        <!-- begin global header -->
+        <div id="headerWrapper">
+          <div id="corporateHat"  class="corporateHat"></div>
+<div class="hatWSJ_c"><div id="hat_div" class="hat_wsjdn">
 
-		</div><div class="linebreak"></div>
-	
 
-</div>
-	</section><section>
-	<div class="group wrap" id="rcs-articleHeader">
-		<div class="column1 col col-10">
-		<div class="article-header">
-    <div class="article-info">
-            <span class="article-section">
-                <a href="/news/archive/scienceNews">Science News</a></span>
-            <span class="divider">|</span>
-            <span class="timestamp">Tue Aug 16, 2016 11:25am EDT</span>
-        </div>
-        
-        <h1 class="article-headline">Long-term study links neonicotinoids to wild bee declines</h1>
-            </div></div>
+ <ul  id="hattabs" class="hat_tabs">
 
-	<div class="column2 col col-4">
-		</div>
+            <li class="hat_tab current " id="hat_tab_wsj">
+            <a class="hat_site_title" href="http://www.wsj.com/" rel="nofollow">WSJ</a>	    
+              <ul>
+	      <li><a class="hat_site_link" href="http://www.wsj.com/" rel="nofollow">WSJ</a></li>	      
+							  <li class="hat_social_tab"><a id="hat_fb_button" class="hat_fb_link" href="#" title="Follow WSJ on Facebook">Facebook</a></li>
+							  <li class="hat_social_tab"><a id="hat_twt_button" class="hat_twitter_link" href="#" title="Follow WSJ on Twitter">Twitter</a></li>
+              </ul>  
+                <div id="fb_like_overlay" class="hat_overlay hat_overlay_fb hidden"></div>
+                <div id="twitter_overlay" class="hat_overlay hat_overlay_twitter hidden"></div>          
 
-</div>
-	</section><section>
-	<div class="group wrap" id="rcs-articleContent">
-		<div class="column1 col col-10">
-		<div class="related-photo landscape" id="articleImage">
-                	           	<div class="related-photo-container">
-                	           		<img
-                                
-                                        src="http://s2.reutersmedia.net/resources/r/?m=02&d=20160816&t=2&i=1149890444&w=780&fh=&fw=&ll=&pl=&sq=&r=LYNXNPEC7F0YB"
-                                
-                                border="0" alt="A bumble bee collects pollen from a flower in a garden near York, northern England, June 28, 2008. REUTERS/Nigel Roddis"
-                                 />
-		</div>
-                			<div class="module-meta group">
-        						<div class="module-caption">
-                                	A bumble bee collects pollen from a flower in a garden near York, northern England, June 28, 2008. <span class="module-credit">
-                                	
-                                		REUTERS/Nigel Roddis</span>
-                                </div>
-                            </div></div>
-                	<div class="core-share  "
-    data-share-short-url="http://reut.rs/2bbo9jv"
-    data-share-url="http://www.reuters.com/article/us-science-bees-neonicotinoids-idUSKCN10R1M5"
-    data-share-title="Long-term study links neonicotinoids to wild bee declines"
-    data-share-desc="LONDON (Reuters) - Wild bees that forage from oilseed rape crops treated with insecticides known as neonicotinoids are more likely to undergo long-term population declines than bees that forage from other sources, according to the findings of an"
-    data-share-img="http://s2.reutersmedia.net/resources/r/?m=02&d=20160816&t=2&i=1149890444&w=1200&fh=&fw=&ll=&pl=&sq=&r=LYNXNPEC7F0YB"
-    data-share="twitter,facebook,linkedin,mailArticle"
-    data-share-id="USKCN10R1M5">
-</div><span id="article-text">
-<span id="midArticle_start"></span>
 
-<div id="article-byline">
-        <span class="author">By <a href="/journalists/kate-kelland">Kate Kelland</a></span>
-            <span class="location"><span class="divider">|</span> LONDON</span> 
-		</div>
-<span id="midArticle_0"></span><span class="article-prime"><p><span class="articleLocation">LONDON</span> Wild bees that forage from oilseed rape crops treated with insecticides known as neonicotinoids are more likely to undergo long-term population declines than bees that forage from other sources, according to the findings of an 18-year study.</p></span><span id="midArticle_1"></span><p>The new research covered 62 species of bee found in the wild in Britain and found a link between their shrinking populations and the use of neonicotinoid pesticides.</p><span id="midArticle_2"></span><p>Neonicotinoids are used worldwide in a range of crops and have been shown in lab-based studies to be harmful to certain species of bee - notably commercial honeybees and bumblebees.</p><span id="midArticle_3"></span><p>The European Union limited use of the chemicals - made and sold by various companies including Bayer CropScience and Syngenta - two years ago, after research pointed to risks for bees, which are crucial for pollinating crops.</p><span id="midArticle_4"></span>
-            
-            <span class="article-divide first-article-divide"></span><p>Neonicotinoids were initially licensed for use as a pesticide in Britain in 2002. By 2011, the proportion of UK oilseed rape seeds treated with them was 83 percent, according to the researchers leading this latest study.</p><span id="midArticle_5"></span><p>Going back to data from 1994 up to 2011, the scientists analyzed how large-scale applications of neonicotinoids to oilseed rape crops influenced bee population changes. </p><span id="midArticle_6"></span><p>The results, published in the journal Nature Communications, found that bees foraging on treated oilseed rape were three times more likely to experience population declines than bees foraging from other crops or wild plants.</p><span id="midArticle_7"></span>
-            
-            <span class="article-divide second-article-divide"></span><p>Giving details at a briefing in London, Ben Woodcock, who co-led the study, said the average decline in population across all 62 species was 7.0 percent, but the average decline among 34 species that forage on oilseed rape was higher, at 10 percent. </p><span id="midArticle_8"></span><p>Five of the 62 species studied declined by 20 percent or more, he said, and the worst affected declined by 30 percent.</p><span id="midArticle_9"></span>
-            
-            <span class="article-divide third-article-divide"></span><p>Woodcock, an ecological entomologist at the Natural Environmental Research Council Center for Ecology and Hydrology, said the findings showed the extent of the impact.</p><span id="midArticle_10"></span><p>"Prior to this, people had an idea that something might be happening, but no-one had an idea of the scale," he told reporters. "(Our results show that) it's long-term, it's large scale, and it's many more species than we knew about before."</p><span id="midArticle_11"></span><p>Woodcock's team said this should add to the body of evidence  being considered in a review of neonicotinoid risks to bees being carried out by the European Food Standards Authority, expected to be completed by January 2017.</p><span id="midArticle_12"></span><p>Christopher Connolly, a neurobiologist and bee expert at the University of Dundee, who was not directly involved in this research, said: "The evidence against neonicotinoids now exists in key bee brain cells involved in learning and memory, in whole bees, entire colonies and now at the level of whole populations of wild bees."</p><span id="midArticle_13"></span><p></p><span id="midArticle_14"></span><p> (Reporting by Kate Kelland; Editing by Janet Lawrence)</p><span id="midArticle_15"></span></span>
+          </li>    
 
-<script type="text/javascript">
-	
-	var $relatedItems     = $('<li><a href="/article/us-china-space-satellite-idUSKCN10R07J">China launches \'hack-proof\' communications satellite</a></li><li><a href="/article/us-science-shark-idUSKCN10M208">Long in the tooth: the Greenland shark may live four centuries</a></li><li><a href="/article/us-britain-zoo-spiders-idUSKCN10N1XR">Rare tarantulas hatch at British zoo</a></li><li><a href="/article/us-science-hoax-idUSKCN10L1HC">Piltdown breakdown: new details about a famed scientific hoax</a></li>'),
-	    $relatedItems     = $relatedItems.slice(0,10),
-	    relatedBlockLimit = Number('6'),
-	    relatedItemsTotal = $relatedItems.length,
-	    $paragraphTags    = $('#article-text p'),
-	    contentParagraphs = 0,
-	    minParagraphs     = Number("8");
+            <li class="hat_tab " id="hat_tab_live">
+            <a class="hat_site_title" href="http://live.wsj.com" rel="nofollow">Live</a>	    
+              <ul>
+	      <li><a class="hat_site_link" href="http://live.wsj.com" rel="nofollow">Live</a></li>	      
+              </ul>  
 
-	for (i=0; i < $paragraphTags.length; i++) {
-		if ($paragraphTags[i].innerText.trim().length > 0) {
-			contentParagraphs = contentParagraphs + 1;
+
+          </li>    
+
+            <li class="hat_tab " id="hat_tab_realtor">
+            <a class="hat_site_title" href="http://www.realtor.com" rel="nofollow">Realtor</a>	    
+              <ul>
+	      <li><a class="hat_site_link" href="http://www.realtor.com" rel="nofollow">Realtor</a></li>	      
+              </ul>  
+
+
+          </li>    
+
+	<style>
+   	   ul.hat_tabs #hat_tab_mansionglobal .hat_site_link {
+  		background-image: url(http://s2.wsj.net/img/hat_sprite_6.png);
+  		background-position: -287px -95px;
 		}
-	}
+	  ul.hat_tabs #hat_tab_mansionglobal .hat_site_title {
+  		background-image: url(http://s2.wsj.net/img/hat_sprite_6.png);
+  		background-position: -278px -751px;
+		}
+	</style>
+            <li class="hat_tab " id="hat_tab_mansionglobal">
+            <a class="hat_site_title" href="http://www.mansionglobal.com" rel="nofollow">Mansion Global</a>	    
+              <ul>
+	      <li><a class="hat_site_link" href="http://www.mansionglobal.com" rel="nofollow">Mansion Global</a></li>	      
+              </ul>  
 
-	if (contentParagraphs > minParagraphs) {
-		setTimeout(function(){
-			if (relatedItemsTotal > relatedBlockLimit) {
-				$('.first-article-divide').append('<div class="related-content group-one"><h3 class="related-content-title">Also In Science News</h3><ul></ul></div>');
-				$('.second-article-divide').append($('.slider.slider-module'));
-				$('.third-article-divide').append('<div class="related-content group-two"><h3 class="related-content-title">Also In Science News</h3><ul></ul></div>');
-				var median                  = (relatedItemsTotal / 2);
-				var $relatedContentGroupOne = $('.related-content.group-one ul');
-				var $relatedContentGroupTwo = $('.related-content.group-two ul');
 
-				$.each($relatedItems, function(k,v) {
-					if (k + 1 <= median) {
-						$relatedContentGroupOne.append($relatedItems[k]);
-					} else {
-						$relatedContentGroupTwo.append($relatedItems[k]);
-					}
-				});	
-			} else {
-				$('.third-article-divide').append($('<div class="related-content group-one"><h3 class="related-content-title">Also In Science News</h3><ul></ul></div>'));
-				$('.related-content ul').append($relatedItems);
-			}
-		},500);	
-	}
-</script>
+          </li>    
 
-<div class="linebreak"></div>
+            <li class="hat_tab " id="hat_tab_bol">
+            <a class="hat_site_title" href="http://online.barrons.com/home" rel="nofollow">Barron's</a>	    
+              <ul>
+	      <li><a class="hat_site_link" href="http://online.barrons.com/home" rel="nofollow">Barron's</a></li>	      
+              </ul>  
+
+
+          </li>    
+
+            <li class="hat_tab " id="hat_tab_wsjplus">
+            <a class="hat_site_title" href="http://www.wsjplus.com" rel="nofollow">WSJ+</a>	    
+              <ul>
+	      <li><a class="hat_site_link" href="http://www.wsjplus.com" rel="nofollow">WSJ+</a></li>	      
+              </ul>  
+
+
+          </li>    
+
+              <li id="hat_tab_dropdown" class="hat_tab_dropdown">      
+              <a id="partyhat_more_dropdown" class="moreTarget" href="#">More</a>                             
+              <ul class="hat_dd_list">  
+            <li id="hat_tab_productx" class="hat_dd_item ">
+            <a href="http://dj.wsj.com/hub?mod=WSJ_Hat" rel="nofollow"  >Product X</a>
+            </li>      
+
+            <li id="hat_tab_port" class="hat_dd_item ">
+            <a href="http://portfolio.wsj.com?mod=wsj_port_hat" rel="nofollow"  >Portfolio</a>
+            </li>      
+
+            <li id="hat tab big charts" class="hat_dd_item ">
+            <a href="http://bigcharts.marketwatch.com/" rel="nofollow"  >BigCharts</a>
+            </li>      
+
+            <li id="hat_tab_fn" class="hat_dd_item ">
+            <a href="http://www.efinancialnews.com/" rel="nofollow"  >Financial News</a>
+            </li>      
+
+            <li id="hat_tab_Professor_Journal" class="hat_dd_item ">
+            <a href="http://professor.wsj.com/" rel="nofollow"  >Professor Journal</a>
+            </li>      
+
+            <li id="hat_tab_Student_Journal" class="hat_dd_item ">
+            <a href="http://wsjstudent.com/" rel="nofollow"  >Student Journal</a>
+            </li>      
+
+            <li id="hat tab Virtual Stock Exchange" class="hat_dd_item ">
+            <a href="http://www.marketwatch.com/Game/" rel="nofollow"  >Virtual Stock Exchange</a>
+            </li>      
+
+            <li id="hat tab WSJ Classifieds" class="hat_dd_item ">
+            <a href="http://online.wsj.com/public/page/classified-search.html" rel="nofollow"  >WSJ Classifieds</a>
+            </li>      
+
+            <li id="hat tab WSJ Classroom" class="hat_dd_item hidden">
+            <a href="http://classroom.wsj.com/" rel="nofollow"  >WSJ Classroom</a>
+            </li>      
+
+            <li id="wsjwine" class="hat_dd_item ">
+            <a href="http://www.wsjwine.com/" rel="nofollow"  >WSJ Wine</a>
+            </li>      
+                </ul></li>
+  </ul>
+<div class="hdrSearch  hidden" id="searchBlingBox" >
+	<div id="searchInputEle" class="hdrSearchC" >
+		<div >
+			<form onsubmit="return false;">
+				<input type="text" value="News, Quotes, Companies, Videos" class="hdrSearchInput unUsed" id="globalHeaderSearchInput" autocomplete="off" size="28">
+				<button class="hdrSearchBtn" type="button">SEARCH</button>
+			</form>
+		</div>
 	</div>
-
-	<div class="column2 col col-4">
-		<div class="module mod-sticky-article"><div class="section article-sticky">
-<div class="sectionContent">
-<div id="ad-div-mpu"><div id="div_gpt_mpu"><div class="ad" id="mpu">
-
-		<script type="text/javascript">
-var dz_final = TR3.extractDartZone();
-// leaderboard
-if( 'mpu' == 'leaderboard'){
-    //US HOME FASTLANE
-    if((TR3.extractDartZone().indexOf("us.reuters") > -1)){
-        if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        {displayAd_sync_fastlane(dz_final,  "articleID=USKCN10R1M5;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" );}
-        else{ displayAd_sync_fastlane( dz_final, "articleID=USKCN10R1M5;" + adParams2 + "" ); }
-    }
-    else{ if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        { displayAd_sync(dz_final,  "articleID=USKCN10R1M5;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" ); }
-        else{ displayAd_sync( dz_final, "articleID=USKCN10R1M5;" + adParams2 + "" ); }
-    }
-}
-else if('mpu' == 'mpu'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpu'); }); }
-else if('mpu' == 'mpulow'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpulow'); }); }
-else if('mpu' == 'leaderboardcenter'){
-    if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_center'); }); }
-    else{ displayAd("div_gpt_mpu", dz_final, [[300, 250],[300,600],[300,1050]], "type=mpu;articleID=USKCN10R1M5;" + adParams2 + "" ); }
-}
-else if('mpu' == 'leaderboardlow'){
-        if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_low'); }); }
-        else{ displayAd("div_gpt_mpu", dz_final, [[300, 250],[300,600],[300,1050]], "type=mpu;articleID=USKCN10R1M5;" + adParams2 + "" ); }
-}
-else{
-    if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined'){
-        displayAd("div_gpt_mpu", dz_final, [[300, 250],[300,600],[300,1050]], "type=mpu;articleID=USKCN10R1M5;storychannel=" + Reuters.info.channel+ ";" + adParams2 + "" );
-    } else{ displayAd("div_gpt_mpu", dz_final, [[300, 250],[300,600],[300,1050]], "type=mpu;articleID=USKCN10R1M5;" + adParams2 + "" ); }	
-}
-</script>
-        
-        </div>
-
-		</div><div class="linebreak"></div>
-	
-
-</div><div class="linebreak"></div>
-	<div class="header-no-margin"><header class="module-header">
-                        <h4 class="module-heading">
-                                Trending <span class="title-last">Stories</span>
-                                </h4>
-                        </header>
-                <div id="mostPopularRead"><div id="most-popular"><div class="moduleBody"><ul></ul></div><div id="most-popular-remark"></div></div></div><script type="text/javascript">
-        var video_btn_url = '<img src="http://s3.reutersmedia.net/resources_v2/images/btn_rel_video.gif" border="0" height="11px" width="43px" alt="Video" />';
-        var _raw_json_note = "not in use for this version";
-	var max_json_num = 5;
-	var filter_str = "/news/pictures";
-	var filter_arr = [];
-        filter_arr = filter_str.split(",");
+	<div id="globalHeaderAutoComplete" class="hdrSearchList hidden">
+		<div class="autocompleteContent" >
+		</div>		
+	</div>
+		<!--  Autocomplete viewTemplate content - could be used on pages where autocomplete is not in header -->
+<!-- Do not change id of textArea its referred in dj.widget.autocomplete.autoCompleteViewTemplate.js-->	
+<textarea id="wsj_autocomplete_template" style="display:none">	
  
-	var parselyObjects= [{"data":[{"title":"Clinton Foundation hired cyber firm after suspected hacking: sources","_hits":"1989","source":"charbeat","video_link":"","url":"http:\/\/www.reuters.com\/article\/us-usa-cyber-democrats-idUSKCN10T01G"},{"title":"U.S. swimmers damaged gas station, quarrelled with guards: source","_hits":"545","source":"charbeat","video_link":"http:\/\/www.reuters.com\/article\/video\/idUSKCN10T07K?videoId=369601744","url":"http:\/\/www.reuters.com\/article\/us-olympics-rio-lochte-police-idUSKCN10T07K"},{"title":"Venezuela crushes 2,000 guns in public, plans registry of bullets","_hits":"528","source":"charbeat","video_link":"","url":"http:\/\/www.reuters.com\/article\/us-venezuela-crime-idUSKCN10S2I9"},{"title":"Merkel says refugees didn't bring Islamist terrorism to Germany","_hits":"519","source":"charbeat","video_link":"","url":"http:\/\/www.reuters.com\/article\/us-europe-attacks-germany-merkel-idUSKCN10S256"},{"title":"Turkey seizes assets as post-coup crackdown turns to business","_hits":"511","source":"charbeat","video_link":"","url":"http:\/\/www.reuters.com\/article\/us-turkey-security-raids-idUSKCN10T0HH"}]}];
-	
-		if (typeof Reuters.parsely.parseParsely == 'function') { Reuters.parsely.parseParsely(parselyObjects); } 
-	</script>
-
-
-
-
-</div></div></div>
-
-
-</div><section class="mod-editors-pick module epnc">
-			<header class="module-header">
-				<h4 class="module-heading">
-				Editor's <span class="title-last">Pick</span>
-				</h4>
-			</header>
-        	<section class="module-content">
-                <article>
-                    <a href="http://live.reuters.com/Event/Election_2016"><div class="story-photo lazy-photo">
-                        <img border="0" alt="" src="" org-src="http://static.reuters.com/resources/media/global/assets/images/20160817/20160817_4194156320160817120616.jpg"></a>
-                    </div>
-                    <div class="story-content">
-                        <h2 class="story-title"><a href="http://live.reuters.com/Event/Election_2016">LIVE: Election 2016</a></h2>
-                    </div>
-                </article>
-        	</section>
-            
-            </section>
-        	<script>
-			 	$(document).ready(function () {
-					if(window.location.href.indexOf("http://live.reuters.com/Event/Election_2016") > -1) {
-					   $('.epnc').hide();
-					}
-				});
-			</script>
-        	
-        
-		<script>
-			 	$('.epnc').show();
-				$(document).ready(function () {
-					if(window.location.href.indexOf("http://blogs.reuters.com/breakingviews/2016/08/17/two-150-bln-plus-tech-giants-face-divergent-futures/") > -1) {
-					   $('.epnc').hide();
-					}
-				});
-				
-			</script>
-		
-
-<div class="module"><div id="div_gpt_mpulow"><div class="ad" id="mpulow">
-
-		<script type="text/javascript">
-var dz_final = TR3.extractDartZone();
-// leaderboard
-if( 'mpulow' == 'leaderboard'){
-    //US HOME FASTLANE
-    if((TR3.extractDartZone().indexOf("us.reuters") > -1)){
-        if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        {displayAd_sync_fastlane(dz_final,  "articleID=USKCN10R1M5;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" );}
-        else{ displayAd_sync_fastlane( dz_final, "articleID=USKCN10R1M5;" + adParams2 + "" ); }
-    }
-    else{ if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        { displayAd_sync(dz_final,  "articleID=USKCN10R1M5;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" ); }
-        else{ displayAd_sync( dz_final, "articleID=USKCN10R1M5;" + adParams2 + "" ); }
-    }
-}
-else if('mpulow' == 'mpu'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpu'); }); }
-else if('mpulow' == 'mpulow'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpulow'); }); }
-else if('mpulow' == 'leaderboardcenter'){
-    if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_center'); }); }
-    else{ displayAd("div_gpt_mpulow", dz_final, [[300, 250],[300,600],[1,1]], "type=mpulow;articleID=USKCN10R1M5;" + adParams2 + "" ); }
-}
-else if('mpulow' == 'leaderboardlow'){
-        if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_low'); }); }
-        else{ displayAd("div_gpt_mpulow", dz_final, [[300, 250],[300,600],[1,1]], "type=mpulow;articleID=USKCN10R1M5;" + adParams2 + "" ); }
-}
-else{
-    if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined'){
-        displayAd("div_gpt_mpulow", dz_final, [[300, 250],[300,600],[1,1]], "type=mpulow;articleID=USKCN10R1M5;storychannel=" + Reuters.info.channel+ ";" + adParams2 + "" );
-    } else{ displayAd("div_gpt_mpulow", dz_final, [[300, 250],[300,600],[1,1]], "type=mpulow;articleID=USKCN10R1M5;" + adParams2 + "" ); }	
-}
-</script>
-        
-        </div>
-
-		</div><div class="linebreak"></div>
-	
-
-</div><div class="module"><header class="module-header">
-                        <h4 class="module-heading">
-                                Sponsored <span class="title-last">Topics</span>
-                                </h4>
-                        </header>
-                <div class="linebreak"></div>
-	<div id="div_gpt_article_rr2"><div class="ad" id="BizDev_Article_RR2">
-
-		<script type="text/javascript">
-var dz_final = TR3.extractDartZone();
-// leaderboard
-if( 'BizDev_Article_RR2' == 'leaderboard'){
-    //US HOME FASTLANE
-    if((TR3.extractDartZone().indexOf("us.reuters") > -1)){
-        if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        {displayAd_sync_fastlane(dz_final,  "articleID=USKCN10R1M5;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" );}
-        else{ displayAd_sync_fastlane( dz_final, "articleID=USKCN10R1M5;" + adParams2 + "" ); }
-    }
-    else{ if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        { displayAd_sync(dz_final,  "articleID=USKCN10R1M5;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" ); }
-        else{ displayAd_sync( dz_final, "articleID=USKCN10R1M5;" + adParams2 + "" ); }
-    }
-}
-else if('BizDev_Article_RR2' == 'mpu'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpu'); }); }
-else if('BizDev_Article_RR2' == 'mpulow'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpulow'); }); }
-else if('BizDev_Article_RR2' == 'leaderboardcenter'){
-    if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_center'); }); }
-    else{ displayAd("div_gpt_article_rr2", dz_final, [[300,250],[1,1]], "type=BizDev_Article_RR2;articleID=USKCN10R1M5;" + adParams2 + "" ); }
-}
-else if('BizDev_Article_RR2' == 'leaderboardlow'){
-        if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_low'); }); }
-        else{ displayAd("div_gpt_article_rr2", dz_final, [[300,250],[1,1]], "type=BizDev_Article_RR2;articleID=USKCN10R1M5;" + adParams2 + "" ); }
-}
-else{
-    if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined'){
-        displayAd("div_gpt_article_rr2", dz_final, [[300,250],[1,1]], "type=BizDev_Article_RR2;articleID=USKCN10R1M5;storychannel=" + Reuters.info.channel+ ";" + adParams2 + "" );
-    } else{ displayAd("div_gpt_article_rr2", dz_final, [[300,250],[1,1]], "type=BizDev_Article_RR2;articleID=USKCN10R1M5;" + adParams2 + "" ); }	
-}
-</script>
-        
-        </div>
-
+	<div>
+			<div class="acHeadline hidden"  >
+			</div>
+			<div class="dropdownContainerClass">
+				<div class="suggestionblock hidden" templateType="C1">	
+					<ul role="listbox" class="">
+						<li role="menuitem" class="hdrSearchListName">
+							headline
+						</li>
+						<li role="menuitem" class="lineItem">
+							<a class="searchResult" href="javascript:void(0);">
+							   <span class="searchTerm">gold</span>man
+							</a>
+						</li>						
+					</ul>
+				</div>
+				<div class="suggestionblock hidden" templateType="C3">	
+					<ul role="listbox" class="hdrSearchListComp">
+						<li role="menuitem" class="hdrSearchListName">
+							Companies
+						</li>
+						<li role="menuitem" class="lineItem">
+							<a class="searchResult" href="javascript:void(0);">
+								<div class="searchListCompTicker">
+									<span class="searchTerm">GOLD</span>
+								</div>
+								<div class="searchListCompName">
+									Ran
+									<span class="searchTerm">gold</span> Resources Ltd. ADS
+								</div>
+								<div class="searchListCompMarkets">
+									U.S.
+								</div>
+							</a>
+						</li>						
+					</ul>									
+				</div>
+			</div>
+			<div class="acFooter hidden">
+				<ul role="listbox" class="hdrSearchListSearch">
+					<li role="menuitem" class="">
+						<a class="footer" href="#">View All Search Results &raquo;</a>
+					</li>
+				</ul>
+			</div>
+			<div id="SearchSponsorBox" class="sponsorBox"></div>
 		</div>
-
-</div></div>
+</textarea>
 
 </div>
-	</section><section>
-	<div class="group wrap" id="rcs-articleAd1">
-		<div class="column1 col col-10">
-		<section  class="module  ">
-		
-		<section class="module-content">
-		<header class="module-header">
-				<h4 class="module-heading">Next In <span class='title-last'> Science News</span> </h4>
-			</header><div class="next-article-container">    
-    	<div class="next-articles">
-    
-	<div class="story">
-		<div class="story-content">
-			<a href="/article/us-innovation-what-3-words-idUSKCN10M1Q6"  ><div class="story-photo">
-					<img
-                                
-					src="http://s4.reutersmedia.net/resources_v2/images/r-generic-hdr.png"
-					org-src=""
-                                
-                                border="0" alt=""
-                                 />
-		</div>
-            
-	            <h3  class="story-title">What3words keeps Olympics visitors on track in Rio</h3></a>
-	<p>An innovative addressing system that assigns every patch of earth in the world an easy to remember three-word address is being used to help visitors get around at the Olympics in Rio de Jeneiro. Some 500,000 foreigners are expected to pass through the city during the Games that run until August 21.</p>
+</div></div><!-- no match! -->
+<div id="factivaHeader_placeHolder" class="hidden"></div>
+   
+<!-- START: /static_html_files/headerone/wsjSSHeader.ftl -->
+<header>
+  <div class="slimH_c slimH_rw">
+    <div class="slimHeader" id="slimHeader">
+      <h1>
+        <a class="mainLogo" href="http://www.wsj.com">The Wall Street Journal</a>
+        </h1>
+<div class="centerCol">        
+        <div class="popC lnMenuC sectionsDDPopUpContainer">
+          <span class="popTrigger lnMenu menuOnClickLink">Menu</span>
+          <div class="popBox pop-secs">
+            <div class="colA">
+              <ul>
+                <li class="lnLi"><a id="SECTION_HOME" href="http://www.wsj.com/">HomePage</a></li>
+                <li class="lnLi"><a id="SECTION_WORLD" href="http://www.wsj.com/news/world">World</a></li>
+                <li class="lnLi"><a id="SECTION_US" href="http://www.wsj.com/news/us">U.S.</a></li>
+                <li class="lnLi"><a id="SECTION_NEWYORK" href="http://www.wsj.com/news/politics">Politics</a></li>
+                <li class="lnLi"><a id="SECTION_BUSINESS" href="http://www.wsj.com/news/economy">Economy</a></li>
+                <li class="lnLi"><a id="SECTION_TECH" href="http://www.wsj.com/news/business">Business</a></li>
+                <li class="lnLi"><a id="SECTION_MARKETS" href="http://www.wsj.com/news/technology">Tech</a></li>
+                <li class="lnLi"><a id="SECTION_MARKETDATA" href="http://www.wsj.com/news/markets">Markets</a></li>
+                <li class="lnLi"><a id="SECTION_OPINION" href="http://www.wsj.com/news/opinion">Opinion</a></li>
+                <li class="lnLi"><a id="SECTION_LIFEANDCULTURE" href="http://www.wsj.com/news/arts">Arts</a></li>
+                <li class="lnLi"><a id="SECTION_REALESTATE" href="http://www.wsj.com/news/life">Life</a></li>
+                <li class="lnLi"><a id="SECTION_MANAGEMENT" href="http://www.wsj.com/news/realestate">Real Estate</a></li>
+              </ul>
+              <div class="hidden" id="login_username">&nbsp;</div>
+              <div class="hidden" id="login_password">&nbsp;</div>
+              <div class="hidden" id="login_button">&nbsp;</div>
+              <div class="hidden"><form id="login_form" >&nbsp;</form></div>
             </div>
-    </div>
-
-	<div class="story">
-		<div class="story-content">
-			<a href="/article/us-science-paralysis-idUSKCN10M1G7"  ><div class="story-photo">
-					<img
-                                
-					src="http://s4.reutersmedia.net/resources_v2/images/r-generic-hdr.png"
-					org-src=""
-                                
-                                border="0" alt=""
-                                 />
-		</div>
             
-	            <h3  class="story-title">Paralysis partly reversed using brain-machine interface training</h3></a>
-	<p>Paraplegic patients recovered partial control and feeling in their limbs after training to use a variety of brain-machine interface technologies, according to new research published on Thursday in the journal "Scientific Reports."</p>
-            </div>
-    </div>
-
-	<div class="story">
-		<div class="story-content">
-			<a href="/article/us-tethered-drone-idUSKCN10L1U1"  ><div class="story-photo">
-					<img
-                                
-					src="http://s4.reutersmedia.net/resources_v2/images/r-generic-hdr.png"
-					org-src=""
-                                
-                                border="0" alt=""
-                                 />
-		</div>
             
-	            <h3  class="story-title">Tethered drone could fly 'forever’</h3></a>
-	<p>An unmanned aircraft system (UAS) developed by engineers from the University of Southampton uses a powered tether to provide unlimited flight time for drones. The developers say it could offer a more cost-effective solution for aerial monitoring and surveillance than other options on the market.</p>
-            </div>
-    </div>
-
-	</div></div>
-
-	</section>
-		</section>
-
+          </div>
+        </div>
+        <div class="siteDesc">
+        <a class="lnSection hidden" id="currentSectionBlk" href="#"></a>
+        </div>
 </div>
+      <div class="subSection hidden" id="promoLoginDetailsId">
+        <ul class="custNav">
+            <li class="cLi"><a class="ln loginClass" href="#">Sign In</a></li>
+        </ul>
+        <div class="subPromo" id="headerPromoContainer"></div>
+      </div>
 
-	<div class="column2 col col-4">
-		<div class="module header-no-margin"><section class="mod-recirc">
-<header class="module-header">
-  <h4 class="module-heading">
-MORE FROM <span class="title-last">REUTERS</span>
-  </h4>
+      <div class="subSection hidden" id="subscribedUserDetailsId">
+        <div class="uNav">
+            <div class="popC uName userInfoPopUpContainer">
+              <a class="popTrigger userLinkC userInfoOnClickLink" href="#" ><span id="userName" class="userLinkC"></span><span class="sym"></span></a>
+              <div class="popBox pop-mj">
+              <ul class="lnUl">
+                <li class="lnLi"><a href="http://www.wsj.com/user/profile/myprofile" class="ln">Profile</a></li>        
+                <li class="lnLi"><a href="http://www.wsj.com/user/personalization/saved-content" class="ln">Saved Articles</a></li>
+                <li class="lnLi"><a href="http://portfolio.wsj.com?mod=wsj_port_mj" class="ln">Portfolio</a></li>
+                <li class="lnLi"><a href="http://www.wsj.com/user/personalization/watchlist">Watchlist</a></li>
+                <li class="lnLi"><a href="http://www.wsj.com/public/page/email-setup.html" class="ln">Newsletters & Alerts</a></li>
+                <li class="lnLi"><a class="ln" href="https://customercenter.wsj.com/view/home.html?mod=WSJ_Login">Customer Center</a></LI>
+                <li class="lnLiLast"><a href="https://id.wsj.com/logout?url=http%3A%2F%2Fwww.wsj.com" id="logoutLink" class="lnLogout">Sign Out</a></li>
+              </ul>
+              </div>
+            </div>
+
+            <div class="lc-btn-box"><a class="lc-btn custChatLink" href="#" onclick="window.open('https://customercenter.s.dev.wsj.com/livechat/chat?product=WSJ', 'DowJones_Live_Chat','width=510,height=420,location=no,menubar=no,status=no,toolbar=no,scrollbars=no,resizable=no');return false;">&nbsp;</a></div>
+
+        </div>
+        <div class="meta hidden" id="goprohook"></div>
+      </div>
+    </div>
+  </div>
 </header>
-<section class="module-content">
-<div id="taboola-recirc"></div>
-<script type="text/javascript">
-  window._taboola = window._taboola || [];
-  _taboola.push({
-    mode: 'organic-thumbnails-a',
-    container: 'taboola-recirc',
-    placement: 'Below Article Thumbnails - Organic',
-    target_type: 'mix'
-  });
-</script>
-</section>
-</section></div></div>
 
+<div class="hidden">
+  <span class="hidden myOnlineJournalLink" id="goprohookx">
+    <ul>
+      <li id="messageCenterLk"><a class="internalOnly messageCenterLink" href="http://www.wsj.com/community/member/mailbox">Message Center <strong>(<span class="messageCount"></span> new)</strong></a></li>
+    </ul>
+  </span>
 </div>
-	</section><section>
-	<div class="group wrap" id="rcs-articleAd2">
-		<div class="column1 col col-10">
-		<header class="module-header">
-    <h4 class="module-heading">From Around the <span class="title-last">Web</span> <span style="color: #ccc; float: right; font-size: 12px; font-weight: normal; margin-top: 3px; text-transform: none;"><a href="http://popup.taboola.com/en/?template=colorbox&taboola_utm_source=cox-clarkhoward&taboola_utm_medium=bytaboola&taboola_utm_content=thumbnails-b:Below%20Article%20Thumbnails%20-%20SC" style="color: #ccc; background: none;" target="_blank">By Taboola</a></span></h4>
-</header><div class="module"><div id="taboola-below-article-thumbnails"></div>
-<script type="text/javascript">
-window._taboola = window._taboola || [];
-_taboola.push(
-{ mode: 'thumbnails-3X2', container: 'taboola-below-article-thumbnails', placement: 'Below Article Thumbnails', target_type: 'mix' }
+<!-- END: /static_html_files/headerone/wsjSSHeader.ftl -->
 
-);
-</script>
-<script type="text/javascript">
-window._taboola = window._taboola || [];
-_taboola.push(
-{flush: true}
-
-);
-</script></div>
-
-</div>
-
-	<div class="column2 col col-4">
-		<header class="module-header">
-    <h4 class="module-heading">Sponsored <span class="title-last">Content</span> <span style="color: #ccc; float: right; font-size: 12px; font-weight: normal; margin-top: 3px; text-transform: none;"><a href="http://www.dianomi.com/cms/register-interest/?utm_source=network&utm_medium=smartad_sponsor_link " target="_blank" style="color: #ccc;background: none;">By Dianomi</a></span></h4>
-</header><div class="module"><iframe valign="middle" width="300" height="444" marginheight=0 marginwidth=0 frameborder=0 vspace=0 hspace=0 scrolling=NO src="//www.dianomi.com/smartads.epl?id=2624"></iframe></div>
-
-<div class="shr-overlay"><div id="weChatBox" class="shr-box shr-qr"><div class="shr-qr-top group"><a href="javascript:void(0)" onclick="shrBoxHide('weChatBox')" class="shr-qr-close">X</a></div><div id="shr-qrcode" class="shr-qr-content"></div></div></div></div>
-
-</div>
-	</section></div>
-<footer>
-<section class="footer">
-	<div class="group wrap" id="">
-		<div id="section-follow-buttons"><span class="footer-follow">Follow Reuters: </span>
-<ul>
-    <li id="foot-twitter"><a href="http://www.twitter.com/reuters" target="_blank"><span class="follow-button follow-twitter">Follow Us On Twitter</span></a></li>
-    <li id="foot-facebook"><a href="http://www.facebook.com/Reuters" target="_blank"><span class="follow-button follow-facebook">Follow Us On Facebook</span></a></li>
-    <li id="foot-rssfeed"><a href="http://www.reuters.com/tools/rss" target="_blank"><span class="follow-button follow-rss">Follow Us On RSS</span></a></li>
-    <li id="foot-instagram"><a href=" https://instagram.com/reuters/" target="_blank"><span class="follow-button follow-instagram">Follow Us On Instagram</span></a></li>
-    <li id="foot-youtube"><a href="https://www.youtube.com/user/ReutersVideo" target="_blank"><span class="follow-button follow-youtube">Follow Us On YouTube</span></a></li>
-    <li id="foot-linkedin"><a href="https://www.linkedin.com/company/thomson-reuters_1400" target="_blank"><span class="follow-button follow-linkedin">Follow Us On LinkedIn</span></a></li>
-</ul></div><div class="footer-more-links"><span class="footer-more">Subscribe: </span>
-<a href="http://www.reuters.com/tools/rss">Feeds</a> | <a href="http://newslink.reuters.com/join/subscribe">Newsletters</a> | <a href="/tools/podcasts">Podcasts</a> | <a href="/tools/mobile">Apps</a> </div></div>
-	</section><section class="footer-body">
-	<div class="group wrap" id="">
-		<div class="footer-services-link"><a href="http://agency.reuters.com" target="_blank">Reuters News Agency</a> | <a href="http://agency.reuters.com/en/platforms-delivery/reuters-brand-attribution-guidelines.html" target="_blank">Brand Attribution Guidelines</a> | <a href="http://thomsonreuters.com/site/delivery-options/" target="_blank">Delivery Options</a></div><div class="disclaimer"><div class="footer-summary">
-<p>Reuters is the news and media division of <a href="http://thomsonreuters.com/" target="_blank">Thomson Reuters</a>. Thomson Reuters is the world's largest international multimedia news agency, providing investing news, world news, business news, technology news, headline news, small business news, news alerts, personal finance, stock market, and mutual funds information available on Reuters.com, video, mobile, and interactive television platforms. Learn more about Thomson Reuters products:</p>
-</div></div><div class="product-container">
-  <a href="http://financial.thomsonreuters.com/en/products/tools-applications/trading-investment-tools/eikon-trading-software.html" target="_blank">
-    <div class="product">
-      <div class="prod-title">Eikon</div>
-        <div class="prod-content">Information, analytics and exclusive news on financial markets - delivered in an intuitive desktop and mobile interface 
+<!-- fastdynapage - secj2kentwap08 - Sun 08/21/16 - 00:46:37 EDT -->
         </div>
-    </div>
-  </a>
-  <a href="http://financial.thomsonreuters.com/en/products/infrastructure/trading-infrastructure/elektron-enterprise-data-management.html" target="_blank">  
-    <div class="product">
-      <div class="prod-title">Elektron</div>
-        <div class="prod-content">Everything you need to empower your workflow and enhance your enterprise data management 
-      </div>
-    </div>
-  </a>
-  <a href="https://risk.thomsonreuters.com/products/world-check" target="_blank">  
-    <div class="product">
-      <div class="prod-title">World-Check</div>
-      <div class="prod-content">Screen for heightened risk individual and entities globally to help uncover hidden risks in business relationships and human networks 
-      </div>
-    </div>
-  </a>  
-  <a href="http://legalsolutions.thomsonreuters.com/law-products/westlaw-legal-research/" target="_blank">
-    <div class="product">
-      <div class="prod-title">Westlaw</div>
-      <div class="prod-content">Build the strongest argument relying on authoritative content, attorney-editor expertise, and industry defining technology   
-      </div>
-    </div>
-  </a>
-  <a href="https://tax.thomsonreuters.com/products/brands/onesource/" target="_blank">  
-    <div class="product">
-      <div class="prod-title">ONESOURCE</div>
-      <div class="prod-content">The most comprehensive solution to manage all your complex and ever-expanding tax and compliance needs
-      </div>
-    </div>
-  </a>
-  <a href="https://tax.thomsonreuters.com/products/brands/checkpoint/" target="_blank">  
-    <div class="product prod-last">
-      <div class="prod-title">CHECKPOINT</div>
-      <div class="prod-content">The industry leader for online information for tax, accounting and finance professionals 
-      </div>
-    </div>
-  </a>  
-</div><div class="linebreak"></div>
-	<div class="footer-policy-links"><p> All quotes delayed a minimum of 15 minutes. <a href="/info/disclaimer">See here for a complete list</a> of exchanges and delays.</p>
-<div class="footer-policies"><ul>
-    
-<li class="h-links">
-<div class="reuters-copyright"><script type="text/javascript">var year = new Date();document.write('<a href="http://thomsonreuters.com/copyright/">&copy;  ' + year.getFullYear() + ' Reuters. All Rights Reserved.</a>');</script></div>
+        <!-- end global header -->
+
+        <div id="djsDigestible"><div class="break3">
+
+
+        <article class='djs-5t djs-5t-cat2 djs-5t-layoutB'>
+
+                <header class='djs-5t-main-header djs-5t-clear '>
+
+
+
+			  <div class="djs-5t-mainimgbox" style="background-image:url(//si.wsj.net/public/resources/images/BN-PJ653_fedmin_M_20160812155035.jpg)">
+			    <img src="//si.wsj.net/public/resources/images/BN-PJ653_fedmin_M_20160812155035.jpg" class="djs-5t-mainimg">
+			    <div class="djs-5t-mainimg-creditbox">
+			      <span class="djs-5t-mainimg-credit">Andrew Harnik/Associated Press</span>
+			    </div>
+			  </div>
+			
+                        <div class="djs-5t-mainheadtextbox">
+
+                                <menu class="djs-5t-social djs-5t-popbox-wrap">
+                                        <li class="djs-5t-social-li">
+                                                <span class="djs-5t-icon-wrap djs-5t-sociallabel"><span class="djs-5t-icon djs-5t-share"></span>Share</span>
+                                                <menu class="djs-5t-socialsub djs-5t-popbox">
+                                                        <li><span class="djs-5t-icon-wrap"><span class="djs-5t-icon djs-5t-share djs-5t-icon-active"></span>Share</span></li>
+                                                                <li id="share-twt" data-url="http://on.wsj.com/2aAV2bg" data-text="5 things to watch on the U.S. economic calendar"><a href="" class="djs-5t-icon-wrap"><span class="djs-5t-icon djs-5t-twt"></span></a></li>
+                                                                <li id="share-fb" data-url="http://on.wsj.com/2aAV2bg" data-text="5 things to watch on the U.S. economic calendar"><a href="" class="djs-5t-icon-wrap"><span class="djs-5t-icon djs-5t-fb"></span></a></li>
+                                                                <li id="share-gplus" data-url="http://on.wsj.com/2aAV2bg" data-text="5 things to watch on the U.S. economic calendar"><a href="" class="djs-5t-icon-wrap"><span class="djs-5t-icon djs-5t-gplus"></span></a></li>
+                                                        </menu>
+                                                </li>
+                                        </menu>
+
+
+
+                                <h1 class='djs-5t-main-head'>
+                                        <span class='djs-5t-mainnum djs-5t-mark'></span>
+                                        <span class='djs-5t-mainlabel djs-5t-mark pl50'>Things </span>
+                                        <span class=""> to Watch on the U.S. Economic Calendar<span>
+                                </h1>
+
+
+                                
+
+                                
+                                <div class="djs-5t-dek djs-5t-textstyle">
+                                        <p>The U.S. economy has flashed mixed signals in recent weeks. Don&#8217;t expect a lot more clarity with the next batch of data, though minutes from the <strong>Federal Reserve&#8217;s</strong> July meeting and speeches from key officials should shed some light on the central bank&#8217;s thinking.</p>
+
+                                </div>
+
+
+
+
+                                        
+                                        <time datetime="2016-08-12" class="djs-5t-time">12 Aug 2016 4:45pm</time>
+
+                                        <div class="connect byline-dsk">
+                                                <span class='intro'>By</span>
+<div class="social-dd"><span class="c-name" rel="author" itemprop="author">Jeffrey Sparshott<span class="bk-box"></span></span>
+<menu class="c-menu connect-author-menu" onclick="event.stopPropagation()">
+<li id="twitterContainer" class="twitter"><span>
+<iframe scrolling="no" frameborder="0" name="twitter_iframe" id="twitter_iframe" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=jeffsparshott&amp;show_count=false&amp;show_screen_name=false" style="width: 60px; height: 21px;" allowtransparency="true"></iframe></span>
+<a href="http://www.twitter.com/@jeffsparshott" target="_blank" >@jeffsparshott</a>
 </li>
-<li class="h-links"><a href="http://reuters.zendesk.com/" target="_blank">Site Feedback</a></li>
-<li class="h-links"><a href="https://reuters.zendesk.com/anonymous_requests/new" target="_blank">Corrections</a></li>
-<li class="h-links"><a href="http://sales.reuters.com/">Advertise With Us</a></li>
-<li class="h-links"><a href="/advertising-guidelines">Advertising Guidelines</a></li>
-<li class="h-links"><a href="http://info.evidon.com/pub_info/285?v=1" id="_bapw-link" target="_blank"><img id="_bapw-icon" border="0" width="11" align="top" src="https://cdn.betrad.com/pub/icon1.png" /> AdChoices</a></li>
-<li class="h-links"><a href="/terms-of-use">Terms of Use</a></li>
-<li class="h-links h-links-last"><a href="/privacy-policy">Privacy Policy</a></li>
+<li class="email">
+<a href="mailto:Jeffrey.Sparshott@wsj.com">Jeffrey.Sparshott@wsj.com</a>
+</li>
+<li class="bio bylineBio"><a href="http://topics.wsj.com/person/A/biography/7236"><span></span>Biography</a></li>
+</menu>
+</div><span class="c-aggregate"><a href="#" class="connector">connect</a><menu class="c-menu connect-author-menu">
+<ul onclick="event.stopPropagation()">
+<li id="twitterContainer" class="twitter"><span>
+<iframe scrolling="no" frameborder="0" name="twitter_iframe" id="twitter_iframe" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=jeffsparshott&amp;show_count=false&amp;show_screen_name=false" style="width: 60px; height: 21px;" allowtransparency="true"></iframe></span>
+<a href="http://www.twitter.com/@jeffsparshott" target="_blank" >@jeffsparshott</a>
+</li>
+<li class="email">
+<a href="mailto:Jeffrey.Sparshott@wsj.com">Jeffrey.Sparshott@wsj.com</a>
+</li>
+<li class="bio bylineBio"><a href="http://topics.wsj.com/person/A/biography/7236"><span></span>Biography</a></li>
+</ul>
+</menu></span>
+                                        </div>
 
-</ul></div></div></div>
-	</section>
 
-</footer>
 
-<script src="http://s4.reutersmedia.net/resources_v2/js/core-header.js" type="text/javascript"></script>
-<script src="http://s3.reutersmedia.net/resources_v2/js/core-login.js" type="text/javascript"></script>
-<script src="http://s2.reutersmedia.net/resources_v2/js/core-tracking.js" type="text/javascript"></script>
-<script src="http://s2.reutersmedia.net/resources_v2/js/core-share.js" type="text/javascript"></script>
-    <script src="http://s2.reutersmedia.net/resources_v2/js/libraries/core-lib.js" type="text/javascript"></script>
-	<script src="http://s4.reutersmedia.net/resources_v2/js/core-modules.js" type="text/javascript"></script>
-<script src="http://s2.reutersmedia.net/resources_v2/js/core-article.js" type="text/javascript"></script>
-<script language="javascript" type="text/javascript" src="http://www.reuters.com/reuters_gpt_bootstrap_footer.js"></script>
+                                
+
+
+                        </div>
+
+                </header>
+
+
+                
+
+                <ul class='djs-5t-list'>
+                
+                        <li class='djs-5t-item djs-5t-clear djs-5t-divider'>
+
+                                <div class="djs-5t-itemhead">
+                                        
+                                        <div class="djs-5t-itemwrapper djs-5t-clear">
+                                                
+                                                <h2 class='djs-5t-head djs-5t-mark'>
+                                                        <span class='djs-5t-num'>1</span>
+                                                        <span class="djs-5t-headtxt">Minute by Minute</span>
+                                                </h2>
+
+                                                <a class="djs-5t-icon-wrap djs-5t-itemsocial" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fon.wsj.com%2F2aVDYsl&amp;text=Thing%20%231%3A%20Minute%20by%20Minute%2C%20via%20%40WSJ"><span class="djs-5t-icon djs-5t-twt">Share on Twitter</span></a>
+
+                                        </div>
+
+                                </div>
+
+                                <div class="djs-5t-itemcontent djs-5t-textstyle">
+
+                                        <p>The Fed releases minutes from its July 26-27 meeting on Wednesday. Central bank officials <a href="http://www.wsj.com/articles/fed-keeps-rates-unchanged-says-near-term-risks-have-diminished-1469642869">opened the door to an interest-rate increase</a> as early as September at the gathering. The door appeared to shut after a <a href="http://www.wsj.com/articles/u-s-economy-grew-at-a-disappointing-1-2-in-2nd-quarter-1469795649">poor reading for gross domestic product</a> and then crack open again after an <a href="http://www.wsj.com/articles/u-s-adds-255-000-jobs-in-july-unemployment-rate-steady-at-4-9-1470400413">upbeat July jobs report</a>. The minutes should offer some details on officials&#8217; concerns and causes for optimism.</p>
+
+
+                                </div>
+
+                                <figure class="djs-5t-media ">
+                                        
+
+
+                                        <img src="http://si.wsj.net/public/resources/images/OG-AH931_Effect_G_20160810101816.png" class="djs-5t-img">
+
+
+
+
+
+
+                                        
+                                
+                                </figure>
+
+
+                        
+                        </li>
+
+
+                        <li class='djs-5t-item djs-5t-clear djs-5t-divider'>
+
+
+                                
+
+
+
+
+
+
+
+                                                <aside id="djs-5t-inlinerectanglead">
+                                                        <div class="djs-5t-adwrap">
+                                                                        <div id="ad_17398" class="adSummary" data-cb-ad-id="BottomRectangle" > </div>
+                                                        </div>
+                                                </aside>
+
+
+                        
+                        </li>
+
+
+                        <li class='djs-5t-item djs-5t-clear djs-5t-divider'>
+
+                                <div class="djs-5t-itemhead">
+                                        
+                                        <div class="djs-5t-itemwrapper djs-5t-clear">
+                                                
+                                                <h2 class='djs-5t-head djs-5t-mark'>
+                                                        <span class='djs-5t-num'>2</span>
+                                                        <span class="djs-5t-headtxt">Listen Up</span>
+                                                </h2>
+
+                                                <a class="djs-5t-icon-wrap djs-5t-itemsocial" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fon.wsj.com%2F2aVE7w5&amp;text=Thing%20%232%3A%20Listen%20Up%2C%20via%20%40WSJ"><span class="djs-5t-icon djs-5t-twt">Share on Twitter</span></a>
+
+                                        </div>
+
+                                </div>
+
+                                <div class="djs-5t-itemcontent djs-5t-textstyle">
+
+                                        <p>Atlanta Fed president <strong>Dennis Lockhart</strong>, St. Louis Fed president <strong>James Bullard</strong> and San Francisco Fed president <strong>John Williams</strong> are scheduled to talk about the economy this week. Messrs. Williams and Lockhart are viewed as closely aligned with Chairwoman <strong>Janet Yellen</strong>, who has emphasized plans to<strong> </strong>proceed cautiously in raising short-term interest rates, and tend to reflect the Fed&#8217;s policy consensus.</p>
+
+
+                                </div>
+
+                                <figure class="djs-5t-media ">
+                                        
+                                        <h4 class="djs-5t-figtitle ">John Williams</h4>
+
+
+                                        <img src="//si.wsj.net/public/resources/images/BN-PE251_0729wi_G_20160729104555.jpg" class="djs-5t-img">
+
+
+
+
+
+
+                                        
+                                        <figcaption class="djs-5t-caption">
+                                        
+                                                
+
+                                                <span class="djs-5t-source">
+                                                        Andrew Harrer/Bloomberg
+                                                </span>
+                                                
+
+                                        </figcaption>
+                                
+                                </figure>
+
+
+                        
+                        </li>
+
+
+                        <li class='djs-5t-item djs-5t-clear djs-5t-divider'>
+
+                                <div class="djs-5t-itemhead">
+                                        
+                                        <div class="djs-5t-itemwrapper djs-5t-clear">
+                                                
+                                                <h2 class='djs-5t-head djs-5t-mark'>
+                                                        <span class='djs-5t-num'>3</span>
+                                                        <span class="djs-5t-headtxt">Inflation Nation</span>
+                                                </h2>
+
+                                                <a class="djs-5t-icon-wrap djs-5t-itemsocial" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fon.wsj.com%2F2aVDq5S&amp;text=Thing%20%233%3A%20Inflation%20Nation%2C%20via%20%40WSJ"><span class="djs-5t-icon djs-5t-twt">Share on Twitter</span></a>
+
+                                        </div>
+
+                                </div>
+
+                                <div class="djs-5t-itemcontent djs-5t-textstyle">
+
+                                        <p>Low oil prices, a strong dollar and slow economic growth have helped keep inflation well below the Fed&#8217;s 2% target. But the June consumer-price index suggested <a href="http://www.wsj.com/articles/u-s-consumer-prices-rose-0-2-in-june-1468585963">some firming for inflation</a>, driven by rising costs for shelter, medical care, transportation services and clothing. Core CPI, which excludes food and energy, was up 2.3% from a year earlier. July&#8217;s numbers are due out Tuesday.</p>
+
+
+                                </div>
+
+                                <figure class="djs-5t-media ">
+                                        
+
+
+                                        <img src="http://si.wsj.net/public/resources/images/OG-AH955_Change_G_20160812162506.png" class="djs-5t-img">
+
+
+
+
+
+
+                                        
+                                
+                                </figure>
+
+
+                        
+                        </li>
+
+
+                        <li class='djs-5t-item djs-5t-clear djs-5t-divider'>
+
+                                <div class="djs-5t-itemhead">
+                                        
+                                        <div class="djs-5t-itemwrapper djs-5t-clear">
+                                                
+                                                <h2 class='djs-5t-head djs-5t-mark'>
+                                                        <span class='djs-5t-num'>4</span>
+                                                        <span class="djs-5t-headtxt">If You Build It</span>
+                                                </h2>
+
+                                                <a class="djs-5t-icon-wrap djs-5t-itemsocial" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fon.wsj.com%2F2aVDItF&amp;text=Thing%20%234%3A%20If%20You%20Build%20It%2C%20via%20%40WSJ"><span class="djs-5t-icon djs-5t-twt">Share on Twitter</span></a>
+
+                                        </div>
+
+                                </div>
+
+                                <div class="djs-5t-itemcontent djs-5t-textstyle">
+
+                                        <p>The housing market has been a bright spot through most of the recovery, though it&#8217;s shown some signs of slowing in recent months. The <strong>National Association of Home Builders&#8217;s</strong> sentiment index for August, out Monday, and government data on housing starts in July may help show if the sector is holding firm.</p>
+
+
+                                </div>
+
+                                <figure class="djs-5t-media ">
+                                        
+
+
+                                        <img src="http://si.wsj.net/public/resources/images/OG-AH933_Newpri_G_20160810103542.png" class="djs-5t-img">
+
+
+
+
+
+
+                                        
+                                
+                                </figure>
+
+
+                        
+                        </li>
+
+
+                        <li class='djs-5t-item djs-5t-clear djs-5t-divider'>
+
+                                <div class="djs-5t-itemhead">
+                                        
+                                        <div class="djs-5t-itemwrapper djs-5t-clear">
+                                                
+                                                <h2 class='djs-5t-head djs-5t-mark'>
+                                                        <span class='djs-5t-num'>5</span>
+                                                        <span class="djs-5t-headtxt">City of Industry</span>
+                                                </h2>
+
+                                                <a class="djs-5t-icon-wrap djs-5t-itemsocial" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fon.wsj.com%2F2aVDRNL&amp;text=Thing%20%235%3A%20City%20of%20Industry%2C%20via%20%40WSJ"><span class="djs-5t-icon djs-5t-twt">Share on Twitter</span></a>
+
+                                        </div>
+
+                                </div>
+
+                                <div class="djs-5t-itemcontent djs-5t-textstyle">
+
+                                        <p>U.S. manufacturing activity has been expanding in recent months, though it&#8217;s been weighed down by the same global forces—oil prices, the dollar and weak global growth—as the broader U.S. economy. The <a href="http://www.wsj.com/articles/u-s-industrial-production-up-0-6-in-june-1468588723">Fed&#8217;s industrial-production report</a>, out Tuesday, should help show whether factories have stabilized. The mining industry and utilities also are covered in the monthly index.</p>
+
+
+                                </div>
+
+                                <figure class="djs-5t-media ">
+                                        
+
+
+                                        <img src="http://si.wsj.net/public/resources/images/OG-AH954_Indust_G_20160812162410.png" class="djs-5t-img">
+
+
+
+
+
+
+                                        
+                                
+                                </figure>
+
+
+                        
+                        </li>
+
+
+
+
+
+
+                
+
+
+                </ul>
+
+        </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <aside id="fivethingsmore">
+
+                <div class="djs-5t-module djs-5t-more djs-5t-divider">
+                        <span class="djs-5t-section">
+                                <small class="djs-5t-sectionsub">More</small>
+                                5 Things
+                        </span>
+
+                        
+
+                                <div class="djs-5t-setList djs-5t-clear">
+
+
+                                <a href="http://blogs.wsj.com/briefly/2016/08/22/5-reasons-why-india-doesnt-get-more-olympic-gold/?mod=briefly_more" class="djs-5t-hedSumm djs-5t-cat1">
+                                        <img src="//si.wsj.net/public/resources/images/BN-PM693_INDOLY_D_20160822061731.jpg" class="djs-5t-thumb">
+                                        <h3 class="djs-5t-hed"><small class="djs-5t-flash djs-5t-mark">5 Reasons</small>Why India Doesn't Get More Olympic Gold</h3>
+                                </a>
+
+
+
+                        
+
+
+
+                                <a href="http://blogs.wsj.com/briefly/2016/08/20/5-challenges-for-indias-new-central-bank-governor-urjit-patel/?mod=briefly_more" class="djs-5t-hedSumm djs-5t-cat2">
+                                        <img src="//si.wsj.net/public/resources/images/BN-PM417_INDRBI_D_20160820094433.jpg" class="djs-5t-thumb">
+                                        <h3 class="djs-5t-hed"><small class="djs-5t-flash djs-5t-mark">5 Challenges</small>for India’s New Central Bank Governor, Urjit Patel</h3>
+                                </a>
+
+
+
+                        
+
+
+
+                                <a href="http://blogs.wsj.com/briefly/2016/08/19/viacom-five-board-members/?mod=briefly_more" class="djs-5t-hedSumm djs-5t-nothumb djs-5t-cat2">
+                                        <h3 class="djs-5t-hed"><small class="djs-5t-flash djs-5t-mark">5 People</small>The Incoming Viacom Board Members</h3>
+                                </a>
+
+
+
+                                </div>
+                        
+
+                                <div class="djs-5t-setList djs-5t-clear">
+
+
+                                <a href="http://blogs.wsj.com/briefly/2016/08/19/paul-manafort-resigns-donald-trump-campaign-chairman-zika-miami-beach-pregnant-ryan-lochte-apology-5-things-to-read-today/?mod=briefly_more" class="djs-5t-hedSumm djs-5t-cat2">
+                                        <img src="//si.wsj.net/public/resources/images/BN-PM085_MANAFO_D_20160819100949.jpg" class="djs-5t-thumb">
+                                        <h3 class="djs-5t-hed"><small class="djs-5t-flash djs-5t-mark">5 Things</small>to Read Today: Paul Manafort Resigns From Trump Campaign, New Area of Zika Virus Transmission, and More</h3>
+                                </a>
+
+
+
+                        
+
+
+
+                                <a href="http://blogs.wsj.com/briefly/2016/08/19/5-ways-to-fend-off-ransomware/?mod=briefly_more" class="djs-5t-hedSumm djs-5t-cat4">
+                                        <img src="http://s.wsj.net/public/resources/images/BN-PG960_bitfin_D_20160807034616.jpg" class="djs-5t-thumb">
+                                        <h3 class="djs-5t-hed"><small class="djs-5t-flash djs-5t-mark">5 Ways</small>to Fend Off Ransomware</h3>
+                                </a>
+
+
+
+                        
+
+
+
+                                <a href="http://blogs.wsj.com/briefly/2016/08/18/5-things-to-know-about-what-all-the-new-wireless-plans-mean-for-you/?mod=briefly_more" class="djs-5t-hedSumm djs-5t-cat4">
+                                        <img src="//si.wsj.net/public/resources/images/BN-PL967_wirele_D_20160818192805.jpg" class="djs-5t-thumb">
+                                        <h3 class="djs-5t-hed"><small class="djs-5t-flash djs-5t-mark">5 Things</small>to Know About What All the New Wireless Plans Mean for You</h3>
+                                </a>
+
+
+
+                                </div>
+                        
+
+                </div>
+        </aside>
+
+
+
+
+</div>
+</div><!--
+WSJ: 0.5.75M
+ 
+-->
+
+                <!-- begin footer -->
+        <div id="footer"><div id="slice" class="hslice" style="display:none;">
+	<div class="entry-title">WSJ Web Slice</div>
+    <div class="entry-content">CONTENT</div>
+    <a rel="entry-content" href="http://ie8.smoothfusion.com/WallStreetJournal/view.aspx">LINKS TO ACTUAL PAGE CONTAINING WEB SLICE FUNCTIONALITY.</a>
+    <a rel="bookmark"  target="_blank" href="http://online.wsj.com" ></a>
+    <span class="ttl" style="display: none;">15</span>
+</div>
+<!-- saved from url=(0101)http://edweb.wsjprod.dowjones.net/tools/staticfiles/cvsco/static_html_files/globalFooter_NA_2012.html -->
+<html data-livestyle-extension="available" class="cye-nm"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="nightModeStyle">
+html.cye-enabled.cye-nm:not(*:-webkit-full-screen-ancestor) body,
+ html.cye-enabled.cye-nm:not(*:-webkit-full-screen-ancestor) #cye-workaround-body {-webkit-filter:contrast(91%) brightness(84%) invert(1);}</style><style id="cyebody">html.cye-enabled.cye-lm body{background-color:#d1edd4 !important;border-color:rgb(52, 59, 53) !important;background-image:none !important;color:#000000  !important}</style><style id="cyediv">html.cye-enabled.cye-lm div{background-color:#d1edd4 !important;border-color:rgb(52, 59, 53) !important;background-image:none !important;color:#000000  !important}</style><style id="cyetable">html.cye-enabled.cye-lm th{background-color:#d1edd4 !important;border-color:rgb(52, 59, 53) !important;background-image:none !important;color:#000000  !important}html.cye-enabled.cye-lm td{background-color:#d1edd4 !important;border-color:rgb(52, 59, 53) !important;background-image:none !important;color:#000000  !important}</style><style id="cyetextInput">html.cye-enabled.cye-lm input[type=text]{background-color:#d1edd4 !important;border-color:rgb(52, 59, 53) !important;background-image:none !important;color:#000000  !important}html.cye-enabled.cye-lm textarea{background-color:#d1edd4 !important;border-color:rgb(52, 59, 53) !important;background-image:none !important;color:#000000  !important}</style><style id="cyeselect">html.cye-enabled.cye-lm select{background-color:#d1edd4 !important;border-color:rgb(52, 59, 53) !important;background-image:none !important;color:#000000  !important}</style><style id="cyeul">html.cye-enabled.cye-lm ul{background-color:#d1edd4 !important;border-color:rgb(52, 59, 53) !important;background-image:none !important;color:#000000  !important}</style><style id="cyeChangeByClick">html.cye-enabled.cye-lm .cye-lm-tag,html.cye-enabled.cye-lm.cye-lm-tag{background-color:#d1edd4 !important;border-color:rgb(52, 59, 53) !important;background-image:none !important;color:#000000  !important}</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head><body><div id="footerWrapper" class="newFooterWrap">
+  <div class="newFooter">
+    <!--TOP BAR LINKS-->
+    <ul class="topLinks clearFix">
+      <li class="wsjLogo"><a href="http://online.wsj.com/">Wall Street Journal</a></li>
+      <li class="socialLogo"><a title="Facebook" href="http://www.facebook.com/wsj" class="facebook">Facebook</a></li>
+      <li class="socialLogo"><a title="Twitter" href="http://twitter.com/WSJ" class="twitter">Twitter</a></li>
+<!--      <li class="socialLogo"><a title="LinkedIn" href="https://www.linkedin.com/company/the-wall-street-journal" class="linkedin">LinkedIn</a></li> -->
+      <li class="socialLogo"><a title="Google+" href="https://plus.google.com/117720626238470886461/posts" class="gplus" rel="publisher">Google+</a></li>
+      <li class="socialLogo"><a title="YouTube" href="http://www.youtube.com/user/WSJDigitalNetwork" class="youtube">YouTube</a></li>
+      <li class="socialLogo"><a title="Podcasts" href="http://online.wsj.com/public/page/podcast.html" class="podcast">Podcasts</a></li>
+      <li class="socialLogo"><a title="GooglePlay" href="https://play.google.com/store/apps/details?id=wsj.reader_sp" class="googleplay">GooglePlay</a></li>
+      <li class="socialLogo"><a title="AppStore" href="http://itunes.apple.com/us/app/the-wall-street-journal./id364387007?mt=8" class="appstore">AppStore</a></li>
+<li class="socialLogo"><a title="Windows 10" href="https://www.microsoft.com/store/apps/9wzdncrfj4nb?ocid=badge" class="windowsbadge" style="width:82px;height:22px;display:block;background-image:url('http://s.wsj.net/img/windows10-badge.png')">Windows 10</a></li>
+      <li class="login_sub">
+        <ul class="clearFix">
+          <li class="subscribe"><a href="https://www.subscribe.wsj.com/hpfooterlink" rel="nofollow">Subscribe</a></li>
+          <li class="login loginClass"><span>/</span><a href="https://id.wsj.com/auth/log-in" class="loginClass">Sign In</a></li> <!--- https://id.wsj.com/auth/log-in for scrim use: loginClass--->
+        </ul>
+      </li>
+      <li class="backToTop"><a href="http://edweb.wsjprod.dowjones.net/tools/staticfiles/cvsco/static_html_files/globalFooter_NA_2012.html#top">Back to Top<span class="rotate">«</span></a></li>
+    </ul>
+    <!--MIDDLE COLUMN LINKS-->
+    <ul class="contentLinks clearFix">
+      <li class="linksCol">
+        <h4>Subscribe</h4>
+        <ul>
+          <li><a href="http://subscription.wsj.com/">Why Subscribe?</a></li>
+          <li><a href="http://www.wsjplus.com/">WSJ+</a></li>
+          <li><a href="http://subscription.wsj.com/corporate/">Corporate Subscriptions</a></li>
+          <li><a href="http://online.wsj.com/public/page/designtech-wsjModuleHome.html">Apps</a></li>
+          <li><a href="http://professor.wsj.com/">Professor Journal</a></li>
+          <li><a href="http://wsjstudent.com/">Student Journal</a></li>
+        </ul>
+      </li>
+      <li class="linksCol">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="http://help.wsj.com/customer-service">Customer Center</a></li>
+          <li><a class="custChatLink" href="http://edweb.wsjprod.dowjones.net/tools/staticfiles/cvsco/static_html_files/globalFooter_NA_2012.html#">Live Help</a></li>
+          <li><a href="http://www.wsj.com/guidedtour/">Redesign Guided Tour</a></li>
+        </ul>
+      </li>
+      <li class="linksCol">
+        <h4>Tools &amp; Features</h4>
+        <ul>          
+          <li><a href="http://online.wsj.com/public/page/email-setup.html">Newsletters &amp; Alerts</a></li>
+          <li><a href="http://online.wsj.com/public/page/guides.html">Guides</a></li>
+          <li><a href="http://www.wsj.com/user/mynews/pages/reader">My News</a></li>
+          <li><a href="http://portfolio.wsj.com/">Portfolio</a></li>
+          <li><a href="http://online.wsj.com/public/page/rss_news_and_feeds.html">RSS Feeds</a></li>
+          <li><a href="http://topics.wsj.com/">Topics</a></li>
+          <li><a href="http://www.wsj.com/video">Video Center</a></li>
+          <li><a href="http://www.wsj.com/user/personalization/watchlist">Watchlist</a></li>         
+        </ul>
+      </li>
+      <li class="linksCol">
+        <h4>Ads</h4>
+        <ul>
+          <li><a href="http://www.wsjdigital.com/">Advertise</a></li>
+          <li><a href="http://www.wsjlocal.com/">Advertise Locally</a></li>
+          <li><a href="https://classifieds.wsj.com/ad/Commercial-Real-Estate-Ads">Commercial Real Estate Ads</a></li>
+          <li><a href="http://classifieds.wsj.com/">Place a Classified Ad</a></li>
+          <li><a href="https://classifieds.wsj.com/ad/Business-For-Sale-Ads">Sell Your Business</a></li>
+          <li><a href="https://classifieds.wsj.com/ad/Residential-Real-Estate-Ads">Sell Your Home</a></li>
+          <li><a href="https://classifieds.wsj.com/ad/Job-Ads">Recruitment &amp; Career Ads</a></li>
+        </ul>
+      </li>
+      <li class="linksCol">
+        <h4>More</h4>
+        <ul>
+          <li><a href="http://online.wsj.com/conferences">Conferences</a></li>
+          <li><a href="http://wsj.com/partner">Content Partnerships</a></li>
+          <li><a href="http://online.wsj.com/news/column/Corrections" rel="nofollow">Corrections</a></li>
+          <li><a href="http://www.dowjones.com/careers.asp">Jobs at WSJ</a></li>
+          <li><a href="http://www.wsj.com/maketime">Make Time</a></li>
+          <li><a href="http://online.wsj.com/public/page/archive.html">News Archive</a></li>
+          <li><a href="https://id.wsj.com/access/509b1a086458232f6e000002/latest/register_standalone.html" class="registerUserClass" rel="nofollow" ref="nofollow" data-widget="LIFP.freeregistration">Register for Free</a></li>
+          <li><a href="http://www.djreprints.com/">Reprints</a></li>
+       </ul>
+      </li>
+    </ul>
+    <!--FOOTNOTE LINKS-->
+    <div class="footnote-wrap sector">
+      <ul class="footnoteLinks clearFix module">
+        <li><a href="http://edweb.wsjprod.dowjones.net/tools/staticfiles/cvsco/static_html_files/http://www.wsj.com/policy/privacy-policy" rel="nofollow">Privacy Policy</a></li>
+       <li><a href="http://edweb.wsjprod.dowjones.net/tools/staticfiles/cvsco/static_html_files/http://www.wsj.com/policy/cookie-policy" rel="nofollow">Cookie Policy</a></li>
+       <li><a href="http://edweb.wsjprod.dowjones.net/tools/staticfiles/cvsco/static_html_files/http://www.wsj.com/policy/copyright-policy" rel="nofollow">Copyright Policy</a></li>
+       <li><a href="http://edweb.wsjprod.dowjones.net/tools/staticfiles/cvsco/static_html_files/http://www.wsj.com/policy/data-policy" rel="nofollow">Data Policy</a></li>
+       <li><a href="http://edweb.wsjprod.dowjones.net/tools/staticfiles/cvsco/static_html_files/http://www.wsj.com/policy/subscriber-agreement" rel="nofollow">Subscriber Agreement &amp; Terms of Use</a></li>
+       <li><a href="http://edweb.wsjprod.dowjones.net/tools/staticfiles/cvsco/static_html_files/http://www.wsj.com/policy/cookie-policy#cookies_advertising" rel="nofollow">Your Ad Choices</a></li>
+        <li class="copyright">Copyright ©2016 <a href="http://edweb.wsjprod.dowjones.net/tools/staticfiles/cvsco/static_html_files/globalFooter_NA_2012.html#">Dow Jones &amp; Company</a>, Inc. All Rights Reserved.</li>
+      </ul>
+    </div>
+  </div>
+  <!-- end module newGlobalFooter2012 -->
+</div>
+</body><div id="cye-workaround-body" style="position: absolute; left: 0px; top: 0px; display: block; z-index: -2147483648; height: 1279px; width: 1280px; background: none 0% 0% / auto repeat scroll padding-box border-box white;"></div><div id="cye-workaround-body-image" style="position: absolute; left: 0px; top: 0px; display: block; z-index: -2147483647; height: 1279px; width: 1280px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"></div></html>
+</div>   
+
+
+
+
+<!-- fastdynapage - secj2kentwap09 - Mon 08/22/16 - 00:15:07 EDT -->
+        <!-- end footer -->
+    </div>
+    <div id="fb-root"></div>
+  <div id="emailThisScrim" class="scrimWSJ_overlay hidden">
+	<div class="scrimWSJ_wrapper">
+		<div class="scrimWSJ_inner">
+			<div class="scrim_email_this scrimWSJ_module loginModule">
+			  	<div class="headerStrap">
+		            <a  href="#" class="closeBtn emailScrimCloseBtn">close</a>
+		        </div>
+			    <h3>Email This</h3>
+				<div id="emailScrimTopAd" class="scrim-sponsor-bug">		        	
+			    </div>
+				<form id="emailForm" name="emailForm">
+					<fieldset>
+						<div class="login_row">
+							<span id="emailThisAddressToError" class="emailError hidden"></span>
+							<label class="login_id">
+								Recipient's Email Address <span class="smallNote">(Separate multiple address with commas)</span>
+							</label>
+							<input name="email" id="emailThisAddressTo" value="" type="text" class="login_id" tabindex="1">
+						</div>
+						<div class="login_row">
+							<span id="emailThisAddressFromError" class="emailError hidden"></span>
+							<label class="login_pw">
+								Your Email Address
+							</label>
+							<input value="" name="email" id="emailThisAddressFrom" class="login_pw" type="text" tabindex="2">
+						</div>
+						<div class="login_row">
+							<label class="login_pw">
+								Message <span>(Optional)</span>
+							</label>
+							<textarea id="emailThisMsg" class="message" maxlength="500" tabindex="3" ></textarea>
+						</div>
+						<div class="login_row">
+							<input id="ccMeChkBox" type="checkbox" checked="checked" class="login_checkbox selected" tabindex="4">
+							<label class="login_checkbox">
+								Send me a copy
+							</label>
+						</div>	
+						<span id="recaptchaError" class="emailError hidden"></span>						
+						<div id="recaptcha_div" class="captcha_row">
+						
+						</div>
+						<div class="login_row">
+							<input type="submit" class="login_submit emailScrimSubmit" value="Send" tabindex="5" id="emailScrimSubmit" tabindex="4">
+							<div class="cancelLink">or <a href="#" class="emailScrimCloseBtn" tabindex="6">Cancel</a></div>
+						</div>
+					</fieldset>				
+				 </form> 				 			
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+<div id="emailConfScrim" class="scrimWSJ_overlay hidden">
+	<div class="scrimWSJ_wrapper">
+		<div class="scrimWSJ_inner">
+			<div class="scrim_thank_you scrimWSJ_module loginModule">
+				<div class="headerStrap">
+		            <a id="emailConfScrimCloseBtn" href="#" class="closeBtn">close</a>
+		        </div>
+			    <h3>Thank You</h3>
+			  	<p>Your email has been sent.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="emailErrorScrim" class="scrimWSJ_overlay hidden">
+	<div class="scrimWSJ_wrapper">
+		<div class="scrimWSJ_inner">
+			<div class="scrim_thank_you scrimWSJ_module loginModule scrim_error">
+				<div class="headerStrap">
+		            <a id="emailErrorScrimCloseBtn" href="#" class="closeBtn">close</a>
+		        </div>
+			    <h3>Error.</h3>
+			  	<p>An error has occured and your email has not been sent. <br />
+			  	Please <a id="reopenEmailScrimFromError" href="#">try again</a>.
+			  	</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="hidden">
+<div id="invalidEmailAddress" class="hidden">&bull; Invalid email address.</div>
+<div id="tooManyEmailAddresses" class="hidden">&bull; You can't enter more than 20 emails.</div>
+<div id="invalidDelimiter" class="hidden">&bull; Seperate multiple addresses with Commas.</div>
+<div id="blankEmailAddress" class="hidden">&bull; Must enter an email address.</div>
+<div id="emptyRecaptchaCd" class="hidden">&bull; You must enter the verification code below to send.</div>
+<div id="invalidRecaptchaCd" class="hidden">&bull; Invalid entry: Please type the verification code again.</div>
+</div>
+
+
+<!-- fastdynapage - secj2kentwap09 - Mon 08/22/16 - 00:38:20 EDT -->
+
+  <!-- briefly specific stuff -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://s.wsj.net/blogs/five-things/jquery.sharrre.min.js"></script>
+
+
+        <script type="text/javascript" src="//fonts.wsj.com/dsa3klf.js"></script>
+      <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+      <!--<script src="http://s.wsj.net/blogs/five-things/jquery.sticky-kit.min.js"></script>-->
+      <script src="http://s.wsj.net/blogs/five-things/jquery.ba-throttle-debounce.min.js"></script>
+      <script src="http://s.wsj.net/blogs/five-things/fivethings.js"></script>
+
+      <!-- new font CSS -->
+      <link rel="stylesheet" href="http://fonts.wsj.net/HCo_Whitney/font_HCo_Whitney.css" />
+      <link rel="stylesheet" href="http://fonts.wsj.net/HCo_Chronicle/font_HCo_Chronicle.css" />
+  
+  
+  <!-- end briefly specific stuff -->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d20006d06b","applicationID":"6613515","transactionName":"ZQQDMREHWRcFBREPWFxOIAYXD1gKSxUMCFBeBA==","queueTime":0,"applicationTime":183,"ttGuid":"","agentToken":"","atts":"SUMAR1kdShk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- global and local js include, clickability button -->
+<script type="text/javascript" src="http://sj.wsj.net/blogs/js/wsj_blogs_omniture.js"></script>
+<script type="text/javascript" src="http://blogs.wsj.com/static_js/djscript_header_nonreno_b17.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://s.wsj.net/blogs/js/blogClass.js"></script>
+<script type="text/javascript" src="http://tags.tiqcdn.com/utag/wsjdn/blogs-nonresponsive/prod/utag.js "></script> 
+
+<!-- <script data-exclude="ttt" type="text/javascript" src="http://sj.wsj.net/public/page/0_0_W0_1300_BLOGS.js"></script> -->
+
+
+<script type="text/javascript" src="http://sj.wsj.net/blogs/js/wsj_blogs1.js"></script> <script> function adrefresher() { document.getElementsByClassName( "postList-liveBlog" )[0].addEventListener( "DOMNodeInserted", function ( event ) { if( event.target.id == "postList-liveBlog") { var id = document.querySelector('[id^="ad_"]').children[0].id ; document.getElementById(id).contentWindow.location.reload() ; } }, false ); } </script> <script type="text/javascript" src="http://blogs.wsj.com/static_js/djscript_Dont_Miss.js"></script> <script type="text/javascript"> if (dojo.getObject("dj.util.onVisibleWidget", true).scan) {dj.util.onVisibleWidget.scan();} </script> <script type="text/javascript"> if (typeof current_path == "undefined") { var current_path = "/"; } var wsj_section = document.location.toString().split( "/", 4 )[3]; 
+var site = window.location.host.match(/blogs|barrons|marketwatch|realtime/);
+switch (site[0]) {
+    case 'barrons':
+        sites = "barrons.com";
+        break;
+    case 'marketwatch':
+        sites = "marketwatch.com";
+        break;
+    case 'realtime':
+        sites = "korea.wsj.com";
+        break;
+    default: 
+        sites = "interactive.wsj.com"; 
+
+        }
+
+var blog_section = window.location.pathname.split("/")[1];  
+var zoneBlog = sites+'/blog_'+ blog_section ; 
+var _sf_async_config={uid:8900,domain:"online.wsj.com",path:current_path, sections:wsj_section, zone: zoneBlog}; (function(){ function loadChartbeat() { window._sf_endpt=(new Date()).getTime(); var e = document.createElement("script"); e.setAttribute("language", "javascript"); e.setAttribute("type", "text/javascript"); e.setAttribute("src", (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") + "static.chartbeat.com/js/chartbeat_pub.js"); document.body.appendChild(e); } var oldonload = window.onload; window.onload = (typeof window.onload != "function") ? loadChartbeat : function() { oldonload(); loadChartbeat(); }; })(); </script> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> <script> // enable "live help" popup in footer var custChatWin=null; dojo.forEach( dojo.query("a.custChatLink"), function(tag) { tag.className = tag.className.replace( /(?:^|\s)custChatLink(?!\S)/g , '' ); // hack: remove class custChatLink so that we don't try to set another popup handler later (base wsj template does, for instance). this class is not targeted by any CSS or any other JS right now dojo.connect(tag,"onclick", function(event) { dojo.stopEvent(event); if(custChatWin==undefined||custChatWin==null||custChatWin.closed) { custChatWin=window.open("https://customercenter.wsj.com/livechat/chat?product=WSJ","DowJones_Live_Chat","width=510,height=420,location=no,menubar=no,status=no,toolbar=no,scrollbars=no,resizable=no"); } else { custChatWin.focus(); } }); }); </script> <script type="text/javascript" src="http://sj.wsj.net/blogs/js/FCF-module.js"></script> <script type="text/javascript"> var FCF = new dj.blogs.FirstClickFree({}); FCF.checkFCF(); </script> <script src="http://mw1.wsj.net/MW5/content/analytics/hooks.js" type="text/javascript"></script>
+
+<script>
+dojo.query(".post-button.button-comment").style("display", "none")
+
+// NC-91 - close social bylines when clicking elsewhere
+dojo.connect(document, "onclick", function(e) {
+  dojo.removeClass(dojo.query(".social-dd")[0],"c-open")
+  dojo.removeClass(dojo.query(".c-aggregate")[0],"c-open")
+});
+</script>
+<!-- end global and local js include, clickability button -->
+
+<!-- begin $GLOBALS[ 'wsj_footer_js' ] -->
+<script type="text/javascript">
+whenElementVisibleDo(document.getElementById('ad_17398'), function(){ dj.blogs.AdManager.createAd(
+                                    'standard_bottom',
+                                    'ad_17398',
+                                    'js',
+                                    { width: 300,
+                                      height: 250,
+                                      size:'728x90',
+                                      site:'bottom.interactive.wsj.com',
+                                      zone:'blog_five-things',
+                                      adClass:'A',
+                                      title: 17398,
+                                      meta:'',
+                                      category:'',
+                                      frequency:'',
+                                      cacheId:'',
+                                      classEnabled:'true',
+                                      classValue:'adSummary',
+                                      styleValue:'',
+                                      conditionType:'',
+                                      conditionValue:'',
+                                      conditionalString:''}); });
+
+/*
+ * example invocation:
+ * whenElementVisibleDo(document.getElementById('some_id'), function(){ console.log('visible now!'); });
+ */
+
+// performs callback when element becomes visible, then removes listeners
+function whenElementVisibleDo(el, cb) {
+  var handler = function() {
+    if (isElementInViewportAtAll(el)) {
+      cb();
+      removeListeners(handler);
+    }
+  }
+  attachListeners(handler);
+}
+
+// similar to http://stackoverflow.com/a/7557433/458614 but returns true if any part of the element is in the viewport, not just the whole thing
+// should work on: Chrome, Firefox, Safari, IE8+, iOS Safari, Android2+, Blackberry, Opera Mobile, IE Mobile
+// doesn't handle z-index, being outside of viewable area of parent element, and possibly other edge cases
+// we check if either the top OR the bottom of the element is within the viewport, while either the left right or the element is also in the viewport
+function isElementInViewportAtAll (el) {
+    var rect = el.getBoundingClientRect();
+    var height = window.innerHeight || document.documentElement.clientHeight;
+    var width = window.innerWidth || document.documentElement.clientWidth;
+    return (
+      (
+        (rect.top <= height && rect.top >= 0) ||
+        (rect.bottom <= height && rect.bottom >= 0)
+      ) &&
+      (
+        (rect.left <= width && rect.left >= 0) ||
+        (rect.right <= width && rect.right >= 0)
+      ) 
+    );
+}
+
+function attachListeners(fn) {
+  if (window.addEventListener) {
+    window.addEventListener('DOMContentLoaded', fn, false);
+    window.addEventListener('load', fn, false);
+    window.addEventListener('scroll', fn, false);
+    window.addEventListener('resize', fn, false);
+  } else if (window.attachEvent) { // IE fallback
+    window.attachEvent('DOMContentLoaded', fn);
+    window.attachEvent('load', fn);
+    window.attachEvent('onscroll', fn);
+    window.attachEvent('onresize', fn);
+  }
+}
+function removeListeners(fn) {
+  if (window.removeEventListener) {
+    window.removeEventListener('DOMContentLoaded', fn, false);
+    window.removeEventListener('load', fn, false);
+    window.removeEventListener('scroll', fn, false);
+    window.removeEventListener('resize', fn, false);
+  } else if (window.attachEvent) { // IE fallback
+    window.detachEvent('DOMContentLoaded', fn);
+    window.detachEvent('load', fn);
+    window.detachEvent('onscroll', fn);
+    window.detachEvent('onresize', fn);
+  }
+}
+        
+
+//sometimes the sharrre.js does not execute, so make sure it actually does
+// function created in 
+if (typeof jQuery('#share-twt').sharrre !== 'function') {
+      
+    sharrre_exec(jQuery, window , document );
+}
+
+
+jQuery('#share-twt').sharrre({
+  share: {
+    twitter: true
+  },
+  template: '<a href="#" class="djs-5t-icon-wrap"><span class="djs-5t-icon djs-5t-twt"></span>{total}</a>',
+  enableHover: false,
+  buttons: { twitter: {via: 'WSJ'}},
+  click: function(api, options){
+    api.simulateClick();
+    api.openPopup('twitter');
+  }
+});
+jQuery('#share-fb').sharrre({
+  share: {
+    facebook: true
+  },
+  template: '<a href="#" class="djs-5t-icon-wrap"><span class="djs-5t-icon djs-5t-fb"></span>{total}</a>',
+  enableHover: false,
+  click: function(api, options){
+    api.simulateClick();
+    api.openPopup('facebook');
+  }
+});
+jQuery('#share-gplus').sharrre({
+  share: {
+    googlePlus: true
+  },
+  template: '<a href="#" class="djs-5t-icon-wrap"><span class="djs-5t-icon djs-5t-gplus"></span>{total}</a>',
+  enableHover: false,
+  click: function(api, options){
+    api.simulateClick();
+    api.openPopup('googlePlus');
+  }
+});
+
+
+  
+</script>
+<!-- end $GLOBALS[ 'wsj_footer_js' ] -->
 
 <script type="text/javascript">
-	$(document).ready( function() {
-		var sclTracking = new rcom_scrollTracker("Article");
-		if( inAppleMobileDevice() ) {document.addEventListener("scroll", sclTracking, false);} else {$(window).scroll( sclTracking );}
-	});
+     dj.module.header2012.lifp.init();
+
+  var tracking;
+  var proomni = new dj.blogs.util.omni(function(){ 
+      tracking = new dj.blogs.Tracking(this);
+     
+      tracking.title       = '5 Things to Watch on the US Economic Calendar_article';
+      tracking.section     = 'US';
+      tracking.subsection  = 'US';
+      tracking.publishTime = '2016-08-12 16:45';
+      tracking.pageType    = 'cross_post';
+      tracking.articleAuthor = 'Jeffrey Sparshott';
+      tracking.articleID = '8057';
+      tracking.blogLanguage = 'english';
+      tracking.originalBlog =  'Realtimeeconomicsblog';
+
+
+          tracking.blogName    = 'Brieflyblog';
+        tracking.ad_zone     = 'blog_briefly';        
+        tracking.articlePrivilege = 'free_Blogs';
+        tracking.articlePrivilegeOrLoggedIn = 'free';
+        tracking.isSubscriberBlog    = 'free';
+
+                  var tmp = tracking.blogName;
+          tracking.blogName = tracking.originalBlog;
+          tracking.originalBlog = tmp;
+          tracking.firePixel();   });
+
+</script> 
+
+<!-- variables for populating global header -->
+<script>
+  window.slimHeaderSection = "U.S.";
+  window.slimHeaderSectionURL = "http://online.wsj.com/public/page/news-world-business.html";
+  window.headerVersion = "blg70";
 </script>
 
-<section>
-	<div class="group" id="">
-		<script type='text/javascript'>
-        var _sf_startpt = (new Date()).getTime();
-        var _sf_async_config = _sf_async_config || {};
-        
-        _sf_async_config.sections = 'Science'; 
-        _sf_async_config.autoDetect = false;
-        
-        _sf_async_config.authors = 'Kate Kelland'; 
-        _sf_async_config.type = 'Article'; 
+<!-- ttt_footer_js -->
+<script>
+  var section = window.slimHeaderSection;
+  if (section == "Managemement") section = "Management";
+  var sectionUrl = window.slimHeaderSectionURL;
 
-        (function(){
-          function loadChartbeat() {
-            window._sf_endpt=(new Date()).getTime();
-            var e = document.createElement('script');
-            e.setAttribute('language', 'javascript');
-            e.setAttribute('type', 'text/javascript');
-            e.setAttribute('src', '//static.chartbeat.com/js/chartbeat_video.js');
-            document.body.appendChild(e);
+  var headerWrapperNode = dojo.byId("headerWrapper"); if ((typeof dj.module.header === "object") && headerWrapperNode) {
+     dj.context.djHeaderEnabled = true;
+  }
+  dj.context.core.quotesUrlPrefix = "http://quotes.wsj.com"; if (headerWrapperNode) {
+     var overrideEnv = 'NA_WSJ_PUB_SS';
+     dj.util.User.isLoggedIn(function (isLoggedIn) {
+       if (isLoggedIn) {
+         overrideEnv = 'NA_WSJ_SUB_SS';
+       }
+     });
+     dj.module.header.nonreno.init({
+       version: window.headerVersion,
+       domNodeId: "headerWrapper",
+       isLoadCss: false,
+       headerPageId: "0_0_WG_HeaderOne_WSJSS",
+       overrideUserEnvStr: overrideEnv,
+       onJsExec: function () {
+         var _secpage = section.toUpperCase();
+         var _secUrl = sectionUrl;
+         if (section) {
+           dojo.byId("currentSectionBlk").href = _secUrl;
+           dojo.byId("currentSectionBlk").innerHTML = _secpage;
+           dojo.removeClass(dojo.byId("currentSectionBlk"), "hidden");
+
+           //Changes to update the logo, if section is Tech
+           if(section == "Tech"){
+            dojo.query("header div.slimH_c").addClass("slimH_tech");
+            dojo.query(".slimHeader h1 a").removeClass("mainLogo").addClass("mainLogo-tech");
+
+            // also change link:
+            dojo.query(".slimHeader h1 a")[0].href = "http://online.wsj.com/news/technology";
           }
-          var oldonload = window.onload;
-          window.onload = (typeof window.onload != 'function') ?
-             loadChartbeat : function() { oldonload(); loadChartbeat(); };
-        })();
-    </script>
-</div>
-	</section>
+         }
+         dojo.style('headerWrapper', 'color', '#000000');
 
-</body>
+         // https://jira.dowjones.net/browse/PSSBSCEN-2017
+         if (dj.util.Cookie && dj.util.Cookie.getCookie("wsjregion") == "asia,india") {
+           dojo.query(".slimHeader h1 a")[0].href = "http://india.wsj.com";
+         }
+
+         // https://jira.dowjones.net/browse/ID-1105
+         dj.util.User.renderFirstName("userName"); var uNamePlaceholder = dojo.byId("userName").innerHTML; if (uNamePlaceholder && uNamePlaceholder!=='' && uNamePlaceholder!=='undefined') { uNamePlaceholder += "'s Journal"; } else { dj.util.User.renderCallsign("userName"); var uNamePlaceholder = dojo.byId("userName").innerHTML; uNamePlaceholder += "'s Journal"; } dojo.byId("userName").innerHTML = uNamePlaceholder;
+
+         // https://jira.dowjones.net/browse/PSSBSCEN-1515
+         dj.util.User.isLoggedIn(function(loggedIn) {
+          if (loggedIn) {
+           dj.module.sitewidget.popoutWidgetize.init();
+           dojo.setObject("dj.context.sitewidgets.popupurl", "http://online.wsj.com/page/0_0_WGT_INVESTORCENTER_MST.html");
+          }
+         });
+       }
+     });
+  }
+</script><!-- end ttt_footer_js -->
+
+<!-- end of footer.php -->
+
 </html>
+
+<!-- Dynamic page generated in 0.167 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2016-08-22 09:16:12 -->
+
+<!-- super cache -->

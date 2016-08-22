@@ -1,1092 +1,1009 @@
-<!--[if !IE]> This has been served from cache <![endif]-->
-<!--[if !IE]> Request served from apache server: S264630NJ2XSF02 <![endif]-->
-<!--[if !IE]> Cached on Thu, 18 Aug 2016 15:16:10 GMT and will expire on Thu, 18 Aug 2016 15:31:10 GMT <![endif]-->
-<!--[if !IE]> token: fb6b1c91-a59d-4d6f-9d4c-daea815bef42 <![endif]-->
-<!--[if !IE]> CSTAT-UUID: 905f6b5f-0f60-4ebf-82cb-26e924e4fa0b <![endif]-->
-<!--[if !IE]> App Server /S264630NJ2XSF51/ <![endif]-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" >
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+    <title>Best Credit Cards to Use at Costco</title>
 
-<!doctype html><html><head>
-<title>
-            EC paper adds further balm to bank capital
-| Reuters</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="utf-8"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="//s1.reutersmedia.net"/><link rel="dns-prefetch" href="//s2.reutersmedia.net"/><link rel="dns-prefetch" href="//s3.reutersmedia.net"/><link rel="dns-prefetch" href="//s4.reutersmedia.net"/><link rel="dns-prefetch" href="//static.reuters.com"/><meta name="robots" content="INDEX, FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta name="google-site-verification" content="SVDMcE-27ZUUuh-EcZzejAJ0YIFjxD9H_nwAX6YVTw4" /><meta name="msvalidate.01" content="2055F771212E9574BFD5AF29D47FBA04" /><script type="text/javascript" >
+<!-- pinterest verification -- temporary 7/13/16 -->
+<meta name="p:domain_verify" content="81af232a26db0c09157082da7b3fc94d"/>
 
-// Rubicon Initialize
-(function() {
-    var account_id = 11384;
-    var rct = document.createElement('script');
-        rct.type = 'text/javascript';
-        rct.async = true;
-        rct.src = (document.location.protocol === 'https:' ? 'https:' : 'http:') + '//ads.rubiconproject.com/header/' + account_id + '.js';
-    var node = document.getElementsByTagName('script')[0];
-        node.parentNode.appendChild(rct);
-})();
+    <meta name="description" content="Now that Costco accepts Visa cards, there are many other options for earning rewards when you shop.">
 
-</script><script type="text/javascript" src="//reuters-d.openx.net/w/1.0/jstag?nc=4735792-reuters"></script><div class="linebreak"></div>
-	<style>
-@font-face { font-family: 'knowledge-reg'; src: url('/resources_v2/fonts/Knowledge-Regular.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'knowledge-light'; src: url('/resources_v2/fonts/Knowledge-Light.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'knowledge-medium'; src: url('/resources_v2/fonts/Knowledge-Medium.woff') format('woff'); font-weight: normal; font-style: normal; }
-</style>
+        
 
-<script type="text/javascript" src="http://www.reuters.com/reuters_bootstrap.js"></script><script type="text/javascript" src="http://www.reuters.com/reuters_gpt_bootstrap.js"></script>
-<script type="text/javascript">var abp;</script><script type="text/javascript" src="http://s4.reutersmedia.net/resources_v2/js/px.js?ch=1"></script><script type="text/javascript" src="http://s4.reutersmedia.net/resources_v2/js/px.js?ch=2"></script>
-<script type="text/javascript">
-var parallelMediaHosts = new Array();
-parallelMediaHosts.push("s1.reutersmedia.net");parallelMediaHosts.push("s2.reutersmedia.net");parallelMediaHosts.push("s3.reutersmedia.net");parallelMediaHosts.push("s4.reutersmedia.net");</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="dns-prefetch" href="//wisebread.killeracesmedia.netdna-cdn.com" />
+<meta property="og:title" content="Best Credit Cards to Use at Costco" />
+<meta property="og:description" content="Now that Costco accepts Visa cards, there are many options for earning rewards when you shop." />
+<meta property="og:image" content="http://www.wisebread.com/files/fruganomics/blog-images/iStock_76963919_LARGE.jpg" />
+<meta property="og:url" content="http://www.wisebread.com/best-credit-cards-to-use-at-costco" />
+<meta property="og:site_name" content="Wise Bread" />
+<link rel="shortcut icon" href="http://wisebread.killeracesmedia.netdna-cdn.com/files/wisebread/favicon-leaves.ico" type="image/x-icon" />
+<link rel="canonical" href="http://www.wisebread.com/best-credit-cards-to-use-at-costco" />
+<meta name="revisit-after" content="1 day" />
+<!--This page is not a news article. googlebot-news IS blocked-->
+<META NAME="GOOGLEBOT-NEWS" CONTENT="NOINDEX, NOFOLLOW">
+    <!-- CSS aggregated by CDN module. -->
+<link type="text/css" rel="stylesheet" media="all" href="http://wisebread.killeracesmedia.netdna-cdn.com/files/fruganomics/css/cdn_css_http_c72837e3652e74afcfb50c6132c4ad41.css" />
+<link type="text/css" rel="stylesheet" media="print" href="http://wisebread.killeracesmedia.netdna-cdn.com/files/fruganomics/css/cdn_css_http_6f8443ffab520ea5a0c58c27f0e8805f.css" />
+<!-- CSS aggregated by CDN module. -->
+    <!--[if lte IE 8]><link type="text/css" rel="stylesheet" media="all" href="/sites/default/themes/custom/wisebread/ie.css" /><![endif]--> <!--If Less Than or Equal (lte) to IE 7-->
+    <!--[if lte IE 7]><link type="text/css" rel="stylesheet" media="all" href="/sites/default/themes/custom/wisebread/ie7.css" /><![endif]--> <!--If Less Than or Equal (lte) to IE 7-->
 
-<meta name="DCSext.ContentChannel" content="bankruptcyNews" />
-<meta name="DCSext.ChannelList" content="SustainabilityGreen;SustainabilityCorporate;everything;Davos;ShellEnergy;AllianzInvestments;Allianz;audib2b;cfaglobal;aa48hours;shipping;ubs;Intel;PFG;Fidelity2014;CathayPacific_US;MSFTOne_UK;MOC_US_2015-16;bankruptcyNews;financialsSector" />
-<meta name="DCSext.ContentHeadline" content="EC+paper+adds+further+balm+to+bank+capital" />
-<meta name="DCSext.PageNumber" content="1" />
-<meta name="DCSext.PageTotal" content="2" />
-<meta name="DCSext.contentversion" content="original" />
-<meta name="DCSext.rAuthor" content="Reuters Editorial">
-<meta name="WT.z_inlinetype" content="false" />
-<meta name="WT.z_navid" content="nav-Text-bankruptcyNews" />
-
-<link rel="canonical" href="" />
-<link rel="alternate" href="http://uk.reuters.com/article/-idUKL8N1AX1FQ" hreflang="en-gb" />
-<link rel="alternate" href="http://in.reuters.com/article/-idINL8N1AX1FQ" hreflang="en-in" />
-<link rel="alternate" href="http://www.reuters.com/article/-idUSL8N1AX1FQ" hreflang="en" /><link rel="alternate" media="only screen and (max-width: 640px)" href="" />
-<meta name="description" content="* EU regulator mulls rule priotising AT1 coupons* Could help cement risky bank capital's recoveryBy Helene DurandLONDON, Aug 17 (IFR)">
-<meta name="Author" content="Reuters Editorial">
-<link rel="image_src" href="http://s4.reutersmedia.net/resources_v2/images/rcom-default.png" />
-<meta name="keywords" content="United Kingdom,Helene Durand,Eurobonds,New Issues,United Kingdom,Market Events,Government Borrowing Requirement,Banking Capital and Liquidity Requirements,Banks (TRBC),International Agencies / Treaty Groups,Credit and Corporate Debt,Corporate Debt,Regulation,Financials (Legacy),Performance / Results / Earnings,High,Yield Securities,Financials (TRBC),Bankruptcy / Insolvency,Europe,European Union,Investment Grade Securities,Government / Politics,Debt / Fixed Income Markets,Banking and Investment Services (TRBC),English,Investment Banking and Investment Services (TRBC),Corporate Events,General News,Dividends,Western Europe,Economic Events,Banking Services (TRBC),Banking Services (Legacy),Corporate Debt Renegotiation" />
-<meta name="news_keywords" content="United Kingdom;Helene Durand;Eurobonds;New Issues;United Kingdom;Market Events;Government Borrowing Requirement;Banking Capital and Liquidity Requirements;Banks (TRBC);International Agencies / Treaty Groups;Credit and Corporate Debt;Corporate Debt;Regulation;Financials (Legacy);Performance / Results / Earnings;High;Yield Securities;Financials (TRBC);Bankruptcy / Insolvency;Europe;European Union;Investment Grade Securities;Government / Politics;Debt / Fixed Income Markets;Banking and Investment Services (TRBC);English;Investment Banking and Investment Services (TRBC);Corporate Events;General News;Dividends;Western Europe;Economic Events;Banking Services (TRBC);Banking Services (Legacy);Corporate Debt Renegotiation" />
-<meta name="REVISION_DATE" content="Wed Aug 17 11:56:55 UTC 2016">
-
-<meta name="sailthru.author" content="Reuters Editorial" />
-<meta name="sailthru.date" content="2016-08-17T11:56:55+0000" />
-<meta name="sailthru.title" content="EC "paper" adds further balm to bank capital" />
-
-<meta property="og:locale" content="en_US"/>
-<meta property="og:site_name" content="Reuters" />
-<meta name="site edition" content="Reuters" />
-<meta property="article:publisher" content="https://www.facebook.com/Reuters" />
-<meta property="og:title" content="EC "paper" adds further balm to bank capital" />
-<meta property="og:url" content="" />
-<meta property="og:type" content="article" />
-<meta property="og:description" content="* EU regulator mulls rule priotising AT1 coupons* Could help cement risky bank capital's recoveryBy Helene DurandLONDON, Aug 17 (IFR)">
-<meta property="og:image" content="http://s4.reutersmedia.net/resources_v2/images/rcom-default.png" />
-<meta property="og:article:published_time" content="2016-08-17T11:56:55+0000" />
-<meta property="og:article:modified_time" content="2016-08-17T11:56:55+0000" /> 
-<meta property="og:article:section" content="Business" /> 
-<meta property="og:article:author" content="Reuters Editorial" />
-<meta property="og:article:tag" content="United Kingdom,Helene Durand,Eurobonds,New Issues,United Kingdom,Market Events,Government Borrowing Requirement,Banking Capital and Liquidity Requirements,Banks (TRBC),International Agencies / Treaty Groups,Credit and Corporate Debt,Corporate Debt,Regulation,Financials (Legacy),Performance / Results / Earnings,High,Yield Securities,Financials (TRBC),Bankruptcy / Insolvency,Europe,European Union,Investment Grade Securities,Government / Politics,Debt / Fixed Income Markets,Banking and Investment Services (TRBC),English,Investment Banking and Investment Services (TRBC),Corporate Events,General News,Dividends,Western Europe,Economic Events,Banking Services (TRBC),Banking Services (Legacy),Corporate Debt Renegotiation" />
-
-<meta name="twitter:site" content="@Reuters" />
-<meta name="twitter:creator" content="@Reuters" />
-<link rel="publisher" href="https://plus.google.com/+Reuters"/>
-    <meta name="twitter:card" content="summary"> 
-    <meta name="twitter:title" content="EC "paper" adds further balm to bank capital" />
-<meta name="twitter:description" content="* EU regulator mulls rule priotising AT1 coupons* Could help cement risky bank capital's recoveryBy Helene DurandLONDON, Aug 17 (IFR)">
-<meta name="twitter:image:src" content="http://s4.reutersmedia.net/resources_v2/images/rcom-default.png">
-<meta name="twitter:image" content="http://s4.reutersmedia.net/resources_v2/images/rcom-default.png" />
-
-
-<script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "article": {
-            "@type": "NewsArticle",
-            "headline": "EC "paper" adds further balm to bank capital",
-            "url": "",
-            "thumbnailUrl": "http://s4.reutersmedia.net/resources_v2/images/rcom-default.png",
-            "dateCreated": "2016-08-17T11:56:55+0000",
-            "dateModified": "2016-08-17T11:56:55+0000",
-            "datePublished": "2016-08-17T11:56:55+0000",
-            "description": "* EU regulator mulls rule priotising AT1 coupons* Could help cement risky bank capital's recoveryBy Helene DurandLONDON, Aug 17 (IFR)",
-            "publisher": "Reuters",
-            "articleSection": "Business",
-            "creator": ["Reuters Editorial"],
-            "keywords": ["United Kingdom","Helene Durand","Eurobonds","New Issues","United Kingdom","Market Events","Government Borrowing Requirement","Banking Capital and Liquidity Requirements","Banks (TRBC)","International Agencies / Treaty Groups","Credit and Corporate Debt","Corporate Debt","Regulation","Financials (Legacy)","Performance / Results / Earnings","High","Yield Securities","Financials (TRBC)","Bankruptcy / Insolvency","Europe","European Union","Investment Grade Securities","Government / Politics","Debt / Fixed Income Markets","Banking and Investment Services (TRBC)","English","Investment Banking and Investment Services (TRBC)","Corporate Events","General News","Dividends","Western Europe","Economic Events","Banking Services (TRBC)","Banking Services (Legacy)","Corporate Debt Renegotiation","Article","Bankruptcy","Financials"],
-            "about":"Article"
-        }
-    }
-</script>
-<meta name="DCSext.rChannel" content="Article - News"> 
-
-<meta name="DCSext.ContentType"  content="Article">
-<meta name="DCSext.DartZone" content="us.reuters/business/deals/bankruptcy/article" />
-<meta name="WT.cg_n" content="Business">
-<meta name="WT.cg_s" content="Deals">
-<link rel="shortcut icon" type="image/x-icon" href="http://s3.reutersmedia.net/resources_v2/images/favicon/favicon.ico" />
-<link rel="icon" type="image/png" href="http://s3.reutersmedia.net/resources_v2/images/favicon/favicon-16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="http://s1.reutersmedia.net/resources_v2/images/favicon/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="http://s3.reutersmedia.net/resources_v2/images/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="stylesheet" type="text/css" href="http://s2.reutersmedia.net/resources_v2/css/core.css" />
-<link rel="stylesheet" type="text/css" href="http://s4.reutersmedia.net/resources_v2/css/core-modules.css" />
-    <link rel="stylesheet" type="text/css" href="http://s2.reutersmedia.net/resources_v2/css/core-article.css" />
-    <script src="http://s3.reutersmedia.net/resources_v2/js/libraries/jquery-2.2.4.min.js" type="text/javascript"></script>
-
-<script src="http://s2.reutersmedia.net/resources_v2/js/libraries/cookie.js" type="text/javascript"></script>
-<script src="http://s2.reutersmedia.net/resources_v2/js/core.js" type="text/javascript"></script>
-<script src="http://s4.reutersmedia.net/resources_v2/js/libraries/slideshow.js" type="text/javascript"></script>
-<script src="http://s2.reutersmedia.net/resources_v2/js/search.js" type="text/javascript"></script>
-<script type="text/javascript" src="http://s4.reutersmedia.net/resources_v2/js/core-most-popular.js"></script>
-<script type="text/javascript">
-  window._taboola = window._taboola || [];
-  _taboola.push({article:'auto'});
-  !function (e, f, u) {
-    e.async = 1;
-    e.src = u;
-    f.parentNode.insertBefore(e, f);
-  }(document.createElement('script'),
-  document.getElementsByTagName('script')[0],
-  '//cdn.taboola.com/libtrc/reuters-network/loader.js');
-</script><script type='text/javascript'>
-        var _sf_async_config = _sf_async_config || {};
-        _sf_async_config.uid = 52639; 
-        _sf_async_config.domain = 'reuters.com';  
-        _sf_async_config.topStorageDomain = 'reuters.com'; 
-        _sf_async_config.path = document.querySelector("link[rel='canonical']").getAttribute("href").replace('http://www.', ''); 
-        _sf_async_config.flickerControl = false;
-        var _sf_startpt = (new Date()).getTime();
-    </script><script async src='//static.chartbeat.com/js/chartbeat_mab.js'></script></head>
-<body class="BETAUS article">
-<div class="inter_bg"></div><div class="close_button" onClick="javascript:$('.inter_bg').hide();$('#div_gpt_intro').hide();$('#div_gpt_intro2').hide();"></div><div id="div_gpt_intro2" style="display:none;"></div>
-<script>function inter_pop(){$(".inter_bg, .close_button").show(),$("#div_gpt_intro2").append($(".close_button"))}function close_pop(){$(".inter_bg, .close_button, #div_gpt_intro2").fadeOut()}function createCookie(e,t,o){if(o){var n=new Date;n.setTime(n.getTime()+24*o*60*60*1e3);var r="; expires="+n.toGMTString()}else var r="";document.cookie=e+"="+t+r+"; path=/"}function readCookie(e){for(var t=e+"=",o=document.cookie.split(";"),n=0;n<o.length;n++){for(var r=o[n];" "==r.charAt(0);)r=r.substring(1,r.length);if(0==r.indexOf(t))return r.substring(t.length,r.length)}return null}function eraseCookie(e){createCookie(e,"",-1)}TR3.extractDartZone().indexOf("jp.reuters")>-1&&$(".close_button").html("???");var x=readCookie("r_inter");"true"==x?TR3.log("inter cookie:true"):displayAd("div_gpt_intro2",TR3.extractDartZone(),[640,480],"type=intro_gpt;"+adParams2);</script><div id="div_gpt_intro" style="display:none;"></div>
-<script>function close_pop2(){$("#div_gpt_intro").fadeOut()}function createCookie(e,t,o){if(o){var r=new Date;r.setTime(r.getTime()+24*o*60*60*1e3);var i="; expires="+r.toGMTString()}else var i="";document.cookie=e+"="+t+i+"; path=/"}function readCookie(e){for(var t=e+"=",o=document.cookie.split(";"),r=0;r<o.length;r++){for(var i=o[r];" "==i.charAt(0);)i=i.substring(1,i.length);if(0==i.indexOf(t))return i.substring(t.length,i.length)}return null}function eraseCookie(e){createCookie(e,"",-1)}var x=readCookie("r_inter");"true"==x?TR3.log("inter cookie:true"):(setTimeout(function(){close_pop2()},15e3),displayAd("div_gpt_intro",TR3.extractDartZone(),"","type=intro_gpt;"+adParams2));</script>
-
-
-
-<!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W9SLGS"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>if (location.href.indexOf('/commentsChild?') == -1){ (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})
-    (window,document,'script','dataLayer','GTM-W9SLGS'); }</script>
-    <!-- End Google Tag Manager -->
-
-    <section id="breakingNewsContainer" class="hidden"><div id="breakingNews" class="group wrap"><div class="breaking-content"><div class="breaking-news-type"></div><div class="breaking-news-content"></div></div><div class="close-btn">X</div></div></section>
-
-    <header id="headerMain">
-        <div class="container group">
-            <div class="edition-container group">
-                <div class="edition-label">Edition:</div>
-                <div class="edition-selector">
-                    <div class="edition">United States</div>
-                    <div class="edition-arrow"></div>
-                </div>
-            </div>
-            <div class="reuters-nav-main">
-                <h2 class="reuters-logo">
-                    <a href="/" title="Reuters"></a>
-                </h2>
-            </div>
-            <div id="utilities" class="utilities"></div>
-        </div>
-    </header>
-    <nav id="headerNav">
-        <div class="container group">
-            <div class="header-mini-logo">
-                    <a href="/" title="Reuters"></a>
-            </div>
-            <ul class="horizontal-list nav-list">
-                <li class="nav-item home-tab active-icon
-                                                no-subnav" id="nav-item-1">
-                                            <a href="/home" class="nav-link-sec">
-                                                <div class="home-icon"></div>
-                                                <span class="text"></span>
-                                            </a>
-                                        </li>
-                <li class="nav-item" id="nav-item-2">
-                                       <a href="/finance" class="nav-link-sec">Business</a>
-                                <div class="subnav" id="subnav-2">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/finance" class="nav-link-subsec">Business Home</a></li>
-                                        <li><a href="/legal" class="nav-link-subsec">Legal</a></li>
-                                        <li><a href="/finance/deals" class="nav-link-subsec">Deals</a></li>
-                                        <li><a href="/subjects/aerospace-and-defense" class="nav-link-subsec">Aerospace & Defense</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/subjects/banks" class="nav-link-subsec">Finance</a></li>
-                                        <li><a href="/subjects/autos" class="nav-link-subsec">Autos</a></li>
-                                        <li><a href="/finance/summits" class="nav-link-subsec">Reuters Summits</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-3">
-                                       <a href="/finance/markets" class="nav-link-sec">Markets</a>
-                                <div class="subnav" id="subnav-3">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/finance/markets" class="nav-link-subsec">Markets Home</a></li>
-                                        <li><a href="/finance/markets/us" class="nav-link-subsec">U.S. Markets</a></li>
-                                        <li><a href="/finance/markets/europe" class="nav-link-subsec">European Markets</a></li>
-                                        <li><a href="/finance/markets/asia" class="nav-link-subsec">Asian Markets</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/finance/global-market-data" class="nav-link-subsec">Global Market Data</a></li>
-                                        <li><a href="/finance/markets/indices" class="nav-link-subsec">Indices</a></li>
-                                        <li><a href="/finance/stocks" class="nav-link-subsec">Stocks</a></li>
-                                        <li><a href="/finance/bonds" class="nav-link-subsec">Bonds</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/finance/currencies" class="nav-link-subsec">Currencies</a></li>
-                                        <li><a href="/finance/commodities" class="nav-link-subsec">Comm & Energy</a></li>
-                                        <li><a href="/finance/futures" class="nav-link-subsec">Futures</a></li>
-                                        <li><a href="/finance/funds" class="nav-link-subsec">Funds</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/finance/EarningsUS" class="nav-link-subsec">Earnings</a></li>
-                                        <li><a href="/finance/markets/dividends" class="nav-link-subsec">Dividends</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-4">
-                                       <a href="/news/world" class="nav-link-sec">World</a>
-                                <div class="subnav" id="subnav-4">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/news/world" class="nav-link-subsec">World Home</a></li>
-                                        <li><a href="/news/us" class="nav-link-subsec">U.S.</a></li>
-                                        <li><a href="/subjects/specialReports" class="nav-link-subsec">Special Reports</a></li>
-                                        <li><a href="http://www.reuters.com/investigates/" class="nav-link-subsec">Reuters Investigates</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/subjects/euro-zone" class="nav-link-subsec">Euro Zone</a></li>
-                                        <li><a href="/subjects/middle-east" class="nav-link-subsec">Middle East</a></li>
-                                        <li><a href="/places/china" class="nav-link-subsec">China</a></li>
-                                        <li><a href="/places/japan" class="nav-link-subsec">Japan</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/places/mexico" class="nav-link-subsec">Mexico</a></li>
-                                        <li><a href="/places/brazil" class="nav-link-subsec">Brazil</a></li>
-                                        <li><a href="/places/africa" class="nav-link-subsec">Africa</a></li>
-                                        <li><a href="/places/russia" class="nav-link-subsec">Russia</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/places/india" class="nav-link-subsec">India</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-5">
-                                       <a href="/politics" class="nav-link-sec">Politics</a>
-                                <div class="subnav" id="subnav-5">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/politics" class="nav-link-subsec">Politics Home</a></li>
-                                        <li><a href="/politics/election2016" class="nav-link-subsec">Election 2016</a></li>
-                                        <li><a href="http://polling.reuters.com" class="nav-link-subsec">Polling Explorer</a></li>
-                                        <li><a href="http://live.reuters.com/Event/Election_2016" class="nav-link-subsec">Just In</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="http://www.reuters.com/election2016/the-undecided/" class="nav-link-subsec">What Voters Want</a></li>
-                                        <li><a href="/subjects/supreme-court" class="nav-link-subsec">Supreme Court</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-6">
-                                       <a href="/news/technology" class="nav-link-sec">Tech</a>
-                                <div class="subnav" id="subnav-6">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/news/technology" class="nav-link-subsec">Technology Home</a></li>
-                                        <li><a href="/news/science" class="nav-link-subsec">Science</a></li>
-                                        <li><a href="/bizfinance/technology/Top100Innovators" class="nav-link-subsec">Top 100 Global Innovators</a></li>
-                                        <li><a href="/news/environment" class="nav-link-subsec">Environment</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="/innovation" class="nav-link-subsec">Innovation</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-7">
-                                       <a href="/commentary/" class="nav-link-sec">Commentary</a>
-                                <div class="subnav" id="subnav-7">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/commentary/" class="nav-link-subsec">Commentary Home </a></li>
-                                        <li><a href="/tools/podcasts/" class="nav-link-subsec">Podcasts</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-8">
-                                       <a href="http://blogs.reuters.com/breakingviews/" class="nav-link-sec">Breakingviews</a>
-                                <div class="subnav" id="subnav-8">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="http://blogs.reuters.com/breakingviews/" class="nav-link-subsec">Breakingviews Home</a></li>
-                                        <li><a href="/video/breakingviews" class="nav-link-subsec">Breakingviews Video</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item" id="nav-item-9">
-                                       <a href="/finance/personal-finance" class="nav-link-sec">Money</a>
-                                <div class="subnav" id="subnav-9">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/finance/personal-finance" class="nav-link-subsec">Money Home</a></li>
-                                        <li><a href="/finance/personal-finance/retirement" class="nav-link-subsec">Retirement</a></li>
-                                        <li><a href="/subjects/us-lipper-awards" class="nav-link-subsec">Lipper Awards</a></li>
-                                        <li><a href="https://commerce.us.reuters.com/purchase/default.do" class="nav-link-subsec">Analyst Research</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        <li><a href="http://stockscreener.us.reuters.com/Stock/US/Index?quickscreen=gaarp" class="nav-link-subsec">Stock Screener</a></li>
-                                        <li><a href="http://funds.us.reuters.com/US/screener/screener.asp" class="nav-link-subsec">Fund Screener</a></li>
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item no-subnav" id="nav-item-10">
-                                       <a href="/subjects/rio-2016" class="nav-link-sec">Rio 2016</a>
-                                </li>
-                <li class="nav-item pictures-tab active-icon active-text
-                                               " id="nav-item-11">
-                                            <a href="/news/pictures" class="nav-link-sec">
-                                                <div class="pictures-icon"></div>
-                                                <span class="text">Pictures</span>
-                                            </a>
-                                        <div class="subnav" id="subnav-11">
-                            <div class="subnav-inset">
-                                <ul class="subnav-list">
-                                    <li><a href="/news/pictures" class="nav-link-subsec">Pictures Home</a></li>
-                                        <li><a href="http://widerimage.reuters.com" class="nav-link-subsec">The Wider Image</a></li>
-                                        <li><a href="http://widerimage.reuters.com/photographer" class="nav-link-subsec">Photographers</a></li>
-                                        <li><a href="/focus-360/" class="nav-link-subsec">Focus 360</a></li>
-                                        </ul>
-                                            <ul class="subnav-list">
-                                        </ul>
-                            </div>
-                        </div>
-                    </li>
-                <li class="nav-item video-tab active-icon active-text
-                                                no-subnav" id="nav-item-12">
-                                            <a href="/video" class="nav-link-sec">
-                                                <div class="video-icon"></div>
-                                                <span class="text">Video</span>
-                                            </a>
-                                        </li>
-                <li class="nav-item search-tab active-icon no-subnav"><div class="search-icon"></div></li>
-            </ul>
-            <div id="searchBar">
-                <form id="searchForm" class="search-form" name="searchbox" method="get" action="/search/news" autocomplete="off">
-                    <input id="searchfield" class="search-field" name="blob" type="text" value="" onfocus="this.value = this.value;"  size="30" maxlength="128">
-                    <span class="search-line"></span>
-                    <input type="submit" id="search-submit-button" class="search-submit-button" value="" onmousedown="if(document.forms['searchbox'].blob.value == 'Search Reuters') { document.forms['searchbox'].blob.value = ''; }">
-                    <div class="search-close-button"></div>
-                </form>
-            </div>
-            <div class="article-mini-nav">
-    <div class="mini-nav-info">
-        <span class="mini-nav-headline">
-            EC "paper" adds further balm to bank capital</span></div>
-    <div class="mini-nav-share">
-        <div class="core-share nav-share" 
-            data-share-short-url="http://reut.rs/2bimRBb"
-            data-share-url="http://www.reuters.com/article/idUSL8N1AX1FQ"
-            data-share-title="EC &#034;paper&#034; adds further balm to bank capital"
-            data-share-desc="EC paper adds further balm to bank capital"
-            data-share-img=""
-            data-share="twitter,facebook,linkedin,mailArticle"
-            data-share-id="USL8N1AX1FQ">
-        </div></div>
-</div></div>
-    </nav>
-    <div class="nav-white-space"></div>
-    <div class="edition-header">
-        <div class="container">
-            <div class="selection-header"></div>
-            <ul class="edition-list">
-                <li>
-                    <div class="item"><a href="http://af.reuters.com">Africa</a></div>
-                    <div class="item"><a href="http://lta.reuters.com">América Latina</a></div>
-                </li>
-                <li>
-                    <div class="item"><a href="http://ara.reuters.com">????</a></div>
-                    <div class="item"><a href="http://ar.reuters.com">Argentina</a></div>
-                </li>
-                <li>
-                    <div class="item"><a href="http://br.reuters.com">Brasil</a></div>
-                    <div class="item"><a href="http://ca.reuters.com">Canada</a></div>
-                </li>   
-                <li>
-                    <div class="item"><a href="http://cn.reuters.com" class="">??</a></div>
-                    <div class="item"><a href="http://de.reuters.com" class="">Deutschland</a></div>
-                </li>
-                <li>
-                    <div class="item"><a href="http://es.reuters.com">España</a></div>
-                    <div class="item"><a href="http://fr.reuters.com">France</a></div>
-                </li>
-                <li>
-                    <div class="item"><a href="http://in.reuters.com" class="">India</a></div>
-                    <div class="item"><a href="http://it.reuters.com">Italia</a></div>
-                </li>
-                <li>
-                    <div class="item"><a href="http://jp.reuters.com" class="">??</a></div>
-                    <div class="item"><a href="http://mx.reuters.com">México</a></div>
-                </li>
-                <li>
-                    <div class="item"><a href="http://ru.reuters.com">??????</a></div>
-                    <div class="item"><a href="http://uk.reuters.com" class="">United Kingdom</a></div>
-                </li> 
-                <li><div class="item"><a href="http://www.reuters.com" class="active">United States</a></div></li>
-            </ul>
-        </div>
-    </div>
     
-    <div id="content">
-            <div id="overlayForSearch"></div><section>
-	<div class="group" id="">
-		<script type="text/javascript">
-Reuters.namespace("info");
-Reuters.info.articleId = 'USL8N1AX1FQ';
-Reuters.info.articlePartnerURI = '';
-Reuters.info.channel = 'bankruptcyNews';
-Reuters.info.articleUrl = '/article/idUSL8N1AX1FQ';
-</script>
-
-<!-- overrideType can be "video" -->
-
-</div>
-	</section><section class="main-content">
-	<div class="group wrap" id="articleContent">
-		<div id="div_gpt_lb" class="ad-leaderboard"><div class="ad" id="leaderboard">
-
-		<script type="text/javascript">
-var dz_final = TR3.extractDartZone();
-// leaderboard
-if( 'leaderboard' == 'leaderboard'){
-    //US HOME FASTLANE
-    if((TR3.extractDartZone().indexOf("us.reuters") > -1)){
-        if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        {displayAd_sync_fastlane(dz_final,  "articleID=USL8N1AX1FQ;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" );}
-        else{ displayAd_sync_fastlane( dz_final, "articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-    }
-    else{ if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        { displayAd_sync(dz_final,  "articleID=USL8N1AX1FQ;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" ); }
-        else{ displayAd_sync( dz_final, "articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-    }
-}
-else if('leaderboard' == 'mpu'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpu'); }); }
-else if('leaderboard' == 'mpulow'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpulow'); }); }
-else if('leaderboard' == 'leaderboardcenter'){
-    if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_center'); }); }
-    else{ displayAd("div_gpt_lb", dz_final, [[728, 90],[970,250],[970,90],[970,66],[1,1]], "type=leaderboard;articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-}
-else if('leaderboard' == 'leaderboardlow'){
-        if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_low'); }); }
-        else{ displayAd("div_gpt_lb", dz_final, [[728, 90],[970,250],[970,90],[970,66],[1,1]], "type=leaderboard;articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-}
-else{
-    if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined'){
-        displayAd("div_gpt_lb", dz_final, [[728, 90],[970,250],[970,90],[970,66],[1,1]], "type=leaderboard;articleID=USL8N1AX1FQ;storychannel=" + Reuters.info.channel+ ";" + adParams2 + "" );
-    } else{ displayAd("div_gpt_lb", dz_final, [[728, 90],[970,250],[970,90],[970,66],[1,1]], "type=leaderboard;articleID=USL8N1AX1FQ;" + adParams2 + "" ); }	
-}
-</script>
-        
-        </div>
-
-		</div><div class="linebreak"></div>
-	
-
-</div>
-	</section><section>
-	<div class="group wrap" id="rcs-articleHeader">
-		<div class="column1 col col-10">
-		<div class="article-header">
-    <div class="article-info">
-            <span class="article-section">
-                <a href="/news/archive/bankruptcyNews">Bankruptcy News</a></span>
-            <span class="divider">|</span>
-            <span class="timestamp">Wed Aug 17, 2016 7:56am EDT</span>
-        </div>
-        
-        <h1 class="article-headline">EC "paper" adds further balm to bank capital</h1>
-            </div></div>
-
-	<div class="column2 col col-4">
-		</div>
-
-</div>
-	</section><section>
-	<div class="group wrap" id="rcs-articleContent">
-		<div class="column1 col col-10">
-		<div class="core-share  "
-    data-share-short-url="http://reut.rs/2bimRBb"
-    data-share-url="http://www.reuters.com/article/idUSL8N1AX1FQ"
-    data-share-title="EC &#034;paper&#034; adds further balm to bank capital"
-    data-share-desc="* EU regulator mulls rule priotising AT1 coupons
-* Could help cement risky bank capital's recovery
-By Helene Durand
-LONDON, Aug 17 (IFR) - The European Commission could give
-another fillip to the rapidly rebounding Additional"
-    data-share-img=""
-    data-share="twitter,facebook,linkedin,mailArticle"
-    data-share-id="USL8N1AX1FQ">
-</div><span id="article-text">
-<span id="midArticle_start"></span>
-
-<span class="article-prime"><p>* EU regulator mulls rule priotising AT1 coupons</p></span><span id="midArticle_0"></span><p>* Could help cement risky bank capital's recovery</p><span id="midArticle_1"></span><p>By Helene Durand</p><span id="midArticle_2"></span><p>LONDON, Aug 17 (IFR) - The European Commission could give
-another fillip to the rapidly rebounding Additional Tier 1
-market, if it adopts proposals laid out in a recent policy paper
-that would lessen pressure on banks' ability to make coupon
-payments.</p><span id="midArticle_3"></span><p>The European Commission recently published a "non-paper
-paper" - a tool it uses to allow its staff to explore various
-non-binding policy options - that said Additional Tier 1 should
-be given priority if a bank's distributions, such as dividends
-and bonuses, have to be restricted because it does not have
-sufficient MDA.</p><span id="midArticle_4"></span><p>The so-called maximum distributable amount (MDA) is,
-effectively, a firm's distributable profit, which if too low can
-force banks to stop paying their AT1 coupons.</p><span id="midArticle_5"></span><p>"Most Additional Tier 1 issuers had previously stated that
-they would cancel dividends before deferring coupons on AT1s,
-but with this change Additional Tier 1 investors will not have
-to rely on the word of the issuers," said BNP Paribas' analysts
-in a note this week.</p><span id="midArticle_6"></span><p>European regulators have been grappling with ways to make
-Additional Tier 1 debt more investor-friendly over recent months
-and assuage holders' fears over potential skipped coupons after
-a brutal sell-off savaged the asset-class in February.</p><span id="midArticle_7"></span>
-            
-            <span class="article-divide first-article-divide"></span><p>This undated paper, seen by IFR, from European Commission's</p><span id="midArticle_8"></span><p>Directorate-General for Financial Stability, Financial
-Services and Capital Markets Union is the latest instalment in
-this effort, and could formalise the pecking order between
-equity and Additional Tier 1 debt investors - putting the latter
-firmly ahead of shareholders.</p><span id="midArticle_9"></span><p>"It's a nice tailwind to have to the asset-class though I
-don't think issuers will get much better execution on the back
-of this," said a hybrid solutions banker.</p><span id="midArticle_10"></span><p>"It's helpful that the rhetoric has been consistently
-positive. I think the volatility in the first quarter was a
-wake-up call for regulators."</p><span id="midArticle_11"></span><p></p><span id="midArticle_12"></span>
-            
-            <span class="article-divide second-article-divide"></span><span class="article-subtitle"><p>STUNNING COMEBACK</p>
-</span><span id="midArticle_13"></span><p>The Additional Tier 1 has staged a phenomenal recovery in
-recent weeks as investors' search for yield has drawn them to
-riskier parts of the bond market.</p><span id="midArticle_14"></span><p>Royal Bank of Scotland and Standard Chartered lured more
-than US$36bn of demand for the first Additional Tier 1 bonds
-from UK banks since the country voted to leave the EU, the
-biggest demand for the asset-class in 2016</p><span id="midArticle_15"></span><p>The Bank of America Merrill Lynch CoCo index's yield is
-5.765%, creeping nearer to the 5.37% all-time low it hit in June
-2014 and a far cry from the 7.25% it touched in mid-February.</p><span id="midArticle_0"></span>
-            
-            <span class="article-divide third-article-divide"></span><p>While banks' equity and Additional Tier 1 debt pricing
-appeared to be moving in lock steps during the dark days of
-February, the latter has now pulled away. RBS's share price is
-down more than 43% since the beginning of the year.</p><span id="midArticle_1"></span><p>"I was a bit surprised to see how these AT1 trades went
-compared to how their equity is performing, especially in the
-case of RBS," another hybrid banker said.</p><span id="midArticle_2"></span><p>"But this is a pure yield play and in the case of RBS, who
-knows when they'll be paying a dividend again so 8.5% is pretty
-exciting."</p><span id="midArticle_3"></span><p></p><span id="midArticle_4"></span><span class="article-subtitle"><p>LOWER BAR</p>
-</span><span id="midArticle_5"></span><p>Some of investors' concerns were already appeased after the
-European Central Bank said in July that it would split banks'
-so-called Pillar 2 capital requirements into a requirement and
-guidance.</p><span id="midArticle_6"></span><p>Crucially, the guided component will not be part of the MDA
-calculation, giving banks more breathing room in order to pay
-Additional Tier 1 coupons, while reassuring investors that
-European banks' capital requirements would not be set too high.</p><span id="midArticle_7"></span><p>"For me, that's the most important thing," a third hybrid
-banker said.</p><span id="midArticle_8"></span><p>"If you make the whole Pillar 2 binding, European banks have
-too high capital requirement and the playing field is not
-levelled. The distance to MDA is much more important to
-investors that the priority of payment though this will make the
-instruments more investor friendly."
-
- (Reporting by Helene Durand, editing by Alex Chambers and
-Robert Smith)</p><span id="midArticle_9"></span></span>
-
+    <script type="text/javascript" src="http://wisebread.killeracesmedia.netdna-cdn.com/files/fruganomics/js/js_7c925f2893d0f6621b07f8104dd70c69.js"></script>
 <script type="text/javascript">
-	
-	var $relatedItems     = $('<li><a href="/article/idUSL8N1AZ0T8">BRIEF-KTG Agrar SE subsidiary NOA Naturoel Anklam AG applies for insolvency</a></li><li><a href="/article/energyfutureholdings-bankruptcy-idUSL1N1AZ02P">UPDATE 1-Texas utility Energy Future pushes bankruptcy exit plan in trial</a></li><li><a href="/article/energyfutureholdings-bankruptcy-idUSL1N1AT1E4">Texas utility Energy Future pushes bankruptcy exit plan in trial</a></li><li><a href="/article/pacific-explor-restructuring-idUSL3N1AZ01J">Pacific Exploration says creditors approve restructuring plan</a></li>'),
-	    $relatedItems     = $relatedItems.slice(0,10),
-	    relatedBlockLimit = Number('6'),
-	    relatedItemsTotal = $relatedItems.length,
-	    $paragraphTags    = $('#article-text p'),
-	    contentParagraphs = 0,
-	    minParagraphs     = Number("8");
-
-	for (i=0; i < $paragraphTags.length; i++) {
-		if ($paragraphTags[i].innerText.trim().length > 0) {
-			contentParagraphs = contentParagraphs + 1;
-		}
-	}
-
-	if (contentParagraphs > minParagraphs) {
-		setTimeout(function(){
-			if (relatedItemsTotal > relatedBlockLimit) {
-				$('.first-article-divide').append('<div class="related-content group-one"><h3 class="related-content-title">Also In Bankruptcy News</h3><ul></ul></div>');
-				$('.second-article-divide').append($('.slider.slider-module'));
-				$('.third-article-divide').append('<div class="related-content group-two"><h3 class="related-content-title">Also In Bankruptcy News</h3><ul></ul></div>');
-				var median                  = (relatedItemsTotal / 2);
-				var $relatedContentGroupOne = $('.related-content.group-one ul');
-				var $relatedContentGroupTwo = $('.related-content.group-two ul');
-
-				$.each($relatedItems, function(k,v) {
-					if (k + 1 <= median) {
-						$relatedContentGroupOne.append($relatedItems[k]);
-					} else {
-						$relatedContentGroupTwo.append($relatedItems[k]);
-					}
-				});	
-			} else {
-				$('.third-article-divide').append($('<div class="related-content group-one"><h3 class="related-content-title">Also In Bankruptcy News</h3><ul></ul></div>'));
-				$('.related-content ul').append($relatedItems);
-			}
-		},500);	
-	}
-</script>
-
-<div class="linebreak"></div>
-	</div>
-
-	<div class="column2 col col-4">
-		<div class="module mod-sticky-article"><div class="section article-sticky">
-<div class="sectionContent">
-<div id="ad-div-mpu"><div id="div_gpt_mpu"><div class="ad" id="mpu">
-
-		<script type="text/javascript">
-var dz_final = TR3.extractDartZone();
-// leaderboard
-if( 'mpu' == 'leaderboard'){
-    //US HOME FASTLANE
-    if((TR3.extractDartZone().indexOf("us.reuters") > -1)){
-        if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        {displayAd_sync_fastlane(dz_final,  "articleID=USL8N1AX1FQ;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" );}
-        else{ displayAd_sync_fastlane( dz_final, "articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-    }
-    else{ if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        { displayAd_sync(dz_final,  "articleID=USL8N1AX1FQ;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" ); }
-        else{ displayAd_sync( dz_final, "articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-    }
-}
-else if('mpu' == 'mpu'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpu'); }); }
-else if('mpu' == 'mpulow'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpulow'); }); }
-else if('mpu' == 'leaderboardcenter'){
-    if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_center'); }); }
-    else{ displayAd("div_gpt_mpu", dz_final, [[300, 250],[300,600],[300,1050]], "type=mpu;articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-}
-else if('mpu' == 'leaderboardlow'){
-        if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_low'); }); }
-        else{ displayAd("div_gpt_mpu", dz_final, [[300, 250],[300,600],[300,1050]], "type=mpu;articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-}
-else{
-    if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined'){
-        displayAd("div_gpt_mpu", dz_final, [[300, 250],[300,600],[300,1050]], "type=mpu;articleID=USL8N1AX1FQ;storychannel=" + Reuters.info.channel+ ";" + adParams2 + "" );
-    } else{ displayAd("div_gpt_mpu", dz_final, [[300, 250],[300,600],[300,1050]], "type=mpu;articleID=USL8N1AX1FQ;" + adParams2 + "" ); }	
-}
-</script>
-        
-        </div>
-
-		</div><div class="linebreak"></div>
-	
-
-</div><div class="linebreak"></div>
-	<div class="header-no-margin"><header class="module-header">
-                        <h4 class="module-heading">
-                                Trending <span class="title-last">Stories</span>
-                                </h4>
-                        </header>
-                <div id="mostPopularRead"><div id="most-popular"><div class="moduleBody"><ul></ul></div><div id="most-popular-remark"></div></div></div><script type="text/javascript">
-        var video_btn_url = '<img src="http://s3.reutersmedia.net/resources_v2/images/btn_rel_video.gif" border="0" height="11px" width="43px" alt="Video" />';
-        var _raw_json_note = "not in use for this version";
-	var max_json_num = 5;
-	var filter_str = "/news/pictures";
-	var filter_arr = [];
-        filter_arr = filter_str.split(",");
- 
-	var parselyObjects= [{"data":[{"title":"Clinton Foundation hired cyber firm after suspected hacking: sources","_hits":"2033","source":"charbeat","video_link":"","url":"http:\/\/www.reuters.com\/article\/us-usa-cyber-democrats-idUSKCN10T01G"},{"title":"U.S. swimmers damaged gas station, quarrelled with guards: source","_hits":"884","source":"charbeat","video_link":"http:\/\/www.reuters.com\/article\/video\/idUSKCN10T07K?videoId=369601744","url":"http:\/\/www.reuters.com\/article\/us-olympics-rio-lochte-police-idUSKCN10T07K"},{"title":"Venezuela crushes 2,000 guns in public, plans registry of bullets","_hits":"525","source":"charbeat","video_link":"","url":"http:\/\/www.reuters.com\/article\/us-venezuela-crime-idUSKCN10S2I9"},{"title":"Turkey seizes assets as post-coup crackdown turns to business","_hits":"513","source":"charbeat","video_link":"","url":"http:\/\/www.reuters.com\/article\/us-turkey-security-raids-idUSKCN10T0HH"},{"title":"Merkel says refugees didn't bring Islamist terrorism to Germany","_hits":"485","source":"charbeat","video_link":"","url":"http:\/\/www.reuters.com\/article\/us-europe-attacks-germany-merkel-idUSKCN10S256"}]}];
-	
-		if (typeof Reuters.parsely.parseParsely == 'function') { Reuters.parsely.parseParsely(parselyObjects); } 
-	</script>
-
-
-
-
-</div></div></div>
-
-
-</div><section class="mod-editors-pick module epnc">
-			<header class="module-header">
-				<h4 class="module-heading">
-				Editor's <span class="title-last">Pick</span>
-				</h4>
-			</header>
-        	<section class="module-content">
-                <article>
-                    <a href="http://live.reuters.com/Event/Election_2016"><div class="story-photo lazy-photo">
-                        <img border="0" alt="" src="" org-src="http://static.reuters.com/resources/media/global/assets/images/20160817/20160817_4194156320160817120616.jpg"></a>
-                    </div>
-                    <div class="story-content">
-                        <h2 class="story-title"><a href="http://live.reuters.com/Event/Election_2016">LIVE: Election 2016</a></h2>
-                    </div>
-                </article>
-        	</section>
-            
-            </section>
-        	<script>
-			 	$(document).ready(function () {
-					if(window.location.href.indexOf("http://live.reuters.com/Event/Election_2016") > -1) {
-					   $('.epnc').hide();
-					}
-				});
-			</script>
-        	
-        
-		<script>
-			 	$('.epnc').show();
-				$(document).ready(function () {
-					if(window.location.href.indexOf("http://blogs.reuters.com/breakingviews/2016/08/17/two-150-bln-plus-tech-giants-face-divergent-futures/") > -1) {
-					   $('.epnc').hide();
-					}
-				});
-				
-			</script>
-		
-
-<div class="module"><div id="div_gpt_mpulow"><div class="ad" id="mpulow">
-
-		<script type="text/javascript">
-var dz_final = TR3.extractDartZone();
-// leaderboard
-if( 'mpulow' == 'leaderboard'){
-    //US HOME FASTLANE
-    if((TR3.extractDartZone().indexOf("us.reuters") > -1)){
-        if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        {displayAd_sync_fastlane(dz_final,  "articleID=USL8N1AX1FQ;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" );}
-        else{ displayAd_sync_fastlane( dz_final, "articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-    }
-    else{ if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        { displayAd_sync(dz_final,  "articleID=USL8N1AX1FQ;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" ); }
-        else{ displayAd_sync( dz_final, "articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-    }
-}
-else if('mpulow' == 'mpu'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpu'); }); }
-else if('mpulow' == 'mpulow'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpulow'); }); }
-else if('mpulow' == 'leaderboardcenter'){
-    if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_center'); }); }
-    else{ displayAd("div_gpt_mpulow", dz_final, [[300, 250],[300,600],[1,1]], "type=mpulow;articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-}
-else if('mpulow' == 'leaderboardlow'){
-        if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_low'); }); }
-        else{ displayAd("div_gpt_mpulow", dz_final, [[300, 250],[300,600],[1,1]], "type=mpulow;articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-}
-else{
-    if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined'){
-        displayAd("div_gpt_mpulow", dz_final, [[300, 250],[300,600],[1,1]], "type=mpulow;articleID=USL8N1AX1FQ;storychannel=" + Reuters.info.channel+ ";" + adParams2 + "" );
-    } else{ displayAd("div_gpt_mpulow", dz_final, [[300, 250],[300,600],[1,1]], "type=mpulow;articleID=USL8N1AX1FQ;" + adParams2 + "" ); }	
-}
-</script>
-        
-        </div>
-
-		</div><div class="linebreak"></div>
-	
-
-</div><div class="module"><header class="module-header">
-                        <h4 class="module-heading">
-                                Sponsored <span class="title-last">Topics</span>
-                                </h4>
-                        </header>
-                <div class="linebreak"></div>
-	<div id="div_gpt_article_rr2"><div class="ad" id="BizDev_Article_RR2">
-
-		<script type="text/javascript">
-var dz_final = TR3.extractDartZone();
-// leaderboard
-if( 'BizDev_Article_RR2' == 'leaderboard'){
-    //US HOME FASTLANE
-    if((TR3.extractDartZone().indexOf("us.reuters") > -1)){
-        if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        {displayAd_sync_fastlane(dz_final,  "articleID=USL8N1AX1FQ;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" );}
-        else{ displayAd_sync_fastlane( dz_final, "articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-    }
-    else{ if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined')
-        { displayAd_sync(dz_final,  "articleID=USL8N1AX1FQ;storychannel=" + Reuters.info.channel + ";" + adParams2 + "" ); }
-        else{ displayAd_sync( dz_final, "articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-    }
-}
-else if('BizDev_Article_RR2' == 'mpu'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpu'); }); }
-else if('BizDev_Article_RR2' == 'mpulow'){ googletag.cmd.push(function() { googletag.display('div_gpt_mpulow'); }); }
-else if('BizDev_Article_RR2' == 'leaderboardcenter'){
-    if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_center'); }); }
-    else{ displayAd("div_gpt_article_rr2", dz_final, [[300,250],[1,1]], "type=BizDev_Article_RR2;articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-}
-else if('BizDev_Article_RR2' == 'leaderboardlow'){
-        if((TR3.extractDartZone().indexOf("us.reuters/home") > -1)){ googletag.cmd.push(function() { googletag.display('div_gpt_lb_low'); }); }
-        else{ displayAd("div_gpt_article_rr2", dz_final, [[300,250],[1,1]], "type=BizDev_Article_RR2;articleID=USL8N1AX1FQ;" + adParams2 + "" ); }
-}
-else{
-    if(typeof(Reuters)!='undefined' && typeof(Reuters.info)!='undefined' && typeof(Reuters.info.channel)!='undefined'){
-        displayAd("div_gpt_article_rr2", dz_final, [[300,250],[1,1]], "type=BizDev_Article_RR2;articleID=USL8N1AX1FQ;storychannel=" + Reuters.info.channel+ ";" + adParams2 + "" );
-    } else{ displayAd("div_gpt_article_rr2", dz_final, [[300,250],[1,1]], "type=BizDev_Article_RR2;articleID=USL8N1AX1FQ;" + adParams2 + "" ); }	
-}
-</script>
-        
-        </div>
-
-		</div>
-
-</div></div>
-
-</div>
-	</section><section>
-	<div class="group wrap" id="rcs-articleAd1">
-		<div class="column1 col col-10">
-		<section  class="module  ">
-		
-		<section class="module-content">
-		<header class="module-header">
-				<h4 class="module-heading">Next In <span class='title-last'> Bankruptcy News</span> </h4>
-			</header><div class="next-article-container">    
-    	<div class="next-articles">
-    
-	<div class="story">
-		<div class="story-content">
-			<a href="/article/idUSFWN1AY0TY"  ><div class="story-photo">
-					<img
-                                
-					src="http://s4.reutersmedia.net/resources_v2/images/r-generic-hdr.png"
-					org-src=""
-                                
-                                border="0" alt=""
-                                 />
-		</div>
-            
-	            <h3  class="story-title">BRIEF-Pacific Exploration announces creditor approval of restructuring plan</h3></a>
-	<p>* Resolution approving plan pursuant to co' creditors
-arrangement act approved by 98.4% in number of affected
-creditors</p>
-            </div>
-    </div>
-
-	<div class="story">
-		<div class="story-content">
-			<a href="/article/peabody-energy-bankruptcy-idUSL1N1AY247"  ><div class="story-photo">
-					<img
-                                
-					src="http://s4.reutersmedia.net/resources_v2/images/r-generic-hdr.png"
-					org-src=""
-                                
-                                border="0" alt=""
-                                 />
-		</div>
-            
-	            <h3  class="story-title">Peabody gets U.S. court approval for clean-up deals, executive bonuses</h3></a>
-	<p>Aug 17 Bankrupt coal company Peabody Energy won
-U.S. court approval on Wednesday for agreements with three
-states to partially cover $1.14 billion in potential
-environmental liabilities and for a bonus plan for its six top
-executives.</p>
-            </div>
-    </div>
-
-	<div class="story">
-		<div class="story-content">
-			<a href="/article/caesars-bankruptcy-idUSL1N1AY1N3"  ><div class="story-photo">
-					<img
-                                
-					src="http://s4.reutersmedia.net/resources_v2/images/r-generic-hdr.png"
-					org-src=""
-                                
-                                border="0" alt=""
-                                 />
-		</div>
-            
-	            <h3  class="story-title">U.S. judge suggests Apollo, TPG pay into Caesars reorganization</h3></a>
-	<p>CHICAGO, Aug 17 A U.S. judge on Wednesday
-suggested the casino operating unit of Caesars Entertainment
-Corp (CEC) ask its parent's private equity sponsors for
-money to fund a plan to exit its contentious $18 billion
-bankruptcy.</p>
-            </div>
-    </div>
-
-	</div></div>
-
-	</section>
-		</section>
-
-</div>
-
-	<div class="column2 col col-4">
-		<div class="module header-no-margin"><section class="mod-recirc">
-<header class="module-header">
-  <h4 class="module-heading">
-MORE FROM <span class="title-last">REUTERS</span>
-  </h4>
-</header>
-<section class="module-content">
-<div id="taboola-recirc"></div>
-<script type="text/javascript">
-  window._taboola = window._taboola || [];
-  _taboola.push({
-    mode: 'organic-thumbnails-a',
-    container: 'taboola-recirc',
-    placement: 'Below Article Thumbnails - Organic',
-    target_type: 'mix'
-  });
-</script>
-</section>
-</section></div></div>
-
-</div>
-	</section><section>
-	<div class="group wrap" id="rcs-articleAd2">
-		<div class="column1 col col-10">
-		<header class="module-header">
-    <h4 class="module-heading">From Around the <span class="title-last">Web</span> <span style="color: #ccc; float: right; font-size: 12px; font-weight: normal; margin-top: 3px; text-transform: none;"><a href="http://popup.taboola.com/en/?template=colorbox&taboola_utm_source=cox-clarkhoward&taboola_utm_medium=bytaboola&taboola_utm_content=thumbnails-b:Below%20Article%20Thumbnails%20-%20SC" style="color: #ccc; background: none;" target="_blank">By Taboola</a></span></h4>
-</header><div class="module"><div id="taboola-below-article-thumbnails"></div>
-<script type="text/javascript">
-window._taboola = window._taboola || [];
-_taboola.push(
-{ mode: 'thumbnails-3X2', container: 'taboola-below-article-thumbnails', placement: 'Below Article Thumbnails', target_type: 'mix' }
-
-);
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","fivestar":{"titleUser":"Your rating: ","titleAverage":"Average: ","feedbackSavingVote":"Saving your vote...","feedbackVoteSaved":"Your vote has been saved or changed.","feedbackDeletingVote":"Deleting your vote...","feedbackVoteDeleted":"Your vote has been deleted."},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"custom_search":{"form_target":"_self","solr":1},"CToolsUrlIsAjaxTrusted":{"\/best-credit-cards-to-use-at-costco?utm_source=feedburner\u0026utm_medium=feed\u0026utm_campaign=Feed%3A+wisebread+%28Wise+Bread%29":[true,true],"\/comment\/reply\/1761734":true},"quicktabs":{"qt_2":{"tabs":[0]},"qt_4":{"tabs":[0]}}});
+//--><!]]>
 </script>
 <script type="text/javascript">
-window._taboola = window._taboola || [];
-_taboola.push(
-{flush: true}
-
-);
-</script></div>
-
-</div>
-
-	<div class="column2 col col-4">
-		<header class="module-header">
-    <h4 class="module-heading">Sponsored <span class="title-last">Content</span> <span style="color: #ccc; float: right; font-size: 12px; font-weight: normal; margin-top: 3px; text-transform: none;"><a href="http://www.dianomi.com/cms/register-interest/?utm_source=network&utm_medium=smartad_sponsor_link " target="_blank" style="color: #ccc;background: none;">By Dianomi</a></span></h4>
-</header><div class="module"><iframe valign="middle" width="300" height="444" marginheight=0 marginwidth=0 frameborder=0 vspace=0 hspace=0 scrolling=NO src="//www.dianomi.com/smartads.epl?id=2624"></iframe></div>
-
-<div class="shr-overlay"><div id="weChatBox" class="shr-box shr-qr"><div class="shr-qr-top group"><a href="javascript:void(0)" onclick="shrBoxHide('weChatBox')" class="shr-qr-close">X</a></div><div id="shr-qrcode" class="shr-qr-content"></div></div></div></div>
-
-</div>
-	</section></div>
-<footer>
-<section class="footer">
-	<div class="group wrap" id="">
-		<div id="section-follow-buttons"><span class="footer-follow">Follow Reuters: </span>
-<ul>
-    <li id="foot-twitter"><a href="http://www.twitter.com/reuters" target="_blank"><span class="follow-button follow-twitter">Follow Us On Twitter</span></a></li>
-    <li id="foot-facebook"><a href="http://www.facebook.com/Reuters" target="_blank"><span class="follow-button follow-facebook">Follow Us On Facebook</span></a></li>
-    <li id="foot-rssfeed"><a href="http://www.reuters.com/tools/rss" target="_blank"><span class="follow-button follow-rss">Follow Us On RSS</span></a></li>
-    <li id="foot-instagram"><a href=" https://instagram.com/reuters/" target="_blank"><span class="follow-button follow-instagram">Follow Us On Instagram</span></a></li>
-    <li id="foot-youtube"><a href="https://www.youtube.com/user/ReutersVideo" target="_blank"><span class="follow-button follow-youtube">Follow Us On YouTube</span></a></li>
-    <li id="foot-linkedin"><a href="https://www.linkedin.com/company/thomson-reuters_1400" target="_blank"><span class="follow-button follow-linkedin">Follow Us On LinkedIn</span></a></li>
-</ul></div><div class="footer-more-links"><span class="footer-more">Subscribe: </span>
-<a href="http://www.reuters.com/tools/rss">Feeds</a> | <a href="http://newslink.reuters.com/join/subscribe">Newsletters</a> | <a href="/tools/podcasts">Podcasts</a> | <a href="/tools/mobile">Apps</a> </div></div>
-	</section><section class="footer-body">
-	<div class="group wrap" id="">
-		<div class="footer-services-link"><a href="http://agency.reuters.com" target="_blank">Reuters News Agency</a> | <a href="http://agency.reuters.com/en/platforms-delivery/reuters-brand-attribution-guidelines.html" target="_blank">Brand Attribution Guidelines</a> | <a href="http://thomsonreuters.com/site/delivery-options/" target="_blank">Delivery Options</a></div><div class="disclaimer"><div class="footer-summary">
-<p>Reuters is the news and media division of <a href="http://thomsonreuters.com/" target="_blank">Thomson Reuters</a>. Thomson Reuters is the world's largest international multimedia news agency, providing investing news, world news, business news, technology news, headline news, small business news, news alerts, personal finance, stock market, and mutual funds information available on Reuters.com, video, mobile, and interactive television platforms. Learn more about Thomson Reuters products:</p>
-</div></div><div class="product-container">
-  <a href="http://financial.thomsonreuters.com/en/products/tools-applications/trading-investment-tools/eikon-trading-software.html" target="_blank">
-    <div class="product">
-      <div class="prod-title">Eikon</div>
-        <div class="prod-content">Information, analytics and exclusive news on financial markets - delivered in an intuitive desktop and mobile interface 
-        </div>
-    </div>
-  </a>
-  <a href="http://financial.thomsonreuters.com/en/products/infrastructure/trading-infrastructure/elektron-enterprise-data-management.html" target="_blank">  
-    <div class="product">
-      <div class="prod-title">Elektron</div>
-        <div class="prod-content">Everything you need to empower your workflow and enhance your enterprise data management 
-      </div>
-    </div>
-  </a>
-  <a href="https://risk.thomsonreuters.com/products/world-check" target="_blank">  
-    <div class="product">
-      <div class="prod-title">World-Check</div>
-      <div class="prod-content">Screen for heightened risk individual and entities globally to help uncover hidden risks in business relationships and human networks 
-      </div>
-    </div>
-  </a>  
-  <a href="http://legalsolutions.thomsonreuters.com/law-products/westlaw-legal-research/" target="_blank">
-    <div class="product">
-      <div class="prod-title">Westlaw</div>
-      <div class="prod-content">Build the strongest argument relying on authoritative content, attorney-editor expertise, and industry defining technology   
-      </div>
-    </div>
-  </a>
-  <a href="https://tax.thomsonreuters.com/products/brands/onesource/" target="_blank">  
-    <div class="product">
-      <div class="prod-title">ONESOURCE</div>
-      <div class="prod-content">The most comprehensive solution to manage all your complex and ever-expanding tax and compliance needs
-      </div>
-    </div>
-  </a>
-  <a href="https://tax.thomsonreuters.com/products/brands/checkpoint/" target="_blank">  
-    <div class="product prod-last">
-      <div class="prod-title">CHECKPOINT</div>
-      <div class="prod-content">The industry leader for online information for tax, accounting and finance professionals 
-      </div>
-    </div>
-  </a>  
-</div><div class="linebreak"></div>
-	<div class="footer-policy-links"><p> All quotes delayed a minimum of 15 minutes. <a href="/info/disclaimer">See here for a complete list</a> of exchanges and delays.</p>
-<div class="footer-policies"><ul>
-    
-<li class="h-links">
-<div class="reuters-copyright"><script type="text/javascript">var year = new Date();document.write('<a href="http://thomsonreuters.com/copyright/">&copy;  ' + year.getFullYear() + ' Reuters. All Rights Reserved.</a>');</script></div>
-</li>
-<li class="h-links"><a href="http://reuters.zendesk.com/" target="_blank">Site Feedback</a></li>
-<li class="h-links"><a href="https://reuters.zendesk.com/anonymous_requests/new" target="_blank">Corrections</a></li>
-<li class="h-links"><a href="http://sales.reuters.com/">Advertise With Us</a></li>
-<li class="h-links"><a href="/advertising-guidelines">Advertising Guidelines</a></li>
-<li class="h-links"><a href="http://info.evidon.com/pub_info/285?v=1" id="_bapw-link" target="_blank"><img id="_bapw-icon" border="0" width="11" align="top" src="https://cdn.betrad.com/pub/icon1.png" /> AdChoices</a></li>
-<li class="h-links"><a href="/terms-of-use">Terms of Use</a></li>
-<li class="h-links h-links-last"><a href="/privacy-policy">Privacy Policy</a></li>
-
-</ul></div></div></div>
-	</section>
-
-</footer>
-
-<script src="http://s4.reutersmedia.net/resources_v2/js/core-header.js" type="text/javascript"></script>
-<script src="http://s3.reutersmedia.net/resources_v2/js/core-login.js" type="text/javascript"></script>
-<script src="http://s2.reutersmedia.net/resources_v2/js/core-tracking.js" type="text/javascript"></script>
-<script src="http://s2.reutersmedia.net/resources_v2/js/core-share.js" type="text/javascript"></script>
-    <script src="http://s2.reutersmedia.net/resources_v2/js/libraries/core-lib.js" type="text/javascript"></script>
-	<script src="http://s4.reutersmedia.net/resources_v2/js/core-modules.js" type="text/javascript"></script>
-<script src="http://s2.reutersmedia.net/resources_v2/js/core-article.js" type="text/javascript"></script>
-<script language="javascript" type="text/javascript" src="http://www.reuters.com/reuters_gpt_bootstrap_footer.js"></script>
-
+<!--//--><![CDATA[//><!--
+ga('set', 'contentGroup5', 'Credit Cards')
+//--><!]]>
+</script>
 <script type="text/javascript">
-	$(document).ready( function() {
-		var sclTracking = new rcom_scrollTracker("Article");
-		if( inAppleMobileDevice() ) {document.addEventListener("scroll", sclTracking, false);} else {$(window).scroll( sclTracking );}
-	});
+<!--//--><![CDATA[//><!--
+var RecaptchaOptions = {"theme":"clean","lang":"en"};
+//--><!]]>
 </script>
 
-<section>
-	<div class="group" id="">
-		<script type='text/javascript'>
-        var _sf_startpt = (new Date()).getTime();
-        var _sf_async_config = _sf_async_config || {};
-        
-        _sf_async_config.sections = 'Deals'; 
-        _sf_async_config.autoDetect = false;
-        
-        _sf_async_config.authors = 'Reuters Editorial'; 
-        _sf_async_config.type = 'Article'; 
+    <!-- analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        (function(){
-          function loadChartbeat() {
-            window._sf_endpt=(new Date()).getTime();
-            var e = document.createElement('script');
-            e.setAttribute('language', 'javascript');
-            e.setAttribute('type', 'text/javascript');
-            e.setAttribute('src', '//static.chartbeat.com/js/chartbeat_video.js');
-            document.body.appendChild(e);
-          }
-          var oldonload = window.onload;
-          window.onload = (typeof window.onload != 'function') ?
-             loadChartbeat : function() { oldonload(); loadChartbeat(); };
-        })();
+      ga('create', 'UA-347060-12', 'auto');
+      ga('send', 'pageview');
+      ga('set', 'contentGroup5', 'credit cards');
+      ga('set', 'contentGroup1', 'best credit cards');
+  
     </script>
-</div>
-	</section>
 
-</body>
+    <!-- start dfp -->
+    <script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+    '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+    })();
+    </script>
+
+    <script type='text/javascript'>
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/1038175/WB_floating_160x600', [160, 600], 'div-gpt-ad-1396207921741-0').addService(googletag.pubads());
+    googletag.defineSlot('/1038175/WB_leaderboard_728x90_homepage_only', [728, 90], 'div-gpt-ad-1396232301203-0').addService(googletag.pubads());
+    googletag.defineSlot('/1038175/WB_top_sidebar_300x250_homepage_only', [300, 250], 'div-gpt-ad-1396234280862-0').addService(googletag.pubads());
+    googletag.defineSlot('/1038175/WB_300x250_skype_nodes', [300, 250], 'div-gpt-ad-1396239767493-0').addService(googletag.pubads());
+    googletag.defineSlot('/1038175/WB_leaderboard_728x90_skype_nodes', [728, 90], 'div-gpt-ad-1396271697630-0').addService(googletag.pubads());
+    googletag.defineSlot('/1038175/Skype_midarticle_300x250', [300, 250], 'div-gpt-ad-1396271961711-0').addService(googletag.pubads());
+    googletag.defineSlot('/1038175/wb_midarticle', [[300, 250], [336, 280]], 'div-gpt-ad-1396904310695-0').addService(googletag.pubads());
+
+    googletag.enableServices();
+    });
+    </script>
+    <!-- end dfp -->
+
+    <!-- start bing event tracking -->
+    <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"4019141"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+    <!-- end bing event tracking -->
+
+    <!-- facebook -->
+    <script>(function() {
+    var _fbq = window._fbq || (window._fbq = []);
+    if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+    }
+    _fbq.push(['addPixelId', '1585036571784545']);
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', 'PixelInitialized', {}]);
+    </script>
+    <noscript><img height="1" width="1" alt="" style="display:none"
+    src="https://www.facebook.com/tr?id=1585036571784545&amp;ev=PixelInitialized" />
+    </noscript>
+    <!-- end facebook -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','//connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1585036571784545');
+    fbq('track', "PageView");</script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1585036571784545&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- taboola pixel code -->
+    <script src="//cdn.taboola.com/libtrc/killeraces-sc/tfa.js"></script>
+    <!-- end taboola pixel code -->
+
+        <!-- gemini tracking code -->
+    <script type="application/javascript">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({'projectId':'10001363796857','properties':{'pixelId':'440576'}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script>
+    <noscript>
+    <img src="https://sp.analytics.yahoo.com/spp.pl?a=10001363796857&.yp=440576"/>
+    </noscript>
+    <!-- end gemini tracking code -->
+    <!-- FM tracking pixel -->
+    <script type='text/javascript' src='http://static.fmpub.net/header/wisebread'></script>
+    <!-- FM tracking pixel -->
+
+          <!-- revcontent wb cc all -->
+      <script src="http://trends.revcontent.com/seg.js.php" id="eJwNwoERwCAIBLCVwIeC4yA%2B%2B49gL8E51dIR7ExTIc3vRxZkOLosG%2FBA226d3429lHCbokU9VR4SDw%3D%3D" class="rc-seg-pix"></script>
+      <!-- end revcontent -->
+  </head>
+  <body class="sidebar-right node-page">
+  <!-- facebook widget -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=6743596911";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- facebook widget -->
+
+      <!-- Layout -->
+<div class="super-container">
+
+<div class="side-float">
+  <div id="sticky-ad">
+          <!-- WB_floating_160x600 -->
+      <div id='div-gpt-ad-1396207921741-0' style='width:160px; height:600px;'>
+      </div>
+      </div>
+</div>
+
+
+    <div class="container" style="display:inline-block;"> <!-- add "showgrid" class to display grid -->
+
+      
+      <div id="mobile-disclaimer"><div id="advertising-disclosure-block" class="block" style="margin-bottom: 30px;"> <div class="content clear ad-disclosure-block" style="text-align: center;width: 300px; border: 1px solid #ddd; background-color: #fafafa; padding: 10px;font-size:14px;"> <a style="font-weight:bold;" href="#" id="advertising-disclosure-sidebar-link">Advertiser Disclosure &blacktriangledown;</a> </div> <div id="advertising-disclosure-sidebar-overlay" style="width:300px;padding:10px;border:1px solid #ddd;border-top:none;display:none;">Wise Bread is an independent, award-winning, advertising-supported website. Many credit card offers that appear here are from companies from which Wise Bread receives compensation. This compensation may impact how and where products appear on this site (including, for example, the order in which they appear). Wise Bread does not include all card offers in the marketplace.<br/><br/><a href="http://www.wisebread.com/advertiser-disclosure" target="_blank">Click here for more info &raquo;</a></div> </div></div>
+      <div id="header" class="clearfix">
+
+        <div id="block-menu-menu-utility" class="block block-menu">
+
+  
+  <div class="content clear">
+        <ul class="menu"><li class="leaf first even"><a href="/about" title="">About</a></li>
+<li class="leaf odd"><a href="/about/contact" title="">Contact</a></li>
+<li class="leaf last even"><a href="/advertise" title="">Advertise</a></li>
+</ul>  </div>
+
+</div>
+                  <div id="header-left">
+            <div id="block-block-181" class="block block-block">
+
+  
+  <div class="content clear">
+        
+
+ 
+  </div>
+
+</div>          </div> <!-- /#header-left -->
+        
+        <div id="logo">
+          <a href="/" title="Home" rel="home"><img src="http://wisebread.killeracesmedia.netdna-cdn.com/files/wisebread/personal-finance-blog-logo.png" alt="logo for personal finance blog Wise Bread" id="logo" /></a>
+        </div> <!-- /logo-title -->
+
+        <div id="mobilehead">
+          <a class="nav-menu-icon" href="#">
+            <img src="/sites/default/themes/custom/wisebread/images/icon_menu.png" alt="More" width="20px" height="20px">
+          </a>
+          <div id="nav-menu-main" class="navhead clearfix">
+            <ul class="menu"><li class="leaf first even"><a href="/topic/personal-finance/credit-cards" title="">Credit Cards</a></li>
+<li class="leaf last odd"><a href="/topic/personal-finance" title="">Personal Finance</a></li>
+</ul>          </div>
+
+          <div class="clear-block"></div>
+          <div class="nav-menu-secondary">
+            <ul class="menu"><li class="leaf first even"><a href="/topic/frugal-living" title="">Frugal Living</a></li>
+<li class="leaf odd"><a href="/topic/career-and-income" title="">Career</a></li>
+<li class="leaf even"><a href="/topic/life-hacks" title="">Life Hacks</a></li>
+<li class="leaf odd"><a href="/bestdeals/today" title="">Best Deals</a></li>
+<li class="leaf last even"><a href="/top-100-most-popular-personal-finance-blogs" title="">Top PF Blogs</a></li>
+</ul>          </div>
+        </div>
+
+        <div id="search-box"><form action="/best-credit-cards-to-use-at-costco?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+wisebread+%28Wise+Bread%29"  accept-charset="UTF-8" method="post" id="search-theme-form" class="search-form">
+<div><div id="search" class="container-inline">
+  <div class="form-item" id="edit-search-theme-form-1-wrapper">
+ <input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" value="" class="form-text NormalTextBox txtSearch" />
+</div>
+<fieldset class="custom_search-popup"></fieldset>
+<input type="image" name="op" value="Search" id="edit-submit-1"  class="form-submit" src="http://wisebread.killeracesmedia.netdna-cdn.com/sites/default/themes/custom/wisebread/images/search-button.jpg" />
+<input type="hidden" name="form_build_id" id="form-NwgzkHzuB0mK7SiOr0kGvs3rMxlXGIJEbhAdL5iv7NE" value="form-NwgzkHzuB0mK7SiOr0kGvs3rMxlXGIJEbhAdL5iv7NE"  />
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"  />
+<input type="hidden" name="default_text" id="edit-default-text" value=""  class="default-text" />
+</div>
+
+</div></form>
+</div>
+      </div> <!-- /#header -->
+
+      <div id="nav" class="navhead clearfix">
+        <ul class="menu"><li class="expanded first odd"><a href="/topic/personal-finance/credit-cards" title="">Credit Cards</a><ul class="menu"><li class="leaf first odd"><a href="http://www.wisebread.com/the-5-best-secured-credit-cards?ref=nav" title="">Secured Credit Cards</a></li>
+<li class="leaf even"><a href="http://www.wisebread.com/the-best-0-balance-transfer-credit-cards?ref=nav" title="">Balance Transfer Credit Cards</a></li>
+<li class="leaf odd"><a href="http://www.wisebread.com/5-best-cash-back-credit-cards?ref=nav" title="">Cash Back Credit Cards</a></li>
+<li class="leaf even"><a href="http://www.wisebread.com/top-5-travel-reward-credit-cards?ref=nav" title="">Travel Credit Cards</a></li>
+<li class="leaf odd"><a href="http://www.wisebread.com/the-best-5-credit-cards-for-groceries?ref=nav" title="">Groceries Credit Cards</a></li>
+<li class="leaf even"><a href="http://www.wisebread.com/the-5-best-credit-cards-for-dining-out?ref=nav" title="">Restaurant Credit Cards</a></li>
+<li class="leaf odd"><a href="http://www.wisebread.com/the-best-low-interest-rate-credit-cards?ref=nav" title="">Low Interest Credit Cards</a></li>
+<li class="leaf last even"><a href="http://www.wisebread.com/the-5-best-credit-cards-for-small-businesses?ref=nav" title="">Small Business Credit Cards</a></li>
+</ul></li>
+<li class="expanded odd"><a href="/topic/personal-finance" title="">Personal Finance</a><ul class="menu"><li class="leaf first even"><a href="/topic/personal-finance/banking" title="">Banking</a></li>
+<li class="leaf odd"><a href="/topic/personal-finance/cars-and-transportation" title="">Cars and Transportation</a></li>
+<li class="leaf even"><a href="/topic/personal-finance/credit-cards" title="">Credit Cards</a></li>
+<li class="leaf odd"><a href="/topic/personal-finance/debt-management" title="">Debt Management</a></li>
+<li class="leaf even"><a href="/topic/personal-finance/financial-news" title="">Financial News</a></li>
+<li class="leaf odd"><a href="/topic/personal-finance/insurance" title="">Insurance</a></li>
+<li class="leaf even"><a href="/topic/personal-finance/investment" title="">Investment</a></li>
+<li class="leaf odd"><a href="/topic/personal-finance/real-estate-and-housing" title="">Real Estate and Housing</a></li>
+<li class="leaf even"><a href="/topic/personal-finance/retirement" title="">Retirement</a></li>
+<li class="leaf odd"><a href="/topic/personal-finance/taxes" title="">Taxes</a></li>
+<li class="leaf last even"><a href="/topic/personal-finance" title="">More in Personal Finance</a></li>
+</ul></li>
+<li class="expanded even"><a href="/topic/frugal-living" title="">Frugal Living</a><ul class="menu"><li class="leaf first even"><a href="/topic/frugal-living/budgeting" title="">Budgeting</a></li>
+<li class="leaf odd"><a href="/topic/frugal-living/diy" title="">DIY</a></li>
+<li class="leaf even"><a href="/topic/frugal-living/entertainment" title="">Entertainment</a></li>
+<li class="leaf odd"><a href="/topic/frugal-living/food-and-drink" title="">Food and Drink</a></li>
+<li class="leaf even"><a href="/topic/frugal-living/green-living" title="">Green Living</a></li>
+<li class="leaf odd"><a href="/topic/frugal-living/health-and-beauty" title="">Health and Beauty</a></li>
+<li class="leaf even"><a href="/topic/frugal-living/home" title="">Home</a></li>
+<li class="leaf odd"><a href="/topic/frugal-living/lifestyle" title="">Lifestyle</a></li>
+<li class="leaf even"><a href="/topic/frugal-living/shopping" title="">Shopping</a></li>
+<li class="leaf odd"><a href="/topic/frugal-living/style" title="">Style</a></li>
+<li class="leaf even"><a href="/topic/frugal-living/travel" title="">Travel</a></li>
+<li class="leaf last odd"><a href="/topic/frugal-living" title="">More in Frugal Living</a></li>
+</ul></li>
+<li class="expanded even"><a href="/topic/career-and-income" title="">Career</a><ul class="menu"><li class="leaf first odd"><a href="/topic/career-and-income/career-building" title="">Career Building</a></li>
+<li class="leaf even"><a href="/newgrads" title="">New College Grads</a></li>
+<li class="leaf odd"><a href="/topic/career-and-income/education-training" title="">Education &amp; Training</a></li>
+<li class="leaf even"><a href="/topic/career-and-income/entrepreneurship" title="">Entrepreneurship</a></li>
+<li class="leaf odd"><a href="/topic/career-and-income/extra-income" title="">Extra Income</a></li>
+<li class="leaf even"><a href="/topic/career-and-income/job-hunting" title="">Job Hunting</a></li>
+<li class="leaf last odd"><a href="/topic/career-and-income" title="">More in Career &amp; Income</a></li>
+</ul></li>
+<li class="expanded odd"><a href="/topic/life-hacks" title="">Life Hacks</a><ul class="menu"><li class="leaf first odd"><a href="/topic/life-hacks/consumer-affairs" title="">Consumer Affairs</a></li>
+<li class="leaf even"><a href="/topic/life-hacks/family" title="">Family</a></li>
+<li class="leaf odd"><a href="/topic/life-hacks/general-tips" title="">General Tips</a></li>
+<li class="leaf even"><a href="/topic/life-hacks/organization" title="">Organization</a></li>
+<li class="leaf odd"><a href="/topic/life-hacks/personal-development" title="">Personal Development</a></li>
+<li class="leaf even"><a href="/topic/life-hacks/productivity" title="">Productivity</a></li>
+<li class="leaf odd"><a href="/topic/life-hacks/technology" title="">Technology</a></li>
+<li class="leaf last even"><a href="/topic/life-hacks" title="">More in Life Hacks</a></li>
+</ul></li>
+<li class="expanded odd"><a href="/bestdeals/today" title="Best deals of the day; handpicked every weekday!">Best Deals</a><ul class="menu"><li class="leaf first even"><a href="/bestdeals/today" title="">Daily Deals</a></li>
+<li class="leaf odd"><a href="/topic/deals-and-coupons/giveaways" title="">Giveaways</a></li>
+<li class="leaf even"><a href="http://www.wisebread.com/coupons" title="">Coupon Codes</a></li>
+<li class="leaf odd"><a href="/printable-coupons" title="">Printable Coupons</a></li>
+<li class="leaf last even"><a href="http://www.wisebread.com/credit-card-guide/?ref=nav" title="Wise Bread picks for credit cards that are good deals.">Best Credit Cards</a></li>
+</ul></li>
+<li class="leaf even"><a href="http://www.wisebread.com/top-100-most-popular-personal-finance-blogs/" title="">Top PF Blogs</a></li>
+<li class="expanded last odd"><a href="/all" title="">More</a><ul class="menu"><li class="leaf first odd"><a href="http://www.wisebread.com/guides" title="">How-To Guides</a></li>
+<li class="leaf even"><a href="http://www.wisebread.com/money-saving-book/" title="">Wise Bread Book</a></li>
+<li class="leaf odd"><a href="http://www.wisebread.com/money-tips/" title="">Money Tips Network</a></li>
+<li class="leaf even"><a href="/make-money-writing-for-wise-bread" title="">Write For Us</a></li>
+<li class="leaf odd"><a href="/about/contact" title="">Contact Us</a></li>
+<li class="leaf last even"><a href="http://www.wisebread.com/bloggers" title="">About Our Writers</a></li>
+</ul></li>
+</ul><div class="clear-block"></div>      </div> <!-- /#nav -->
+
+
+
+      <div class="body-container clearfix">
+        
+        <div id="main" class="">
+
+          
+                                          <div class="breadcrumb"><a href="/">Home</a> » <a href="/topic/personal-finance">Personal Finance</a> » <a href="/topic/personal-finance/credit-cards">Credit Cards</a> » Best Credit Cards to Use at Costco</div>                                            <h1 class="page-title ">Best Credit Cards to Use at Costco</h1>                                                                                                  
+                          <div id="above-content">
+                <div id="block-block-110" class="block block-block">
+
+  
+  <div class="content clear">
+        <script src="http://www.anrdoezrs.net/am/2822544/include/joined/sid/autoDL/am.js"></script>  </div>
+
+</div>              </div>
+            
+            <div id="node-1761734" class="node node-blog ggnoads ggnoads">
+
+  
+    
+          <div class="credits">
+                  By <a href="/jason-steele" title="View user profile.">Jason Steele</a>.          <span class="date">Last updated 19 August 2016.</span>
+                <span class="comments"><a href="/best-credit-cards-to-use-at-costco#comments" class="active">0 comments</a></span>
+      </div>
+    
+          <div class="sharing-chicklets">
+        <span class="facebook-plugins-like-button_count">
+          <div class="fb-share-button" data-href="/best-credit-cards-to-use-at-costco" data-type="button_count"></div>
+        </span>
+        <span class="retweet">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-via="wisebread" data-text="Best Credit Cards to Use at Costco">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </span>
+        <span class="pinit">
+          <a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.wisebread.com%2Fbest-credit-cards-to-use-at-costco&media=http%3A%2F%2Fwww.wisebread.com%2Ffiles/fruganomics/blog-images/iStock_76963919_LARGE.jpg&description=Best Credit Cards to Use at Costco" data-pin-do="buttonPin" data-pin-config="beside" data-pin-color="red"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" /></a>
+        </span>
+      </div>
+
+      <div class="sharing-chicklets-top-article big-share-buttons">
+        <a class="big-share-btn facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.wisebread.com%2Fbest-credit-cards-to-use-at-costco"><img src="http://www.wisebread.com/files/fruganomics/facebook-17x17.png" /><span>Share on Facebook</span></a>
+        <a class="big-share-btn twitter" target="_blank" href="http://twitter.com/home/?status=Best Credit Cards to Use at Costco http%3A%2F%2Fwww.wisebread.com%2Fbest-credit-cards-to-use-at-costco via @wisebread"><img src="http://www.wisebread.com/files/fruganomics/twitter-17x17.png" /><span>Tweet This</span></a>
+        <a class="big-share-btn pinterest" target="_blank" href="http://pinterest.com/pin/create/link/?url=http%3A%2F%2Fwww.wisebread.com%2Fbest-credit-cards-to-use-at-costco&media=http%3A%2F%2Fwww.wisebread.com%2Ffiles%2Ffruganomics%2Fblog-images%2FiStock_76963919_LARGE.jpg&description=Best Credit Cards to Use at Costco"><img src="http://www.wisebread.com/files/fruganomics/pinterest-17x17.png" /><span>Pin It</span></a>
+      </div> <!-- end big share buttons -->
+    
+    <div class="body">
+            
+                        <div id="big-main-image">
+            <img src="http://wisebread.killeracesmedia.netdna-cdn.com/files/fruganomics/imagecache/605x340/blog-images/iStock_76963919_LARGE.jpg" alt="" title=""  class=" ggnoads" width="605" height="340" />          </div>
+                      <br />
+          
+          <p class="advertising-policy-disclosure" style="color:#666;font-size:11px;font-style:italic;font-family:georgia,serif;">This post contains references to products from our advertisers. We may receive compensation when you click on links to those products. The content is not provided by the advertiser and any opinions, analyses, reviews or recommendations expressed in this article are those of the author’s alone, and have not been reviewed, approved or otherwise endorsed by any bank, card issuer, airline or hotel chain. Please visit our <strong><a href="http://www.wisebread.com/advertiser-disclosure" target="_blank">Advertiser Disclosure</a></strong> to view our partners, and for additional details.</p>
+
+                                  <div class="image-and-share below-big-image">
+                              <!-- editors pick block below image -->
+                
+<style>
+  div.custom-belimg {
+    border:1px solid #d2d2d2;
+    padding: 5px;
+    font: 12px helvetica, arial, sans;
+  }
+  div.custom-belimg div.belimg-heading {
+   border-bottom:1px solid #c2c2c2;
+   font: bold 13px helvetica, arial, sans;
+   margin: 0 10px 15px 10px;
+   padding: 5px;
+  }
+  div.custom-belimg .belimg-content ul {
+  }
+  div.custom-belimg .belimg-content ul li {
+    line-height: 1.5em;
+    background: none;
+    margin-bottom: 1em;
+    padding: 0 1.5em;
+  }
+  div.custom-belimg .belimg-content ul li a {
+    border-bottom: none;
+  }
+</style>
+<div class="custom-belimg">
+<!-- 1761734 -->
+
+  <div class="belimg-heading">
+    <img src="http://www.wisebread.com/favicon.ico" style="position:relative;top:3px;margin-right:3px;"> 
+    Wise Bread Picks
+  </div>
+  <div class="belimg-content">
+    <ul>
+      <li><a href="http://www.wisebread.com/top-5-travel-reward-credit-cards?ref=belimg-all" title="5 Best Travel Rewards Credit Cards Reviewed">Travel Rewards Credit Cards</a></li>
+      <li><a href="http://www.wisebread.com/5-best-cash-back-credit-cards?ref=belimg-all" title="Top 5 Cash Back Credit Cards">Cash Back Credit Cards</a></li>
+<li><a href="http://www.wisebread.com/the-best-0-balance-transfer-credit-cards?ref=belimg-a" title="Best 0% Balance Transfer Credit Cards">0% Balance Transfer Credit Cards</a></li>
+      
+
+   
+
+    </ul>
+  </div>
+</div>                          </div>
+                                    
+      
+<!-- midarticle: first half --><p>The recent <a href="http://www.wisebread.com/6-things-you-need-to-know-about-the-new-costco-credit-card?utm_source=wisebread&amp;utm_medium=internal&amp;utm_campaign=5x">news about Costo accepting Visa credit cards</a> exclusively may change the way Costco shoppers spend. Instead of using an American Express card that offers the best rewards, shoppers now have more options for credit card rewards for their Costco purchases. These are the best cards to use at Costco, now that they accept Visa credit cards.&nbsp;</p>
+<h2>Costco Anywhere Visa&reg; Card by Citi</h2>
+<p><img width="154" border="0" height="97" src="http://www.wisebread.com/files/fruganomics/u784/Citi-Costco-Anywhere.jpg" alt="" class="img-exempt" style="float:right;margin:0 5px 5px 10px;" /><a href="http://ct.wisebread.com/click.php?pg=227&amp;pid=128&amp;pp=1&amp;uv=xcardbutton" rel="nofollow" title="Costco Anywhere Visa&reg; Card by Citi" alt="Costco Anywhere Visa&reg; Card by Citi" target="_blank" style="border:none;float:right;clear:right;margin: 0 5px 5px 10px;"><img src="http://www.wisebread.com/files/fruganomics/apply-now.png" class="img-exempt" alt="" /></a>The new <a href="http://ct.wisebread.com/click.php?pg=227&amp;pid=128&amp;pp=1&amp;uv=xname">Costco Anywhere Visa&reg; Card</a> from our partner Citi features 4% cash back on eligible gas purchases, including those at Costco (on up to $7,000 spent each year), 3% cash back at restaurants and on travel expenses, and 2% cash back for all other Costco purchases. Everywhere else, 1% cash back is offered on all other purchases. There is no annual fee for this card with your paid annual membership.</p>
+<p><strong><a href="http://ct.wisebread.com/click.php?pg=227&amp;pid=128&amp;pp=1&amp;uv=xend">Click here to learn more and apply for the&nbsp;Costco Anywhere Visa&reg; Card by Citi today!</a></strong></p>
+<h2>BankAmericard Cash Rewards&trade; Credit Card</h2>
+<p><img width="154" border="0" height="97" src=" http://www.wisebread.com/files/fruganomics/BoA_Cash_Rewards-154.jpg" alt="" class="img-exempt" style="float:right;margin:0 5px 5px 10px;" /><a href="http://ct.wisebread.com/click.php?pg=227&amp;pid=106&amp;pp=2&amp;uv=xcardbutton" rel="nofollow" title="BankAmericard Cash Rewards&trade; Credit Card" alt="BankAmericard Cash Rewards&trade; Credit Card" target="_blank" style="border:none;float:right;clear:right;margin: 0 5px 5px 10px;"><img src="http://www.wisebread.com/files/fruganomics/apply-now.png" class="img-exempt" alt="" /></a>The <a href="http://ct.wisebread.com/click.php?pg=227&amp;pid=106&amp;pp=2&amp;uv=xname">BankAmericard Cash Rewards&trade; Credit Card</a>&nbsp;recently changed its terms to extend cash back bonus rewards to shopping at wholesale clubs including Costco. Cardholders now earn 2% cash back at grocery stores and wholesale clubs like Costco, and 3% cash back at gas stations on the first $2,500 in combined grocery, wholesale club and gas purchases each quarter, and 1% cash back elsewhere. New cardholders earn $100 bonus cash back after using their card to spend $500 in purchases within 90 days of account opening, and 12 billing cycles of 0% APR promotional financing on both new purchases and balance transfers made within 60 days of account opening, with a 3% balance transfer fee. Finally, cardholders can receive a 10% annual bonus on their cash back earned when they redeem the cash back into a Bank of America savings or checking account. There is no annual fee for this card.</p>
+<p><strong><a href="http://ct.wisebread.com/click.php?pg=227&amp;pid=106&amp;pp=2&amp;uv=xend">Click here to learn more and apply for the&nbsp;BankAmericard Cash Rewards&trade; Credit Card today!</a></strong></p>
+<h2>BankAmericard Travel Rewards&reg; Card</h2>
+<p><img border="0" alt="" style="float:right;margin:0 5px 5px 10px;" src="http://www.wisebread.com/files/fruganomics/BoA_Travel-154.jpg" /><a onclick="window.fbq('track', 'Lead');" style="border:none;float:right;clear:right;margin: 0 5px 5px 10px;" target="_blank" rel="nofollow" alt="BankAmericard Travel Rewards&reg; Credit Card" title="BankAmericard Travel Rewards&reg; Credit Card" href="http://ct.wisebread.com/click.php?pg=227&amp;pid=108&amp;pp=3&amp;uv=xcardbutton"><img alt="" class="img-exempt" src="http://www.wisebread.com/files/fruganomics/apply-now.png" /></a>The <a href="http://ct.wisebread.com/click.php?pg=227&amp;pid=108&amp;pp=3&amp;uv=xname">BankAmericard Travel Rewards&reg; Card</a>&nbsp;is another Visa card that's worth considering when shopping at Costco. It offers unlimited 1.5 points per dollar spent on all purchases, and each point is worth one cent as statement credits toward travel reservations. New cardholders earn 20,000 bonus points after spending $1,000 on their card within 90 days of account opening and enjoy 12 billing cycles of 0% APR promotional financing on new purchases. This card is also eligible to receive a 10% annual customer relationship bonus for cardholders who have a Bank of America checking or savings account. There is no annual fee for this card.</p>
+<p><strong><a href="http://ct.wisebread.com/click.php?pg=227&amp;pid=108&amp;pp=3&amp;uv=xend">Click here to learn more and apply for the&nbsp;BankAmericard Travel Rewards&reg; Card today!</a></strong></p>
+<h2>Chase Freedom Unlimited?&nbsp;</h2>
+<p><img width="154" border="0" src="http://www.imgsynergy.com/191x120/chase-freedom-unlimited-072116.png" style="float:right;margin:0 5px 5px 10px;" alt="" /><a style="border:none;float:right;clear:right;margin: 0 5px 5px 10px;" href="http://ct.wisebread.com/click.php?pg=227&amp;pid=130&amp;pp=4&amp;uv=xcardbutton" target="_blank" rel="nofollow"><img alt="" class="img-exempt" src="http://www.wisebread.com/files/fruganomics/apply-now.png" /></a>The <a href="http://ct.wisebread.com/click.php?pg=227&amp;pid=130&amp;pp=4&amp;uv=xname">Chase Freedom Unlimited? Credit Card</a> offers 1.5% unlimited cash back. Cash can be redeemed for any amount, at any time. There is currently a $150 bonus offer after spending $500 within the first 3 months of account opening, and a 0% intro APR for 15 months on purchases and balance transfers (14.24%-23.24% variable after). Balance transfers have a 5% fee ($5 minimum). There is no annual fee.</p>
+<p><strong><a href="http://ct.wisebread.com/click.php?pg=227&amp;pid=130&amp;pp=4&amp;uv=xend">Click here to learn more and apply for the&nbsp;Chase Freedom Unlimited? Credit Card today!</a></strong></p>
+<h2>Fidelity&reg; Rewards Visa Signature&reg; Card</h2>
+<p><img width="154" border="0" height="97" src="http://www.wisebread.com/files/wisebread/cc/cardart/fidelityrewardsvisasig.jpg" alt="" class="img-exempt" style="float:right;margin:0 5px 5px 10px;" /><a href="http://ct.wisebread.com/click.php?pg=227&amp;pid=124&amp;pp=5&amp;uv=xcardbutton" target=" rel=" style="border:none;float:right;clear:right;margin: 0 5px 5px 10px;"><img src="http://www.wisebread.com/files/fruganomics/apply-now.png" class="img-exempt" alt="" /></a>The <a href="http://ct.wisebread.com/click.php?pg=227&amp;pid=124&amp;pp=5&amp;uv=xname">Fidelity&reg; Rewards Visa Signature&reg; Card</a> offers an unlimited 2% cash back on all purchases as long as your rewards are deposited in a qualifying account. Cardholders can choose from a brokerage account, Fidelity&reg; Cash Management Account, 529 College Savings plan, or a retirement account. This card is also part of the Visa Signature program which includes numerous travel and shopping discounts as well as a 24 hour complimentary concierge service. There is no annual fee for this card.</p>
+<p><strong><a href="http://ct.wisebread.com/click.php?pg=227&amp;pid=124&amp;pp=5&amp;uv=xend">Click here to learn more and apply for the&nbsp;Fidelity&reg; Rewards Visa Signature&reg; Card today!</a></strong></p>
+        
+      
+      
+              <div id="below-content" class="mobile-ad">
+                  </div>
+      
+    </div>
+
+      <div class="mobile-ad">
+                            <div class="image-and-share below-big-image">
+                          <!-- editors pick block below image -->
+              
+<style>
+  div.custom-belimg {
+    border:1px solid #d2d2d2;
+    padding: 5px;
+    font: 12px helvetica, arial, sans;
+  }
+  div.custom-belimg div.belimg-heading {
+   border-bottom:1px solid #c2c2c2;
+   font: bold 13px helvetica, arial, sans;
+   margin: 0 10px 15px 10px;
+   padding: 5px;
+  }
+  div.custom-belimg .belimg-content ul {
+  }
+  div.custom-belimg .belimg-content ul li {
+    line-height: 1.5em;
+    background: none;
+    margin-bottom: 1em;
+    padding: 0 1.5em;
+  }
+  div.custom-belimg .belimg-content ul li a {
+    border-bottom: none;
+  }
+</style>
+<div class="custom-belimg">
+<!-- 1761734 -->
+
+  <div class="belimg-heading">
+    <img src="http://www.wisebread.com/favicon.ico" style="position:relative;top:3px;margin-right:3px;"> 
+    Wise Bread Picks
+  </div>
+  <div class="belimg-content">
+    <ul>
+      <li><a href="http://www.wisebread.com/top-5-travel-reward-credit-cards?ref=belimg-all" title="5 Best Travel Rewards Credit Cards Reviewed">Travel Rewards Credit Cards</a></li>
+      <li><a href="http://www.wisebread.com/5-best-cash-back-credit-cards?ref=belimg-all" title="Top 5 Cash Back Credit Cards">Cash Back Credit Cards</a></li>
+<li><a href="http://www.wisebread.com/the-best-0-balance-transfer-credit-cards?ref=belimg-a" title="Best 0% Balance Transfer Credit Cards">0% Balance Transfer Credit Cards</a></li>
+      
+
+   
+
+    </ul>
+  </div>
+</div>                      </div>
+                        </div>
+
+
+
+      <div class="big-share-buttons" style="margin:30px 0 60px;">
+
+      <a class="big-share-btn facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.wisebread.com%2Fbest-credit-cards-to-use-at-costco"><img src="http://www.wisebread.com/files/fruganomics/facebook-17x17.png" /><span>Share on Facebook</span></a>
+
+      <a class="big-share-btn twitter" target="_blank" href="http://twitter.com/home/?status=Best Credit Cards to Use at Costco http%3A%2F%2Fwww.wisebread.com%2Fbest-credit-cards-to-use-at-costco via @wisebread"><img src="http://www.wisebread.com/files/fruganomics/twitter-17x17.png" /><span>Tweet This</span></a>
+
+      <a class="big-share-btn pinterest" target="_blank" href="http://pinterest.com/pin/create/link/?url=http%3A%2F%2Fwww.wisebread.com%2Fbest-credit-cards-to-use-at-costco&media=http%3A%2F%2Fwww.wisebread.com%2Ffiles%2Ffruganomics%2Fblog-images%2FiStock_76963919_LARGE.jpg&description=Best Credit Cards to Use at Costco"><img src="http://www.wisebread.com/files/fruganomics/pinterest-17x17.png" /><span>Pin It</span></a>
+    </div> <!-- end big share buttons -->
+  
+          <div id="adsense-end-article">
+        <!-- end-of-article ad placeholder -->
+      </div>
+    
+    
+          <div class="terms" style="margin-bottom:10px;">
+        <strong>Tagged: </strong><a href="/topic/personal-finance/credit-cards">Credit Cards</a>, <a href="/topic/best-credit-cards">best credit cards</a>      </div>
+    
+                <div class="related-posts" style="clear:both;">
+        <div id="related-links-title" style="margin-bottom:7px;"><strong>Related and Popular</strong></div>
+        <div class="view view-similarterms view-id-similarterms view-display-id-block_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field-title">
+                <span class="field-content"><a href="http://www.wisebread.com/follow-these-5-credit-card-rules-when-traveling-abroad?ref=relatedbox"><span>
+<img src="http://wisebread.killeracesmedia.netdna-cdn.com/files/fruganomics/imagecache/195x160a/blog-images/woman_beach_credit_card_100441963.jpg" alt="Woman following credit card rules while traveling abroad" title=""  class="imagecache imagecache-195x160a imagecache-default imagecache-195x160a_default" width="195" height="160" />
+<br />
+Follow These 5 Credit Card Rules When Traveling Abroad
+</span></a></span>
+  </div>
+  </div>
+    <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field-title">
+                <span class="field-content"><a href="http://www.wisebread.com/best-credit-cards-for-millennials?ref=relatedbox"><span>
+<img src="http://wisebread.killeracesmedia.netdna-cdn.com/files/fruganomics/imagecache/195x160a/blog-images/iStock_89879337_LARGE.jpg" alt="" title=""  class="imagecache imagecache-195x160a imagecache-default imagecache-195x160a_default" width="195" height="160" />
+<br />
+Best Credit Cards for Millennials
+</span></a></span>
+  </div>
+  </div>
+    <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field-title">
+                <span class="field-content"><a href="http://www.wisebread.com/which-hilton-hhonors-credit-card-should-you-get?ref=relatedbox"><span>
+<img src="http://wisebread.killeracesmedia.netdna-cdn.com/files/fruganomics/imagecache/195x160a/blog-images/iStock_000033718418_Large.jpg" alt="" title=""  class="imagecache imagecache-195x160a imagecache-default imagecache-195x160a_default" width="195" height="160" />
+<br />
+Which Hilton HHonors Credit Card Should You Get?
+</span></a></span>
+  </div>
+  </div>
+  <div style="" class="clear">&nbsp;</div>  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field-title">
+                <span class="field-content"><a href="http://www.wisebread.com/3-ways-your-cash-rewards-can-make-you-rich?ref=relatedbox"><span>
+<img src="http://wisebread.killeracesmedia.netdna-cdn.com/files/fruganomics/imagecache/195x160a/blog-images/iStock_70878579_LARGE.jpg" alt="" title=""  class="imagecache imagecache-195x160a imagecache-default imagecache-195x160a_default" width="195" height="160" />
+<br />
+3 Ways Your Cash Rewards Can Make You Rich
+</span></a></span>
+  </div>
+  </div>
+    <div class="views-row views-row-5 views-row-odd">
+      
+  <div class="views-field-title">
+                <span class="field-content"><a href="http://www.wisebread.com/best-credit-cards-that-give-back-to-charity?ref=relatedbox"><span>
+<img src="http://wisebread.killeracesmedia.netdna-cdn.com/files/fruganomics/imagecache/195x160a/blog-images/iStock_000087506865_Large.jpg" alt="" title=""  class="imagecache imagecache-195x160a imagecache-default imagecache-195x160a_default" width="195" height="160" />
+<br />
+Best Credit Cards that Give Back to Charity
+</span></a></span>
+  </div>
+  </div>
+    <div class="views-row views-row-6 views-row-even views-row-last">
+      
+  <div class="views-field-title">
+                <span class="field-content"><a href="http://www.wisebread.com/7-ways-to-avoid-credit-card-fraud-while-traveling?ref=relatedbox"><span>
+<img src="http://wisebread.killeracesmedia.netdna-cdn.com/files/fruganomics/imagecache/195x160a/blog-images/credit_card_fraud_56707570.jpg" alt="Learning ways to avoid credit card fraud while traveling" title=""  class="imagecache imagecache-195x160a imagecache-default imagecache-195x160a_default" width="195" height="160" />
+<br />
+7 Ways to Avoid Credit Card Fraud While Traveling
+</span></a></span>
+  </div>
+  </div>
+  <div style="" class="clear">&nbsp;</div>    </div>
+  
+  
+  
+  
+  
+  
+</div>       </div>
+              <!-- Render ZergNet -->
+        <!-- End of ZergNet -->
+    
+
+    <div class="bottom">
+      <span class="part fivestar"><form action="/best-credit-cards-to-use-at-costco?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+wisebread+%28Wise+Bread%29"  accept-charset="UTF-8" method="post" id="fivestar-form-node-1761734" class="fivestar-widget fivestar-combo-stars">
+<div><div class="fivestar-form-vote-1761734 clear-block"><div class="fivestar-static-form-item"><div class="form-item">
+ <div class="fivestar-widget-static fivestar-widget-static-vote fivestar-widget-static-5 clear-block"><div class="star star-1 star-odd star-first"><span class="on">3.5</span></div><div class="star star-2 star-even"><span class="on"></span></div><div class="star star-3 star-odd"><span class="on"></span></div><div class="star star-4 star-even"><span class="on" style="width: 50%"></span></div><div class="star star-5 star-odd star-last"><span class="off"></span></div></div>
+ <div class="description"><div class="fivestar-summary fivestar-summary-average-count"><span class="average-rating">Average: <span>3.5</span></span> <span class="total-votes">(<span>2</span> votes)</span></div></div>
+</div>
+</div><input type="hidden" name="content_type" id="edit-content-type" value="node"  />
+<input type="hidden" name="content_id" id="edit-content-id" value="1761734"  />
+<div class="fivestar-form-item  fivestar-combo-text fivestar-combo-stars fivestar-labels-hover"><div class="form-item" id="edit-vote-wrapper">
+ <input type="hidden" name="vote_count" id="edit-vote-count" value="2"  />
+<input type="hidden" name="vote_average" id="edit-vote-average" value="70"  />
+<input type="hidden" name="auto_submit_path" id="edit-auto-submit-path" value="/fivestar/vote/node/1761734/vote"  class="fivestar-path" />
+<select name="vote" class="form-select" id="edit-vote-1" ><option value="-">Select rating</option><option value="20">Not useful</option><option value="40">Somewhat useful</option><option value="60">Useful</option><option value="80">Very useful</option><option value="100">Extremely useful</option></select><input type="hidden" name="auto_submit_token" id="edit-auto-submit-token" value="8881d96aaae9fd8f1c5abafc56131b38"  class="fivestar-token" />
+
+ <div class="description"><div class="fivestar-summary fivestar-summary-user"><span class="user-rating">Your rating: <span>None</span></span></div></div>
+</div>
+</div><input type="hidden" name="destination" id="edit-destination" value="node/1761734"  />
+<input type="submit" name="op" id="edit-fivestar-submit" value="Rate"  class="form-submit fivestar-submit" />
+<input type="hidden" name="form_build_id" id="form-r7G8dXljIl0PyCvCpsAAT_mxNUyboWOFiyXvr5T0OQ0" value="form-r7G8dXljIl0PyCvCpsAAT_mxNUyboWOFiyXvr5T0OQ0"  />
+<input type="hidden" name="form_id" id="edit-fivestar-form-node-1761734" value="fivestar_form_node_1761734"  />
+</div>
+</div></form>
+</span>
+      <span class="part sharethis"><a href="http://www.wisebread.com/best-credit-cards-to-use-at-costco" class="sharethis-link" title="Best Credit Cards to Use at Costco" rel="nofollow">ShareThis</a></span>
+      <div class="clear-block" style="width: 100%; clear: both;"></div>
+
+            
+    </div>
+
+
+      <div id="comment-cc-disclosure">Disclaimer: The responses below are not provided or commissioned by the bank advertiser. Responses have not been reviewed, approved or otherwise endorsed by the bank advertiser. It is not the bank advertiser's responsibility to ensure all posts and/or questions are answered.</div>
+  
+
+</div>
+  <br style="clear: both;" />
+<div id="block-commentblock-comment_form" class="block block-commentblock">
+
+  
+  <div class="content clear">
+        <div id="comments"></div> <form action="/comment/reply/1761734"  accept-charset="UTF-8" method="post" id="comment-form">
+<div><div class="comment-header">  <h3>comments</h3>  <div class="count">0 discussions</div></div><h2>Add New Comment</h2><div class="form-item" id="edit-comment-wrapper">
+ <label for="edit-comment">Comment: <span class="form-required" title="This field is required.">*</span></label>
+ <textarea cols="60" rows="15" name="comment" id="edit-comment"  class="form-textarea resizable required"></textarea>
+</div>
+<input type="hidden" name="format" id="edit-format" value="1"  />
+<input type="hidden" name="form_build_id" id="form-yquR6lbEVAy03sYqVOBVYL-ExTm8mY-I2bIewu4s700" value="form-yquR6lbEVAy03sYqVOBVYL-ExTm8mY-I2bIewu4s700"  />
+<input type="hidden" name="form_id" id="edit-comment-form" value="comment_form"  />
+<fieldset class="captcha"><legend>CAPTCHA</legend><div class="description">This test helps prevent automated spam submissions.</div><input type="hidden" name="captcha_sid" id="edit-captcha-sid" value="155158852"  />
+<input type="hidden" name="captcha_token" id="edit-captcha-token" value="a34e9302c979897aa3c05194ead2ebed"  />
+<input type="hidden" name="captcha_response" id="edit-captcha-response" value="reCAPTCHA"  />
+<div class="form-item">
+ <script type="text/javascript" src="https://www.google.com/recaptcha/api/challenge?k=6Ld9iQIAAAAAAFN9Ci9hoMzR9umTPAsqjA9VqAIc"></script>
+
+	<noscript>
+  		<iframe src="https://www.google.com/recaptcha/api/noscript?k=6Ld9iQIAAAAAAFN9Ci9hoMzR9umTPAsqjA9VqAIc" height="300" width="500" frameborder="0"></iframe><br/>
+  		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  		<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
+	</noscript>
+</div>
+</fieldset>
+<div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Your name: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="30" value="Guest" class="form-text required" />
+</div>
+<div class="form-item" id="edit-mail-wrapper">
+ <label for="edit-mail">E-mail: </label>
+ <input type="text" maxlength="64" name="mail" id="edit-mail" size="30" value="" class="form-text" />
+</div>
+<div class="clear-block"><div class="form-item" id="edit-notify-wrapper">
+ <label class="option" for="edit-notify"><input type="checkbox" name="notify" id="edit-notify" value="1"   class="form-checkbox" /> Subscribe to comments on this article. </label>
+</div>
+<input type="hidden" name="notify_type" id="edit-notify-type" value="1"  />
+</div><input type="submit" name="op" id="edit-submit" value="Post as Guest"  class="form-submit" />
+
+</div></form>
+  </div>
+
+</div><div id="block-views-comments-block_1" class="block block-views">
+
+  
+  <div class="content clear">
+        <div class="view view-comments view-id-comments view-display-id-block_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-empty">
+      <p>&nbsp;</p>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>   </div>
+
+</div>
+                        
+          
+        </div> <!-- /#main -->
+
+                  <div id="sidebar-right" class="sidebar">
+            <div id="advertising-disclosure-block" class="block" style="margin-bottom: 30px;"> <div class="content clear ad-disclosure-block" style="text-align: center;width: 300px; border: 1px solid #ddd; background-color: #fafafa; padding: 10px;font-size:14px;"> <a style="font-weight:bold;" href="#" id="advertising-disclosure-sidebar-link">Advertiser Disclosure &blacktriangledown;</a> </div> <div id="advertising-disclosure-sidebar-overlay" style="width:300px;padding:10px;border:1px solid #ddd;border-top:none;display:none;">Wise Bread is an independent, award-winning, advertising-supported website. Many credit card offers that appear here are from companies from which Wise Bread receives compensation. This compensation may impact how and where products appear on this site (including, for example, the order in which they appear). Wise Bread does not include all card offers in the marketplace.<br/><br/><a href="http://www.wisebread.com/advertiser-disclosure" target="_blank">Click here for more info &raquo;</a></div> </div>            <div id="block-ka_author_block-0" class="block block-ka_author_block">
+
+  
+  <div class="content clear">
+        
+
+<div id="ka_author_block-0" class="block yespic yesbio">
+
+      <div class="author-picture">
+      <a href="http://www.wisebread.com/jason-steele" title="View author&#039;s profile"><img width="85" height="85" class="author-picture" alt="" src="http://wisebread.killeracesmedia.netdna-cdn.com/files/fruganomics/pictures/picture-2821.jpg" /></a>    </div>
+  
+
+  <div class="author-name">
+    <a href="http://www.wisebread.com/jason-steele" title="View &#039;s profile">Jason Steele</a>  </div>
+
+
+  <div class="author-title">
+    Credit Card Expert  </div>
+
+
+        <div  class="author-more">
+      <a href="/jason-steele">More articles &raquo;</a>    </div>
+  
+
+  <div class="author-icons">
+    <a href="/jason-steele" title="&#039;s profile"><img id="author-icon-profile" width="16" height="16" src="http://wisebread.killeracesmedia.netdna-cdn.com/sites/default/themes/custom/wisebread/fugue-icons/icons/user.png" /></a><a href="/contact-wise-bread-writer?uid=2821" title="Contact "><img id="author-icon-contact" width="16" height="16" src="http://wisebread.killeracesmedia.netdna-cdn.com/sites/default/themes/custom/wisebread/fugue-icons/icons/mail.png" /></a>  </div>
+
+
+      <div class="author-short-bio">
+      <div class="author-short-bio-text">
+        <img class="blockquote-image" src="http://wisebread.killeracesmedia.netdna-cdn.com/sites/default/themes/custom/wisebread/images/blockquote.gif" />
+        <a href="http://www.wisebread.com/jason-steele" title="View &#039;s profile">My family travels the globe using credit card rewards. Ask me how!</a>      </div>
+    </div>
+  
+
+  
+</div>
+ <!-- author_block cached 2016/08/21 - 12:09 -->  </div>
+
+</div> <div id="block-views-node_info-block_1" class="block block-views">
+
+  
+  <div class="content clear">
+          </div>
+
+</div> <div id="block-block-185" class="block block-block">
+
+  
+  <div class="content clear">
+        
+<div id="block-cc-sidebar-links" class="block" style="width:300px;margin:0 auto;">
+  <style>
+    .view-affiliates-tab ul li,
+    ul.ccbar-content li {
+      list-style: none;
+      margin-bottom: 1em;
+      text-indent: 0em;
+      background: none;
+      padding-left: 0px;
+    }
+    ul.ccbar-small-ul {
+      width: 145px;
+    }
+    p.ccbar-desc {
+      font-size: 1.1em;
+      color: #666;
+      padding: 0 10px;
+    }
+    h3.ccbar-heading {
+      font-family:Calibri, sans;
+      padding-bottom: 0px;
+      border-bottom: 1px solid #B9D181;
+      margin-top: 20px;
+    }
+    div.ccbar-content {
+      padding:0;
+      font-size:13px;
+      margin:0;
+    }
+    .view-affiliates-tab ul li a.active {
+      color: #036;
+      text-decoration: none;
+    }
+  </style>
+
+
+
+
+	<div class="ccbar-content desktop-ad">
+	<a href="http://www.wisebread.com/about/media-kit" target="_blank" title="" style="border:none;"><img src="http://www.wisebread.com/files/wisebread/newgrads/images/wisebread-best-of-the-web-300.png" alt="MSN,Slate,CNNMoney,CNBC logos" class=”ggnoads” /></a>
+	</div><!--/press-->
+
+<h3 class="ccbar-heading">Best Credit Cards</h3>
+	<div class="ccbar-content">
+    <ul class="ccbar-content">
+            <li><b>Travel Rewards</b><br/><a target="_blank" href="http://www.wisebread.com/chase-sapphire-preferred-review?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_cc">Chase Sapphire Preferred Card - Favorite card of frequent travelers. Sign-up bonus worth $625 in travel through Ultimate Rewards Portal.</a></li>
+            <li><b>Balance Transfer</b><br/><a target="_blank" href="http://www.wisebread.com/retire-your-credit-card-debt-with-citi-simplicity-card?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_cc">Citi Simplicity - 21 months 0% APR on balance transfers and new purchases.</a></li>
+	    <li><b>Cash Back</b><br/><a target="_blank" href="http://www.wisebread.com/citi-double-cash-rewards-card-pays-you-to-pay-off-your-debt?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_cc">Citi Double Cash Card - 18 month BT offer - Get paid twice: 1% cash back when you buy, 1% when you pay.</a></li>
+            <li><b>Groceries</b><br/><a target="_blank" href="http://www.wisebread.com/cashing-in-at-the-supermarket-blue-cash-preferred-card-from-american-express-review?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_cc">Blue Cash Preferred from American Express - 6% cash back at US supermarkets is highest available cash back offer.</a></li>
+
+
+    </ul>
+	</div><!-- /offers -->		
+
+	<h3 class="ccbar-heading">Credit Card Tips & Tricks</h3>
+	<div class="ccbar-content">
+    <ul class="ccbar-content">
+      <li><a href="http://www.wisebread.com/6-ways-my-family-scores-free-travel-with-credit-cards?utm_source=wisebread&utm_medium=ccbar&utm_campaign=tips" title="6 Ways My Family Scores Free Travel With Credit Cards">6 Ways My Family Scores Free Travel With Credit Cards</a></li>
+
+      <li><a href="http://www.wisebread.com/pre-approved-for-credit-card-offers-are-you-pre-qualified?utm_source=wisebread&utm_medium=ccbar&utm_campaign=tips" title="Pre-Approved for Credit Card Offers: Are You Pre-Qualified?">How to Pre-Qualify for a Credit Card</a></li>
+      <li><a href="http://www.wisebread.com/6-awesome-credit-card-tricks-that-will-save-you-money?utm_source=wisebread&utm_medium=ccbar&utm_campaign=tips" title="6 Awesome Credit Card Tricks That Will Save You Money">6 Awesome Credit Card Tricks That Will Save You Money</a></li>
+      <li><a href="http://www.wisebread.com/how-to-save-an-extra-109486-a-year?utm_source=wisebread&utm_medium=ccbar&utm_campaign=tips" title="A typical American family can save over $1,000 a year by using these four credit cards.">How to Save an Extra $1,094.86 a Year With These 4 Cards</a></li>
+      <li><a href="http://www.wisebread.com/5-ways-to-earn-cashback-rewards-without-extra-spending?utm_source=wisebread&utm_medium=ccbar&utm_campaign=tips" title="5 Ways to Earn Cashback Rewards Without Extra Spending">5 Ways to Earn Cashback Rewards Without Extra Spending</a></li>
+      <li><a href="http://www.wisebread.com/what-is-a-good-credit-score-range?utm_source=wisebread&utm_medium=ccbar&utm_campaign=tips" title="What Is a Good Credit Score and Why Is It Important?">What Is a Good Credit Score, and How to Improve Your Own Credit Rating</a></li>
+
+    </ul>
+	</div><!-- /cc tips and tricks -->		
+
+	<h3 class="ccbar-heading">Rebuilding Credit</h3>
+	<div class="ccbar-content">
+    <ul class="ccbar-content">
+      <li><a href="http://www.wisebread.com/how-to-rebuild-your-credit-in-8-simple-steps?utm_source=wisebread&utm_medium=ccbar&utm_campaign=credit" title="How to Rebuild Your Credit in 8 Easy Steps">8 Easy Steps to Rebuild Credit</a></li>
+      <li><a href="http://www.wisebread.com/10-surprising-ways-to-negatively-affect-your-credit-score?utm_source=wisebread&utm_medium=ccbar&utm_campaign=credit" title="Surprising actions that cause a dip in your credit score.">10 Surprising Ways to Kill Your Credit Score</a></li>
+      <li><a href="http://www.wisebread.com/the-5-best-secured-credit-cards?utm_source=wisebread&utm_medium=ccbar&utm_campaign=credit" title="Wise Bread's Top 5 Secured Card Picks">5 Best Secured Credit Cards</a></li>
+    </ul>
+	</div><!-- /rebuilding credit -->		
+
+
+
+	<h3 class="ccbar-heading">Best Credit Cards by Category</h3>
+	<div class="ccbar-content">
+    <p class="ccbar-desc">
+      Experts pick their 5 favorite cards for each spending category. (<a href="http://www.wisebread.com/topic/best-credit-cards?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_category" title="Best Credit Cards Listed by Category">See all.</a>)
+    </p>
+    <ul class="ccbar-content ccbar-small-ul" style="float:right;">
+            <li><a href="http://www.wisebread.com/the-5-best-credit-cards-with-no-annual-fees?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_category">No Annual Fee</a></li>
+	    <li><a href="http://www.wisebread.com/5-best-credit-cards-for-people-with-excellent-credit?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_category">Excellent Credit</a></li>
+            <li><a href="http://www.wisebread.com/the-5-best-secured-credit-cards?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_category" title="Wise Bread's Top 5 Secured Card Picks">Bad Credit</a></li>
+	    <li><a href="http://www.wisebread.com/the-best-5-credit-cards-for-groceries?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_category">Groceries</a></li>
+    </ul>
+    <ul class="ccbar-content ccbar-small-ul">
+	    <li><a href="http://www.wisebread.com/the-best-0-balance-transfer-credit-cards?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_category">0% Balance Transfer</a></li>
+	    <li><a href="http://www.wisebread.com/5-best-cash-back-credit-cards?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_category">Cash Back Rewards</a></li>
+	    <li><a href="http://www.wisebread.com/top-5-travel-reward-credit-cards?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_category">Travel Rewards</a></li>
+            <li><a href="http://www.wisebread.com/the-best-low-interest-rate-credit-cards?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_category">Low Interest</a></li>
+    </ul>
+	</div><!--/best-->
+
+
+<h3 class="ccbar-heading">Reviews by Card Issuer</h3>
+<div class="ccbar-content" style="margin-bottom: 50px;">
+    <p class="ccbar-desc">
+      Reviews of cards offered by each bank.
+    </p>
+    <ul class="ccbar-content ccbar-small-ul" style="float:right;">
+	    <li><a href="http://www.wisebread.com/capital-one-credit-card-applications?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_issuer">Capital One</a></li>
+	    <li><a href="http://www.wisebread.com/chase-credit-card-offers-applications-reviews?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_issuer">Chase</a></li>
+	    <li><a href="http://www.wisebread.com/citi-credit-card-offers-applications-reviews?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_issuer">Citi</a></li>
+    </ul>
+    <ul class="ccbar-content ccbar-small-ul">
+           <li><a href="http://www.wisebread.com/american-express-credit-card-offers-applications-reviews?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_issuer">American Express</a></li>
+            <li><a href="http://www.wisebread.com/bank-of-america-credit-card-offers-applications-reviews?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_issuer">Bank of America</a></li>
+	    <li><a href="http://www.wisebread.com/barclaycard-credit-card-offers-applications-reviews?utm_source=wisebread&utm_medium=ccbar&utm_campaign=best_issuer">Barclaycard</a></li>	    
+    </ul>
+</div><!--/best-->
+
+
+
+
+<div id="sticky-ad">
+  <a href="http://www.wisebread.com/balance-transfer-credit-cards?utm_campaign=21apr&utm_content=ccbar&utm_source=wisebread&utm_medium=banner" title="Wise Bread's Picks for Best Balance Cards" style="border:none;">
+    <img src="http://www.wisebread.com/files/wisebread/cc/21apr/300X250-upto21apr.jpg" width="300" height="250" />
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div><!--/cc-sidebar-->  </div>
+
+</div>            <div class="sidebar-split">
+              <div class="split-left"></div>
+              <div class="split-right"></div>
+            </div>
+          </div> <!-- /#sidebar-right -->
+        
+                <div class="clear-block"></div>
+      </div>
+
+      <div class="footer-dividor"></div>
+
+      <div id="footer" class="clear">
+                <div class="clear-block"></div>
+        <div class="footer-message">
+                    <div class="footer-disclosure"> Advertiser Disclosure: Many of the credit card offers that appear on the website are from credit card companies from which Wise Bread receives compensation. This compensation may impact how and where products appear on this site (including, for example, the order in which they appear). This site does not include all credit card companies or all available credit card offers. Please view our <a href="http://www.wisebread.com/advertiser-disclosure" style="color:blue;" target="_blank">advertiser disclosure page</a> for more information.  </div>          <div>
+            &copy; 2016            <a href="/">Wise Bread</a> |
+            <a href="/about">About</a> |
+            <a href="/advertise">Advertise</a> |
+            <a href="/about/contact">Contact</a> |
+            <a href="http://feeds.killeraces.com/wisebread">Subscribe</a>          </div>
+          <div>
+            <strong><a href="/legal/user-agreement">User Agreement</a></strong> |
+            <strong><a href="/legal/privacy-policy">Privacy Policy</a></strong>
+          </div>
+        </div>
+      </div> <!-- /#footer -->
+      <div id="subfooter" class="clear">
+           <div id="block-block-155" class="block block-block">
+
+  
+  <div class="content clear">
+        <!-- crazyegg -->
+        <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0006/5275.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+          
+<!-- Start Quantcast tag -->
+
+<script type="text/javascript">
+
+_qoptions={
+
+qacct:"p-b0fVTrG87oLhU"
+
+};
+
+</script>
+
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+
+<noscript>
+
+<img src="http://pixel.quantserve.com/pixel/p-b0fVTrG87oLhU.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+
+</noscript>
+<!-- End Quantcast tag -->
+
+
+                                                                                                                 
+<!-- FM Insight Tag -->
+<script type="text/javascript">
+  var _bizo_data_partner_id = "901";
+</script>
+<script type="text/javascript">
+  var _bizo_p = (("https:" == document.location.protocol) ? "https://sjs." : "http://js.");
+  document.write(unescape("%3Cscript src='" + _bizo_p + "bizographics.com/convert_data.js?partner_id=" + _bizo_data_partner_id + "' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<noscript>
+  <img height="1" width="1" alt="" style="display:none;" src="http://www.bizographics.com/collect/?pid=901&fmt=gif" />
+</noscript>
+<!-- end FM Insight Tag -->
+
+
+
+
+  </div>
+
+</div>      </div>
+
+    </div> <!-- /.container -->
+</div><!-- /.super-container-->
+    <!-- /layout -->
+
+  <script type="text/javascript" src="http://wisebread.killeracesmedia.netdna-cdn.com/files/fruganomics/js/js_277686d19c564ca46f7a01102b59e783.js"></script>
+
+<!-- pinterest js -->
+<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+
+    
+      <!-- Google Code for Remarketing Tag -->
+      <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 1040518555;
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+      /* ]]> */
+      </script>
+      <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+      </script>
+      <noscript>
+      <div style="display:inline;">
+      <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1040518555/?value=0&amp;guid=ON&amp;script=0"/>
+      </div>
+      </noscript>
+      <!-- End Google Code for Remarketing Tag -->
+              <!-- adroll remarketing code -->
+      <script type="text/javascript">
+          adroll_adv_id = "IOMUOMEE2NBYDMXT57ZDKV";
+          adroll_pix_id = "AHF2D7ACP5HB7GBUUC3XRA";
+          (function () {
+              var _onload = function(){
+                  if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+                  if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+                  var scr = document.createElement("script");
+                  var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+                  scr.setAttribute('async', 'true');
+                  scr.type = "text/javascript";
+                  scr.src = host + "/j/roundtrip.js";
+                  ((document.getElementsByTagName('head') || [null])[0] ||
+                      document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+              };
+              if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+              else {window.attachEvent('onload', _onload)}
+          }());
+      </script>
+      <!-- end adroll -->          <!-- industrybrains wb cc all -->
+       <img src="//pixel.industrybrains.com/imps.php?sgms=17277" border="0" />
+      <!-- end industrybrains -->
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1fdce76940","applicationID":"12902797","transactionName":"MgZVbBQHXBAEUhFZXgtMdlsSD10NSl8KVFQ6E1ZfAzlECgBG","queueTime":0,"applicationTime":1192,"atts":"HkFWGlwdTx4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
