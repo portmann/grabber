@@ -1,0 +1,16 @@
+CREATE TABLE `channel` (
+	`idChannel`	INTEGER PRIMARY KEY AUTOINCREMENT,
+	`title`	VARCHAR(300),
+	`description`	TEXT,
+	`url`	VARCHAR(300)
+);
+
+CREATE TABLE `item` (
+	`idItem`	INTEGER PRIMARY KEY AUTOINCREMENT,
+	`idChannel`	INTEGER,
+	`title`	VARCHAR(300),
+	`url`	VARCHAR(300),
+	`date`	DATE,
+	`md5`	VARCHAR(35)
+);
+
